@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Metric-Light.otf">
-            <string>Metric-Light</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Simple Cable Release-->
         <scene sceneID="9ez-Zk-If8">
@@ -30,9 +24,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zl9-Hr-6dM" userLabel="topLeftView">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="380"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the big red button to make the magic happen." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="584" translatesAutoresizingMaskIntoConstraints="NO" id="jTD-gq-8pa">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the big red button to make the magic happen." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" preferredMaxLayoutWidth="584" translatesAutoresizingMaskIntoConstraints="NO" id="jTD-gq-8pa">
                                         <rect key="frame" x="30" y="8" width="540" height="364"/>
-                                        <fontDescription key="fontDescription" name="Metric-Light" family="Metric" pointSize="22"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <color key="textColor" red="0.51372549020000002" green="0.51372549020000002" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -113,9 +107,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jFK-Nt-f81" userLabel="topeLeftView">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="380"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the big red button to make the magic happen, release the button to take a picture." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="560" translatesAutoresizingMaskIntoConstraints="NO" id="UYx-ux-cU4">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the big red button to make the magic happen, release the button to take a picture." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" preferredMaxLayoutWidth="560" translatesAutoresizingMaskIntoConstraints="NO" id="UYx-ux-cU4">
                                         <rect key="frame" x="30" y="8" width="540" height="364"/>
-                                        <fontDescription key="fontDescription" name="Metric-Light" family="Metric" pointSize="22"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <color key="textColor" red="0.51372549020000002" green="0.51372549020000002" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -199,9 +193,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xfw-oq-ApE" userLabel="topeLeftView">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="380"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Touch the button to open the shutter on your camera. To end your exposure, just let go." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="560" translatesAutoresizingMaskIntoConstraints="NO" id="vpT-TF-exo">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Touch the button to open the shutter on your camera. To end your exposure, just let go." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" preferredMaxLayoutWidth="560" translatesAutoresizingMaskIntoConstraints="NO" id="vpT-TF-exo">
                                         <rect key="frame" x="30" y="8" width="540" height="364"/>
-                                        <fontDescription key="fontDescription" name="Metric-Light" family="Metric" pointSize="22"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <color key="textColor" red="0.51372549020000002" green="0.51372549020000002" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -299,9 +293,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S4M-b5-ASh" userLabel="topeLeftView">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="380"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Touch the button to open the shutter on your camera. When you're done, touch it again to end your exposure. Easy!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="560" translatesAutoresizingMaskIntoConstraints="NO" id="vdc-pU-RrT">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Touch the button to open the shutter on your camera. When you're done, touch it again to end your exposure. Easy!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" preferredMaxLayoutWidth="560" translatesAutoresizingMaskIntoConstraints="NO" id="vdc-pU-RrT">
                                         <rect key="frame" x="30" y="8" width="540" height="364"/>
-                                        <fontDescription key="fontDescription" name="Metric-Light" family="Metric" pointSize="22"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <color key="textColor" red="0.51372549020000002" green="0.51372549020000002" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -411,12 +405,12 @@
                                                     <action selector="openKeyboard:" destination="DHJ-bY-mK3" eventType="touchUpInside" id="uim-MC-S0O"/>
                                                 </connections>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your favourite shutter speed. Press the button. Relax - the exposure ends when the timer runs down." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="560" translatesAutoresizingMaskIntoConstraints="NO" id="fTY-ws-pXu">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your favourite shutter speed. Press the button. Relax - the exposure ends when the timer runs down." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" preferredMaxLayoutWidth="560" translatesAutoresizingMaskIntoConstraints="NO" id="fTY-ws-pXu">
                                                 <rect key="frame" x="30" y="30" width="540" height="255"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="iZj-id-Ado"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Metric-Light" family="Metric" pointSize="22"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <color key="textColor" red="0.51372549020000002" green="0.51372549020000002" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="default">
@@ -584,12 +578,12 @@
                                                     <action selector="openKeyboard:" destination="ps1-C4-tnV" eventType="touchUpInside" id="F0V-vZ-j3e"/>
                                                 </connections>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set a time, tap the red button, and get in position!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="560" translatesAutoresizingMaskIntoConstraints="NO" id="3KM-bK-D0H">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set a time, tap the red button, and get in position!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" preferredMaxLayoutWidth="560" translatesAutoresizingMaskIntoConstraints="NO" id="3KM-bK-D0H">
                                                 <rect key="frame" x="0.0" y="0.0" width="540" height="225"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="Uri-Nd-RFv"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Metric-Light" family="Metric" pointSize="22"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <color key="textColor" red="0.51372549020000002" green="0.51372549020000002" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="default">
