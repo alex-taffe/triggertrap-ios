@@ -89,7 +89,7 @@ extension LeftPanelViewController: UITableViewDataSource {
         if let modes = modes, let modesSection = (modes[indexPath.section] as? NSArray), let modesInSection = modesSection[1] as? NSArray, let mode = modesInSection[indexPath.row] as? NSDictionary {
             
             cell.titleLabel.text = NSLocalizedString(mode["title"] as! String, tableName: "ModesPlist", bundle: Bundle.main, value: "Title", comment: "Ignore when translating")
-            
+            cell.titleLabel.font = UIFont.preferredFont(forTextStyle: .title2)
             cell.titleLabel.textColor = UIColor.triggertrap_accentColor()
             cell.identifier = mode["identifier"] as? String
             cell.backgroundColor = UIColor.triggertrap_fillColor()
@@ -130,7 +130,7 @@ extension LeftPanelViewController: UITableViewDataSource {
         let label = UILabel(frame: CGRect(x: 8, y: 0, width: self.tableView.frame.width, height: 22.0))
         
         label.text = NSLocalizedString((modes?[section] as AnyObject).object(at: 0) as! String, tableName: "ModesPlist", bundle: Bundle.main, value: "Section", comment: "Ignore when translating")
-        label.font = UIFont.triggertrap_metric_regular(18.0)
+        label.font = UIFont.preferredFont(forTextStyle: .title2)
         label.textColor = UIColor.triggertrap_accentColor(1.0)
         
         sectionBackgroundView.addSubview(label)

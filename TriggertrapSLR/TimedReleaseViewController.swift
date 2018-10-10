@@ -97,7 +97,7 @@ class TimedReleaseViewController: CableReleaseViewController, TTNumberInputDeleg
 
         navigationController.navigationBar.barTintColor = UIColor.triggertrap_primaryColor(1.0)
         
-        navigationController.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.triggertrap_metric_regular(23.0), NSAttributedString.Key.foregroundColor: UIColor.triggertrap_iconColor(1.0)]
+        navigationController.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .title2), NSAttributedString.Key.foregroundColor: UIColor.triggertrap_iconColor(1.0)]
  
         
         viewController.ndCalculatorCompletionBlock = ({ duration in

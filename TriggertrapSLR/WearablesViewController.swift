@@ -37,9 +37,9 @@ class WearablesViewController: TTViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        segmentedControl.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.triggertrap_metric_light(20.0)]
+        segmentedControl.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .title3)]
             , for: UIControl.State())
-        segmentedControl.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.triggertrap_metric_light(20.0)]
+        segmentedControl.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .title3)]
             , for: .selected)
     }
     

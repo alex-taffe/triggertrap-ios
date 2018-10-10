@@ -84,7 +84,7 @@ class SubSettingsViewController: UITableViewController {
         
         self.navigationController?.navigationBar.tintColor = UIColor.triggertrap_iconColor()
         self.navigationController?.navigationBar.barTintColor = UIColor.triggertrap_primaryColor(1.0)
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.triggertrap_metric_regular(23.0), NSAttributedString.Key.foregroundColor: UIColor.triggertrap_iconColor(1.0)]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .title1), NSAttributedString.Key.foregroundColor: UIColor.triggertrap_iconColor(1.0)]
     }
     
     // MARK: - UITableView Data Source
@@ -107,7 +107,7 @@ class SubSettingsViewController: UITableViewController {
         cell.usesSmartColor = false
         cell.backgroundFadeColor = UIColor.triggertrap_fillColor()
         
-        cell.textLabel?.font = UIFont.triggertrap_metric_light(20.0)
+        cell.textLabel?.font = UIFont.preferredFont(forTextStyle: .title3)
         cell.textLabel?.textColor = UIColor.triggertrap_accentColor(1.0)
         cell.textLabel?.text = strings[indexPath.row]
         

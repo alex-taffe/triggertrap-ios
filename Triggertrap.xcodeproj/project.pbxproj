@@ -174,10 +174,7 @@
 		BDD44D2A1BB1619300B98FF6 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD44D261BB1619300B98FF6 /* Array.swift */; };
 		BDD44D2C1BB1619300B98FF6 /* SharedConstansts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD44D271BB1619300B98FF6 /* SharedConstansts.swift */; };
 		BDD44D2E1BB1619300B98FF6 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD44D281BB1619300B98FF6 /* UIColor.swift */; };
-		BDD44D301BB1619300B98FF6 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD44D291BB1619300B98FF6 /* UIFont.swift */; };
 		BDD44D331BB161A900B98FF6 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD44D321BB161A900B98FF6 /* Functions.swift */; };
-		BDD44D3B1BB1620500B98FF6 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDD44D361BB1620500B98FF6 /* OpenSans-Bold.ttf */; };
-		BDD44D3D1BB1620500B98FF6 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDD44D371BB1620500B98FF6 /* OpenSans-Regular.ttf */; };
 		BDD44D4A1BB163B200B98FF6 /* SLRConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD44D491BB163B200B98FF6 /* SLRConstants.swift */; };
 		BDD4C3791BEA828D008CA311 /* ModesPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BDD4C37B1BEA828D008CA311 /* ModesPlist.strings */; };
 		BDD4C3821BEA829B008CA311 /* OptionsPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BDD4C3841BEA829B008CA311 /* OptionsPlist.strings */; };
@@ -525,10 +522,7 @@
 		BDD44D261BB1619300B98FF6 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		BDD44D271BB1619300B98FF6 /* SharedConstansts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedConstansts.swift; sourceTree = "<group>"; };
 		BDD44D281BB1619300B98FF6 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
-		BDD44D291BB1619300B98FF6 /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		BDD44D321BB161A900B98FF6 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
-		BDD44D361BB1620500B98FF6 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
-		BDD44D371BB1620500B98FF6 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		BDD44D491BB163B200B98FF6 /* SLRConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLRConstants.swift; sourceTree = "<group>"; };
 		BDD4C37A1BEA828D008CA311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/ModesPlist.strings; sourceTree = "<group>"; };
 		BDD4C37C1BEA8291008CA311 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ModesPlist.strings; sourceTree = "<group>"; };
@@ -1446,18 +1440,8 @@
 				BD11343D1BB3F47F006ED87A /* Model */,
 				BD1133AF1BB18E7C006ED87A /* Controllers */,
 				BDD44D451BB1625A00B98FF6 /* Extensions */,
-				BDD44D351BB161E800B98FF6 /* Fonts */,
 			);
 			path = SharedResources;
-			sourceTree = "<group>";
-		};
-		BDD44D351BB161E800B98FF6 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				BDD44D361BB1620500B98FF6 /* OpenSans-Bold.ttf */,
-				BDD44D371BB1620500B98FF6 /* OpenSans-Regular.ttf */,
-			);
-			name = Fonts;
 			sourceTree = "<group>";
 		};
 		BDD44D451BB1625A00B98FF6 /* Extensions */ = {
@@ -1465,7 +1449,6 @@
 			children = (
 				BDD44D261BB1619300B98FF6 /* Array.swift */,
 				BDD44D281BB1619300B98FF6 /* UIColor.swift */,
-				BDD44D291BB1619300B98FF6 /* UIFont.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -1718,7 +1701,6 @@
 				BD934FDD1BD4F2FC00527872 /* ModeTableViewCell.xib in Resources */,
 				BDD75BE81BE77BB50014DA3D /* CableSelector.storyboard in Resources */,
 				BDD75BC21BE77A750014DA3D /* RemoteModes.storyboard in Resources */,
-				BDD44D3D1BB1620500B98FF6 /* OpenSans-Regular.ttf in Resources */,
 				BDD75BAD1BE77A4D0014DA3D /* TimelapseModes.storyboard in Resources */,
 				BD098C101BC7D08E00A87FC8 /* sensorDelays.plist in Resources */,
 				9E23FEBA1BFF3AC50021E659 /* iTunesConnect.strings in Resources */,
@@ -1730,7 +1712,6 @@
 				BDD75BC91BE77A800014DA3D /* Calculators.storyboard in Resources */,
 				BDD4C3A91BEB7F55008CA311 /* speedUnitsPlist.strings in Resources */,
 				BDD75B9F1BE779E20014DA3D /* CableReleaseModes.storyboard in Resources */,
-				BDD44D3B1BB1620500B98FF6 /* OpenSans-Bold.ttf in Resources */,
 				BDD75CD71BEA56280014DA3D /* pulseLengths.plist in Resources */,
 				BDD75BF01BE77BC90014DA3D /* Onboarding.storyboard in Resources */,
 				9EE1F1B61B1C9FE800FE6EB7 /* Images.xcassets in Resources */,
@@ -1950,7 +1931,6 @@
 				BD1134081BB3F01A006ED87A /* SplashViewController.swift in Sources */,
 				BD098BEE1BC7C53900A87FC8 /* CubicBezierInterpolator.m in Sources */,
 				BD098B861BC5282B00A87FC8 /* TTViewController.swift in Sources */,
-				BDD44D301BB1619300B98FF6 /* UIFont.swift in Sources */,
 				BDD44B111BA98B0300B98FF6 /* Pulse.swift in Sources */,
 				BD1134261BB3F1C5006ED87A /* CableSelectorViewController.swift in Sources */,
 				9EE1F1AC1B1C9FE800FE6EB7 /* AppDelegate.swift in Sources */,

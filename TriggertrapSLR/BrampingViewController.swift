@@ -45,9 +45,9 @@ class BrampingViewController: TTViewController, HorizontalPickerDelegate, TTNumb
         setupHorizontalPickers()
         setupNumberPickers()
         
-        durationDisplayLabel.boldFont = UIFont.triggertrap_openSans_bold(17.0)
-        durationDisplayLabel.regularFont = UIFont.triggertrap_openSans_regular(17.0)
-        durationDisplayLabel.font = UIFont.triggertrap_openSans_regular(13.0)
+        durationDisplayLabel.boldFont = UIFont.preferredFont(forTextStyle: .title1)
+        durationDisplayLabel.regularFont = UIFont.preferredFont(forTextStyle: .title2)
+        durationDisplayLabel.font = UIFont.preferredFont(forTextStyle: .title3)
         durationDisplayLabel.textColor = UIColor.triggertrap_accentColor(1.0)
         
         durationDisplayLabel.updateApperance()

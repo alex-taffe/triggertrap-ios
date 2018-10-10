@@ -86,9 +86,9 @@ class TimeWarpViewController: TTViewController, TTNumberInputDelegate, TTKeyboar
         durationNumberInputView.showFractions = false
         durationNumberInputView.minValue = 0
         
-        durationFeedbackLabel.boldFont = UIFont.triggertrap_openSans_bold(17)
-        durationFeedbackLabel.regularFont = UIFont.triggertrap_openSans_regular(17)
-        durationFeedbackLabel.font = UIFont.triggertrap_openSans_regular(13)
+        durationFeedbackLabel.boldFont = UIFont.preferredFont(forTextStyle: .title1)
+        durationFeedbackLabel.regularFont = UIFont.preferredFont(forTextStyle: .title2)
+        durationFeedbackLabel.font = UIFont.preferredFont(forTextStyle: .title3)
         durationFeedbackLabel.displayMode = kDisplayMode.displayModeSeconds
         durationFeedbackLabel.textColor = UIColor.white
         durationFeedbackLabel.textAlignment = NSTextAlignment.left;

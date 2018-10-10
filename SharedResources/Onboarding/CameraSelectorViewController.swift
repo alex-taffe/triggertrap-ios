@@ -116,10 +116,10 @@ extension CameraSelectorViewController: UIPickerViewDelegate {
         let pickerLabel = UILabel()
         
         if pickerView.tag == 0 {
-            pickerLabel.font = UIFont.triggertrap_metric_regular(18.0)
+            pickerLabel.font = UIFont.preferredFont(forTextStyle: .title2)
             pickerLabel.text = cameraManufacturers[row] as String
         } else {
-            pickerLabel.font = UIFont.triggertrap_metric_light(18.0)
+            pickerLabel.font = UIFont.preferredFont(forTextStyle: .title3)
             pickerLabel.text = cameraModelsForSelectedManufacturer[row] as String
         }
         

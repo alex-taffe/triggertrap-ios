@@ -47,21 +47,21 @@ class FeedbackViewController: UIViewController, TTCounterLabelDelegate, TTCircle
         
         self.view.backgroundColor = UIColor.triggertrap_primaryColor(1.0)
         
-        counterLabel?.boldFont = UIFont.triggertrap_openSans_bold(55.0)
-        counterLabel?.regularFont = UIFont.triggertrap_openSans_regular(55.0)
-        counterLabel?.font = UIFont.triggertrap_openSans_regular(25.0)
+        counterLabel?.boldFont = UIFont.preferredFont(forTextStyle: .title1)
+        counterLabel?.regularFont = UIFont.preferredFont(forTextStyle: .title2)
+        counterLabel?.font =  UIFont.preferredFont(forTextStyle: .title1)
         
-        exposureCounterLabel?.boldFont = UIFont.triggertrap_openSans_bold(17.0)
-        exposureCounterLabel?.regularFont = UIFont.triggertrap_openSans_regular(17.0)
-        exposureCounterLabel?.font = UIFont.triggertrap_openSans_regular(13.0)
+        exposureCounterLabel?.boldFont = UIFont.preferredFont(forTextStyle: .title1)
+        exposureCounterLabel?.regularFont =  UIFont.preferredFont(forTextStyle: .title2)
+        exposureCounterLabel?.font =  UIFont.preferredFont(forTextStyle: .title1)
         
-        pauseCounterLabel?.boldFont = UIFont.triggertrap_openSans_bold(17.0)
-        pauseCounterLabel?.regularFont = UIFont.triggertrap_openSans_regular(17.0)
-        pauseCounterLabel?.font = UIFont.triggertrap_openSans_regular(13.0)
+        pauseCounterLabel?.boldFont = UIFont.preferredFont(forTextStyle: .title1)
+        pauseCounterLabel?.regularFont =  UIFont.preferredFont(forTextStyle: .title2)
+        pauseCounterLabel?.font =  UIFont.preferredFont(forTextStyle: .title1)
         
-        elapsedCounterLabel?.boldFont = UIFont.triggertrap_openSans_bold(17.0)
-        elapsedCounterLabel?.regularFont = UIFont.triggertrap_openSans_regular(17.0)
-        elapsedCounterLabel?.font = UIFont.triggertrap_openSans_regular(13.0) 
+        elapsedCounterLabel?.boldFont = UIFont.preferredFont(forTextStyle: .title1)
+        elapsedCounterLabel?.regularFont =  UIFont.preferredFont(forTextStyle: .title2)
+        elapsedCounterLabel?.font =  UIFont.preferredFont(forTextStyle: .title1)
         
         performThemeUpdate()
     }

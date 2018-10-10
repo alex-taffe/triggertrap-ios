@@ -51,7 +51,7 @@ class OptionsTableViewController: UIViewController {
     fileprivate func applyTheme() {
         self.navigationController?.navigationBar.barTintColor = UIColor.triggertrap_primaryColor(1.0)
         self.navigationItem.rightBarButtonItem?.tintColor = UIColor.triggertrap_iconColor()
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.triggertrap_metric_regular(23.0), NSAttributedString.Key.foregroundColor: UIColor.triggertrap_iconColor(1.0)]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .title1), NSAttributedString.Key.foregroundColor: UIColor.triggertrap_iconColor(1.0)]
         
         self.view.backgroundColor = UIColor.triggertrap_naturalColor()
         self.tableView.backgroundColor = UIColor.triggertrap_naturalColor()
@@ -100,7 +100,7 @@ extension OptionsTableViewController: UITableViewDataSource {
         let label = UILabel(frame: CGRect(x: 8, y: 0, width: self.tableView.frame.width, height: 22.0))
         
         label.text =  NSLocalizedString((options?[section] as AnyObject).object(at: 0) as! String, tableName: "OptionsPlist", bundle: Bundle.main, value: "Section", comment: "Ignore when translating")
-        label.font = UIFont.triggertrap_metric_regular(18.0)
+        label.font = UIFont.preferredFont(forTextStyle: .title2)
         label.textColor = UIColor.triggertrap_accentColor(1.0)
         
         sectionBackgroundView.addSubview(label)
@@ -132,7 +132,7 @@ extension OptionsTableViewController: UITableViewDelegate {
                 
                 self.navigationController?.navigationBar.barTintColor = UIColor(hex: 0xE2231A, alpha: 1.0)
                 self.navigationItem.rightBarButtonItem?.tintColor = UIColor.white
-                self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.triggertrap_metric_regular(23.0), NSAttributedString.Key.foregroundColor: UIColor.white]
+                self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .title1), NSAttributedString.Key.foregroundColor: UIColor.white]
                 
                 
                 self.navigationController?.pushViewController(feedbackViewController!, animated: true)

@@ -34,7 +34,7 @@ class ManualFocusToTestTriggerTransition: CustomTransition {
             redView.backgroundColor = UIColor(hex: 0xE2231A, alpha: 1.0)
             
             let triggertrapLabel = UILabel()
-            triggertrapLabel.font = UIFont.triggertrap_metric_light(24)
+            triggertrapLabel.font = UIFont.preferredFont(forTextStyle: .title3)
             triggertrapLabel.textAlignment = NSTextAlignment.center
             triggertrapLabel.textColor = UIColor.white
             triggertrapLabel.text = "Triggertrap"
