@@ -29,7 +29,10 @@ class LeftPanelViewController: UIViewController {
         
         modes = NSArray(contentsOfFile: pathForResource("Modes")) 
         
-        NotificationCenter.default.addObserver(self, selector: #selector(LeftPanelViewController.removeActiveCell(_:)), name: NSNotification.Name(rawValue: "DidRemoveActiveViewController"), object: nil) 
+        NotificationCenter.default.addObserver(self, selector: #selector(LeftPanelViewController.removeActiveCell(_:)), name: NSNotification.Name(rawValue: "DidRemoveActiveViewController"), object: nil)
+
+        self.tableView.sectionHeaderHeight = UITableView.automaticDimension;
+        self.tableView.estimatedSectionHeaderHeight = 25;
     }
     
     deinit {
@@ -124,7 +127,7 @@ extension LeftPanelViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let sectionBackgroundView = UIView(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.width, height: 22.0))
+        let sectionBackgroundView = UIView()
         sectionBackgroundView.backgroundColor = UIColor.triggertrap_backgroundColor(1.0)
         
         let label = UILabel(frame: CGRect(x: 8, y: 0, width: self.tableView.frame.width, height: 22.0))
@@ -137,13 +140,16 @@ extension LeftPanelViewController: UITableViewDataSource {
         label.translatesAutoresizingMaskIntoConstraints = false
         if #available(iOS 11.0, *) {
             NSLayoutConstraint.activate([
-                label.leftAnchor.constraint(equalTo: sectionBackgroundView.safeAreaLayoutGuide.leftAnchor, constant: 5.0)
+                label.leftAnchor.constraint(equalTo: sectionBackgroundView.safeAreaLayoutGuide.leftAnchor, constant: 5.0),
+                label.bottomAnchor.constraint(equalToSystemSpacingBelow: sectionBackgroundView.safeAreaLayoutGuide.bottomAnchor, multiplier: 0.0),
+                label.topAnchor.constraint(equalToSystemSpacingBelow: sectionBackgroundView.safeAreaLayoutGuide.topAnchor, multiplier: 0.0)
             ])
         }
         
         
         return sectionBackgroundView
-    } 
+    }
+
 }
 
 extension LeftPanelViewController: UITableViewDelegate {
