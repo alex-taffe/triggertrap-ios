@@ -8,6 +8,7 @@
 
 import UIKit
 import CTFeedback
+import SnapKit
 
 class OptionsTableViewController: UIViewController {
     
@@ -26,6 +27,9 @@ class OptionsTableViewController: UIViewController {
         
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         self.tableView.separatorColor = UIColor.clear
+
+        self.tableView.sectionHeaderHeight = UITableView.automaticDimension
+        self.tableView.estimatedSectionHeaderHeight = 25
         
         tableView.register(UINib(nibName: "ModeTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: "ModeTableViewCell")
         
@@ -94,13 +98,13 @@ extension OptionsTableViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let sectionBackgroundView = UIView(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.width, height: 22.0))
+        let sectionBackgroundView = UIView()
         sectionBackgroundView.backgroundColor = UIColor.triggertrap_backgroundColor(1.0)
         
-        let label = UILabel(frame: CGRect(x: 8, y: 0, width: self.tableView.frame.width, height: 22.0))
+        let label = UILabel()
         
         label.text =  NSLocalizedString((options?[section] as AnyObject).object(at: 0) as! String, tableName: "OptionsPlist", bundle: Bundle.main, value: "Section", comment: "Ignore when translating")
-        label.font = UIFont.preferredFont(forTextStyle: .title2)
+        label.font = UIFont.preferredFont(forTextStyle: .title3)
         label.textColor = UIColor.triggertrap_accentColor(1.0)
         
         sectionBackgroundView.addSubview(label)
@@ -110,6 +114,11 @@ extension OptionsTableViewController: UITableViewDataSource {
             NSLayoutConstraint.activate([
                 label.leftAnchor.constraint(equalTo: sectionBackgroundView.safeAreaLayoutGuide.leftAnchor, constant: 5.0)
             ])
+        }
+
+        label.snp.makeConstraints { (make) in
+            make.top.equalTo(sectionBackgroundView.snp_topMargin)
+            make.bottom.equalTo(sectionBackgroundView.snp_bottomMargin)
         }
         
         return sectionBackgroundView

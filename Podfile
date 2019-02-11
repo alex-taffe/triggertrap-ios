@@ -13,6 +13,7 @@ def common_pods
     pod 'RPCircularProgress', :git => 'https://github.com/alex-taffe/RPCircularProgress.git'
     pod 'MPGNotification'
     pod 'Masonry'
+    pod 'SnapKit'
 end
 
 target 'TriggertrapSLR' do
