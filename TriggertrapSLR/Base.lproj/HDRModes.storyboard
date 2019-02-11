@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -30,7 +30,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="380"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dcc-c4-Ftv">
-                                        <rect key="frame" x="167" y="63" width="266" height="253"/>
+                                        <rect key="frame" x="167" y="63.5" width="266" height="253"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uh8-f4-SzW" userLabel="evHorizontalPicker" customClass="HorizontalPicker">
                                                 <rect key="frame" x="0.0" y="208" width="266" height="45"/>
@@ -40,12 +40,11 @@
                                                     <constraint firstAttribute="width" constant="266" id="NqV-6a-YYL"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z0M-53-Vgp" userLabel="numberInputView" customClass="TTTimeInput">
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z0M-53-Vgp" userLabel="numberInputView" customClass="TTTimeInput">
                                                 <rect key="frame" x="23" y="121" width="220" height="45"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="7pX-1N-u86"/>
-                                                    <constraint firstAttribute="width" constant="220" id="dD7-aU-72g"/>
                                                 </constraints>
                                                 <connections>
                                                     <action selector="openKeyboard:" destination="a6D-VQ-8Jm" eventType="touchUpInside" id="gfh-8O-djQ"/>
@@ -100,12 +99,14 @@
                                             <constraint firstAttribute="centerX" secondItem="Z0M-53-Vgp" secondAttribute="centerX" id="Cw9-Fa-kXP"/>
                                             <constraint firstItem="5xb-rE-dpE" firstAttribute="top" secondItem="tP0-Pw-5Gu" secondAttribute="bottom" constant="8" id="ILq-OT-QTq"/>
                                             <constraint firstItem="Z0M-53-Vgp" firstAttribute="top" secondItem="9ZK-Go-Gn3" secondAttribute="bottom" constant="8" id="Io8-JK-919"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Z0M-53-Vgp" secondAttribute="trailing" id="V4J-8F-Tka"/>
                                             <constraint firstItem="tP0-Pw-5Gu" firstAttribute="top" secondItem="dcc-c4-Ftv" secondAttribute="top" id="VYd-65-bHe"/>
                                             <constraint firstAttribute="trailing" secondItem="tP0-Pw-5Gu" secondAttribute="trailing" id="Ym9-ak-4pH"/>
                                             <constraint firstItem="hyB-bU-9vA" firstAttribute="top" secondItem="Z0M-53-Vgp" secondAttribute="bottom" constant="8" id="ZgU-21-4J3"/>
                                             <constraint firstItem="uh8-f4-SzW" firstAttribute="top" secondItem="hyB-bU-9vA" secondAttribute="bottom" constant="8" id="cEc-Cr-KY2"/>
                                             <constraint firstAttribute="bottom" secondItem="uh8-f4-SzW" secondAttribute="bottom" id="d5j-C5-T0R"/>
                                             <constraint firstAttribute="centerX" secondItem="uh8-f4-SzW" secondAttribute="centerX" id="vqq-5t-ltZ"/>
+                                            <constraint firstItem="Z0M-53-Vgp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dcc-c4-Ftv" secondAttribute="leading" id="zEk-Lf-enb"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -203,7 +204,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="380"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LUa-kP-PO8">
-                                        <rect key="frame" x="167" y="64" width="266" height="253"/>
+                                        <rect key="frame" x="167" y="63.5" width="266" height="253"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ssZ-Fc-X2I" userLabel="numberOfExposuresHorizontalPicker" customClass="HorizontalPicker">
                                                 <rect key="frame" x="0.0" y="208" width="266" height="45"/>

@@ -9,10 +9,7 @@
 #import "TTNumberInput.h"
 #import "TTNumberPadView.h"
 #import "UIColor+branding.h"
-#import "TTBranding.h"
-//#import "TTActivityManager.h"
-//#import "ActivityBar.h"
-//#import "TTViewController.h"
+@import Masonry;
 
 @implementation TTNumberInput
 
@@ -58,14 +55,52 @@
     self.borderColor = [UIColor TTDarkGreyColour];
     self.borderHighlightColor = [UIColor TTRedColour];
     self.backgroundColor = [UIColor clearColor];
-    self.valueFont = TTNumberInputValueFont;
-    self.smallValueFont = TTNumberInputSmallValueFont;
+    if (@available(iOS 11.0, *)) {
+        self.valueFont = [UIFont preferredFontForTextStyle:UIFontTextStyleLargeTitle];
+    } else {
+        self.valueFont = [UIFont preferredFontForTextStyle:UIFontTextStyleTitle1];
+    }
+    self.smallValueFont = [UIFont preferredFontForTextStyle:UIFontTextStyleTitle1];
     self.maxNumberLength = 10;
     
     self.keyboardCanBeDismissed = YES;
     [self setup];
     
     [self addSubview:self.displayView];
+
+    self.bottomBorder = [[UIView alloc] init];
+    self.bottomBorder.backgroundColor = self.borderColor;
+    [self addSubview:self.bottomBorder];
+
+
+    self.leftBorder = [[UIView alloc] init];
+    self.leftBorder.backgroundColor = self.borderColor;
+    [self addSubview:self.leftBorder];
+
+    self.rightBorder = [[UIView alloc] init];
+    self.rightBorder.backgroundColor = self.borderColor;
+    [self addSubview:self.rightBorder];
+
+    [self.bottomBorder mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(1);
+        make.left.equalTo(self.mas_left);
+        make.right.equalTo(self.mas_right);
+        make.bottom.equalTo(self.mas_bottom);
+    }];
+
+    [self.leftBorder mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.mas_equalTo(1);
+        make.height.mas_equalTo(8);
+        make.left.equalTo(self.mas_left);
+        make.bottom.equalTo(self.mas_bottom);
+    }];
+
+    [self.rightBorder mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.mas_equalTo(1);
+        make.height.mas_equalTo(8);
+        make.right.equalTo(self.mas_right);
+        make.bottom.equalTo(self.mas_bottom);
+    }];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(viewWillRotate) name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
 }
@@ -94,6 +129,9 @@
 - (void)openKeyboardInView:(UIView *)view covering:(UIView *)covered animate:(BOOL)animate {
     self.valueChanged = NO;
     self.initialValue = self.value;
+    self.leftBorder.backgroundColor = self.borderHighlightColor;
+    self.rightBorder.backgroundColor = self.borderHighlightColor;
+    self.bottomBorder.backgroundColor = self.borderHighlightColor;
     
     // reset the display value to allow a fresh input
     self.displayValue = 0;
@@ -157,6 +195,10 @@
 }
 
 - (void)hideKeyboardWithAnimation:(BOOL)animate {
+    self.leftBorder.backgroundColor = self.borderColor;
+    self.rightBorder.backgroundColor = self.borderColor;
+    self.bottomBorder.backgroundColor = self.borderColor;
+
     if (!_keyboardOpen) {
         return;
     }
@@ -317,14 +359,6 @@
 
 - (void)drawRect:(CGRect)rect {
     [super drawRect:rect];
-    
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetStrokeColorWithColor(context, _keyboardOpen ? self.borderHighlightColor.CGColor : self.borderColor.CGColor);
-    CGContextMoveToPoint(context, 1, self.bounds.size.height - (_keyboardOpen ? 15 : 10));
-    CGContextAddLineToPoint(context, 1, self.bounds.size.height - 1);
-    CGContextAddLineToPoint(context, self.bounds.size.width - 1, self.bounds.size.height - 1);
-    CGContextAddLineToPoint(context, self.bounds.size.width - 1, self.bounds.size.height - (_keyboardOpen ? 15 : 10));
-    CGContextStrokePath(context);
     
     if (_keyboardOpen) {
         [self drawCursor];

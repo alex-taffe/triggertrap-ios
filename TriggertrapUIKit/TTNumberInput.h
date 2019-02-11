@@ -44,6 +44,9 @@
 @property (nonatomic, retain) UIFont *smallValueFont;
 @property (nonatomic, retain) UIColor *borderColor;
 @property (nonatomic, retain) UIColor *borderHighlightColor;
+@property (nonatomic, retain) UIView *bottomBorder;
+@property (nonatomic, retain) UIView *leftBorder;
+@property (nonatomic, retain) UIView *rightBorder;
 @property (nonatomic, assign) unsigned long long maxValue;
 @property (nonatomic, assign) unsigned long long minValue;
 @property (nonatomic, assign) unsigned long long value;

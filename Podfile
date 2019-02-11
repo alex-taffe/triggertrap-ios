@@ -12,6 +12,7 @@ def common_pods
     pod 'CocoaAsyncSocket'
     pod 'RPCircularProgress', :git => 'https://github.com/alex-taffe/RPCircularProgress.git'
     pod 'MPGNotification'
+    pod 'Masonry'
 end
 
 target 'TriggertrapSLR' do

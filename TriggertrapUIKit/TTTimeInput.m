@@ -7,7 +7,7 @@
 //
 
 #import "TTTimeInput.h"
-#import "TTBranding.h"
+@import Masonry;
 
 @implementation TTTimeInput
 
@@ -18,17 +18,20 @@
     
     if (self) {
         
-        hours = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 60, 40)];
+        hours = [[UILabel alloc] init];
         hours.text = @"00";
         hours.adjustsFontSizeToFitWidth = YES;
+        hours.adjustsFontForContentSizeCategory = true;
         
-        minutes = [[UILabel alloc] initWithFrame:CGRectMake(70, 0, 60, 40)];
+        minutes = [[UILabel alloc] init];
         minutes.text = @"00";
+        minutes.adjustsFontForContentSizeCategory = true;
         
-        seconds = [[UILabel alloc] initWithFrame:CGRectMake(130, 0, 60, 40)];
+        seconds = [[UILabel alloc] init];
         seconds.text = @"00";
+        seconds.adjustsFontForContentSizeCategory = true;
         
-        fractions = [[UILabel alloc] initWithFrame:CGRectMake(180, 4, 60, 40)];
+        fractions = [[UILabel alloc] init];
         
         self.showFractionsInFull = NO;
         
@@ -41,15 +44,18 @@
         minutes.font = seconds.font = self.valueFont;
         fractions.font = self.smallValueFont;
         
-        h = [[UILabel alloc] initWithFrame:CGRectMake(54, 3, 20, 20)];
+        h = [[UILabel alloc] init];
         h.text = @"H";
+        h.adjustsFontForContentSizeCategory = true;
         
-        m = [[UILabel alloc] initWithFrame:CGRectMake(113, 3, 20, 20)];
+        m = [[UILabel alloc] init];
         m.text = @"M";
-        
-        s = [[UILabel alloc] initWithFrame:CGRectMake(175, 3, 20, 20)];
+        m.adjustsFontForContentSizeCategory = true;
+
+        s = [[UILabel alloc] init];
         s.text = @"S";
-        
+        s.adjustsFontForContentSizeCategory = true;
+
         hours.backgroundColor = [UIColor clearColor];
         minutes.backgroundColor = [UIColor clearColor];
         seconds.backgroundColor = [UIColor clearColor];
@@ -67,13 +73,58 @@
         [self addSubview:seconds];
         [self addSubview:fractions];
         [self addSubview:s];
+
+
+        const int itemOffset = 5;
+        const int labelOffset = 3;
+        const int xPadding = 3;
+
+        [hours mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.mas_top);
+            make.left.equalTo(self.mas_left).with.offset(xPadding);
+        }];
+
+        [h mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self->hours.mas_top).with.offset(4);
+            make.left.equalTo(self->hours.mas_right).with.offset(labelOffset);
+        }];
+
+        [minutes mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.bottom.equalTo(self->hours.mas_bottom);
+            make.left.equalTo(self->h.mas_right).with.offset(itemOffset);
+        }];
+
+        [m mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self->minutes.mas_top).with.offset(4);
+            make.left.equalTo(self->minutes.mas_right).with.offset(labelOffset);
+        }];
+
+        [seconds mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.bottom.equalTo(self->minutes.mas_bottom);
+            make.left.equalTo(self->m.mas_right).with.offset(itemOffset);
+        }];
+
+        [s mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self->seconds.mas_top).with.offset(4);
+            make.left.equalTo(self->seconds.mas_right).with.offset(labelOffset);
+        }];
+
+        [fractions mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.bottom.equalTo(self->seconds);
+            make.left.equalTo(self->s.mas_left).with.offset(itemOffset);
+            make.right.equalTo(self.mas_right).with.offset(xPadding);
+        }];
         
         self.displayView.hidden = YES;
         
         self.showFractions = TRUE;
         
-        self.unitsLabelFont = TTTimeInputUnitsFont;
-        self.boldValueFont = TTTimeInputBoldValueFont;
+        self.unitsLabelFont = [UIFont preferredFontForTextStyle:UIFontTextStyleCaption1];
+        if (@available(iOS 11.0, *)) {
+            self.boldValueFont = [UIFont preferredFontForTextStyle:UIFontTextStyleLargeTitle];
+        } else {
+            self.boldValueFont = [UIFont preferredFontForTextStyle:UIFontTextStyleTitle1];
+        }
     }
     
     return self;
