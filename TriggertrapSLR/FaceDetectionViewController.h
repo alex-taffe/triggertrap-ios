@@ -22,7 +22,8 @@
 
 @interface FaceDetectionViewController : UIViewController <GPUImageVideoCameraDelegate, HorizontalPickerDelegate> {
     GPUImageVideoCamera *videoCamera;
-    GPUImageOutput<GPUImageInput> *filter;
+    GPUImageOutput<GPUImageInput> *saturationFilter;
+    GPUImageCropFilter *zoomFilter;
 
 //    UIView *faceView;
     CIDetector *faceDetector;
