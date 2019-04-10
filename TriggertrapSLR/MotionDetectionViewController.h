@@ -21,7 +21,8 @@
 
 @interface MotionDetectionViewController : UIViewController <GPUImageVideoCameraDelegate> {
     GPUImageVideoCamera *videoCamera;
-    GPUImageOutput<GPUImageInput> *filter;
+    GPUImageOutput<GPUImageInput> *motionFilter;
+    GPUImageCropFilter *zoomFilter;
 //    UIView *boundsView;
 }
 
