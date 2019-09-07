@@ -8,7 +8,7 @@
 
 #if !TARGET_OS_MACCATALYST
 #import <UIKit/UIKit.h>
-#import <GPUImage/GPUImage.h>;
+#import <GPUImage/GPUImage.h>
 
 @class MotionDetectionViewController;
 

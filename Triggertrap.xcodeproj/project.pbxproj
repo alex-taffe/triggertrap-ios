@@ -349,7 +349,6 @@
 		FA06C6612324369A002C4A11 /* TestTriggertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1134031BB3F01A006ED87A /* TestTriggertViewController.swift */; };
 		FA06C6622324369A002C4A11 /* SharedConstansts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD44D271BB1619300B98FF6 /* SharedConstansts.swift */; };
 		FA06C6632324369A002C4A11 /* AccelerometerFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7D542D1BCBB9680030219D /* AccelerometerFilter.m */; };
-		FA06C6672324369A002C4A11 /* Modes.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDD75BD91BE77AAB0014DA3D /* Modes.plist */; };
 		FA06C6682324369A002C4A11 /* sensorResetDelays.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD098C061BC7D08E00A87FC8 /* sensorResetDelays.plist */; };
 		FA06C6692324369A002C4A11 /* HDRModes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD75BBD1BE77A690014DA3D /* HDRModes.storyboard */; };
 		FA06C66A2324369A002C4A11 /* StoreLinks.JSON in Resources */ = {isa = PBXBuildFile; fileRef = BD1134291BB3F29A006ED87A /* StoreLinks.JSON */; };
@@ -398,6 +397,7 @@
 		FA6E879323243E7B009590DF /* Modes Mac.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA6E879023243E75009590DF /* Modes Mac.plist */; };
 		FA6E879923244710009590DF /* DetailNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E879823244710009590DF /* DetailNavigationController.swift */; };
 		FA6E879A23244710009590DF /* DetailNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E879823244710009590DF /* DetailNavigationController.swift */; };
+		FA6E879B232448C7009590DF /* Modes.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDD75BD91BE77AAB0014DA3D /* Modes.plist */; };
 		FAB3553F20BF011E003CCF66 /* MPGNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB3553E20BF011E003CCF66 /* MPGNotification.m */; };
 		FAB6639020B4D1AD003C256E /* OptionsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB6638F20B4D1AD003C256E /* OptionsNavigationController.swift */; };
 /* End PBXBuildFile section */
@@ -1946,6 +1946,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD098C111BC7D08E00A87FC8 /* sensorResetDelays.plist in Resources */,
+				FA6E879B232448C7009590DF /* Modes.plist in Resources */,
 				BDD75BBB1BE77A690014DA3D /* HDRModes.storyboard in Resources */,
 				BD11342E1BB3F29A006ED87A /* StoreLinks.JSON in Resources */,
 				BDD75B981BE7799C0014DA3D /* Feedback.storyboard in Resources */,
@@ -2030,7 +2031,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA06C6672324369A002C4A11 /* Modes.plist in Resources */,
 				FA06C6682324369A002C4A11 /* sensorResetDelays.plist in Resources */,
 				FA6E879323243E7B009590DF /* Modes Mac.plist in Resources */,
 				FA06C6692324369A002C4A11 /* HDRModes.storyboard in Resources */,
