@@ -16,10 +16,15 @@ class UserActivityManager {
     var activities = [Activity]()
     
     fileprivate init() {
+
+        #if targetEnvironment(macCatalyst)
+        let modeFile = "Modes Mac"
+        #else
+        let modeFile = "Modes"
+        #endif
         
         // Add modes to the activities
-        
-        if let modes = NSArray(contentsOfFile: pathForResource("Modes")) {
+        if let modes = NSArray(contentsOfFile: pathForResource(modeFile)) {
             for section in modes {
                 if let section = section as? NSArray, let modesInSection = section[1] as? NSArray {
                     for mode in modesInSection {

@@ -71,8 +71,13 @@ func AppTheme() -> Theme {
 }
 
 func IdentifiersForModesInSection(_ index: Int) -> [String] {
-    
-    if let sections = NSArray(contentsOfFile: pathForResource("Modes")), let section = sections[index] as? NSArray, let modes = section[1] as? NSArray {
+    #if targetEnvironment(macCatalyst)
+    let modeFile = "Modes Mac"
+    #else
+    let modeFile = "Modes"
+    #endif
+
+    if let sections = NSArray(contentsOfFile: pathForResource(modeFile)), let section = sections[index] as? NSArray, let modes = section[1] as? NSArray {
         
         var identifiers: [String] = []
         
