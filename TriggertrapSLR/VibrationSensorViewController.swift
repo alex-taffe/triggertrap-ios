@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Triggertrap Ltd. All rights reserved.
 //
 
+
 import UIKit
 
 class VibrationSensorViewController: SensorViewController, CicularSliderDelegate {

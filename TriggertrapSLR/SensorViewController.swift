@@ -6,6 +6,8 @@
 //  Copyright © 2015 Triggertrap Limited. All rights reserved.
 //
 
+
+import AVKit
 import UIKit
 
 class SensorViewController: TTViewController {

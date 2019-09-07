@@ -5,6 +5,7 @@
 //  Created by Ross Gibson on 19/08/2014.
 //  Copyright (c) 2014 Triggertrap Ltd. All rights reserved.
 //
+#if !targetEnvironment(macCatalyst)  
 
 import UIKit
 
@@ -100,3 +101,4 @@ extension MotionSensorViewController: WearableManagerDelegate {
         self.shutterButtonTouchUpInside(UIButton())
     }
 }
+#endif

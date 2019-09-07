@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1DF0B459EB8E6F5EC09B5C5C /* Pods_TriggertrapSLR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C94759E9ADAD35B7D584C7 /* Pods_TriggertrapSLR.framework */; };
+		1DF0B459EB8E6F5EC09B5C5C /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		6C27BE94075250620411351D /* Pods_TriggertrapSLR_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0EABEDE2EC72F98FAC1644 /* Pods_TriggertrapSLR_Mac.framework */; };
 		9E23FEBA1BFF3AC50021E659 /* iTunesConnect.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E23FEBC1BFF3AC50021E659 /* iTunesConnect.strings */; };
 		9E67C6831D423BAD00C560CD /* SettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C6821D423BAD00C560CD /* SettingsManager.m */; };
 		9E67C69D1D423F6800C560CD /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C69C1D423F6800C560CD /* FeedbackViewController.swift */; };
@@ -201,7 +202,6 @@
 		BDD75BC21BE77A750014DA3D /* RemoteModes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD75BC41BE77A750014DA3D /* RemoteModes.storyboard */; };
 		BDD75BC91BE77A800014DA3D /* Calculators.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD75BCB1BE77A800014DA3D /* Calculators.storyboard */; };
 		BDD75BD01BE77A8E0014DA3D /* WifiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDD75BD21BE77A8E0014DA3D /* WifiCell.xib */; };
-		BDD75BD71BE77AAB0014DA3D /* Modes.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDD75BD91BE77AAB0014DA3D /* Modes.plist */; };
 		BDD75BDC1BE77AC50014DA3D /* Options.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDD75BDE1BE77AC50014DA3D /* Options.plist */; };
 		BDD75BE81BE77BB50014DA3D /* CableSelector.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD75BEB1BE77BB50014DA3D /* CableSelector.storyboard */; };
 		BDD75BF01BE77BC90014DA3D /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD75BF31BE77BC90014DA3D /* Onboarding.storyboard */; };
@@ -210,8 +210,200 @@
 		BDD75CD71BEA56280014DA3D /* pulseLengths.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDD75CD91BEA56280014DA3D /* pulseLengths.plist */; };
 		BDD75CDD1BEA56310014DA3D /* speedUnits.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDD75CDF1BEA56310014DA3D /* speedUnits.plist */; };
 		BDD75CE31BEA56380014DA3D /* distanceUnits.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDD75CE51BEA56380014DA3D /* distanceUnits.plist */; };
+		FA06C5CF2324369A002C4A11 /* CLLocation+GPS.m in Sources */ = {isa = PBXBuildFile; fileRef = BD098BF61BC7C93D00A87FC8 /* CLLocation+GPS.m */; };
+		FA06C5D02324369A002C4A11 /* Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2687C51B4537F3008C03EF /* Repeat.swift */; };
+		FA06C5D12324369A002C4A11 /* SelfTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD098BC61BC6CA3900A87FC8 /* SelfTimerViewController.swift */; };
+		FA06C5D22324369A002C4A11 /* OutputDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2687B01B453699008C03EF /* OutputDispatcher.swift */; };
+		FA06C5D32324369A002C4A11 /* TTTimeInput.m in Sources */ = {isa = PBXBuildFile; fileRef = BD098BAC1BC6C6E400A87FC8 /* TTTimeInput.m */; };
+		FA06C5D42324369A002C4A11 /* QuickReleaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD098BC21BC6CA3900A87FC8 /* QuickReleaseViewController.swift */; };
+		FA06C5D52324369A002C4A11 /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2687BD1B45379D008C03EF /* Delay.swift */; };
+		FA06C5D62324369A002C4A11 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB81891BCBFFC700F84AB6 /* SettingsTableViewController.swift */; };
+		FA06C5D72324369A002C4A11 /* TTCircleTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23B3E9208B79D500263445 /* TTCircleTimer.swift */; };
+		FA06C5D82324369A002C4A11 /* NeutralDensityCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB817D1BCBFB0A00F84AB6 /* NeutralDensityCalculatorViewController.swift */; };
+		FA06C5D92324369A002C4A11 /* HeadphoneDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2687B61B45371C008C03EF /* HeadphoneDispatcher.swift */; };
+		FA06C5DA2324369A002C4A11 /* WifiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB81761BCBE70400F84AB6 /* WifiCell.swift */; };
+		FA06C5DB2324369A002C4A11 /* AstronomicalCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAB4AE31B677F66009EB328 /* AstronomicalCalendar.m */; };
+		FA06C5DC2324369A002C4A11 /* TimelapseProViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD098B751BC28CFE00A87FC8 /* TimelapseProViewController.swift */; };
+		FA06C5DD2324369A002C4A11 /* MCPanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0098531BCD1CE40062C7C8 /* MCPanGestureRecognizer.m */; };
+		FA06C5DE2324369A002C4A11 /* SidebarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1FA2101BBE838A002C7AEB /* SidebarTableViewController.swift */; };
+		FA06C5E02324369A002C4A11 /* UserActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD17D55A1C0CAC5200843404 /* UserActivityManager.swift */; };
+		FA06C5E12324369A002C4A11 /* SCTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1133BF1BB3EED1006ED87A /* SCTransition.m */; };
+		FA06C5E22324369A002C4A11 /* LeHdrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB816D1BCBDBCD00F84AB6 /* LeHdrViewController.swift */; };
+		FA06C5E32324369A002C4A11 /* SCPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1133BD1BB3EED1006ED87A /* SCPercentDrivenInteractiveTransition.m */; };
+		FA06C5E42324369A002C4A11 /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1133C81BB3EED1006ED87A /* NavigationControllerDelegate.swift */; };
+		FA06C5E52324369A002C4A11 /* MCPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0098511BCD1CE40062C7C8 /* MCPanelViewController.m */; };
+		FA06C5E62324369A002C4A11 /* WearablesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB81741BCBE70400F84AB6 /* WearablesViewController.swift */; };
+		FA06C5E72324369A002C4A11 /* SequenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2687C91B45382D008C03EF /* SequenceManager.swift */; };
+		FA06C5E82324369A002C4A11 /* StarTrailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD098BD01BC7BFE300A87FC8 /* StarTrailViewController.swift */; };
+		FA06C5E92324369A002C4A11 /* SensorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7D54341BCBC4240030219D /* SensorViewController.swift */; };
+		FA06C5EA2324369A002C4A11 /* MathAdditions.c in Sources */ = {isa = PBXBuildFile; fileRef = BDAB4AE91B677F66009EB328 /* MathAdditions.c */; };
+		FA06C5EB2324369A002C4A11 /* MirrorLockup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2687C31B4537E1008C03EF /* MirrorLockup.swift */; };
+		FA06C5EC2324369A002C4A11 /* CameraSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1133FE1BB3F01A006ED87A /* CameraSelectorViewController.swift */; };
+		FA06C5ED2324369A002C4A11 /* SunriseSunsetCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB817E1BCBFB0A00F84AB6 /* SunriseSunsetCalculatorViewController.swift */; };
+		FA06C5EE2324369A002C4A11 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7144C71BBA877B00E7A34B /* BorderButton.swift */; };
+		FA06C5EF2324369A002C4A11 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD44D281BB1619300B98FF6 /* UIColor.swift */; };
+		FA06C5F02324369A002C4A11 /* AccelerationAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = BD098BEC1BC7C53900A87FC8 /* AccelerationAnimation.m */; };
+		FA06C5F12324369A002C4A11 /* PressAndLockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD098BC41BC6CA3900A87FC8 /* PressAndLockViewController.swift */; };
+		FA06C5F22324369A002C4A11 /* OptionsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB6638F20B4D1AD003C256E /* OptionsNavigationController.swift */; };
+		FA06C5F32324369A002C4A11 /* CustomTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1133C01BB3EED1006ED87A /* CustomTransition.swift */; };
+		FA06C5F42324369A002C4A11 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD44D321BB161A900B98FF6 /* Functions.swift */; };
+		FA06C5F52324369A002C4A11 /* MeterTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD7144D21BBA888500E7A34B /* MeterTable.cpp */; };
+		FA06C5F62324369A002C4A11 /* MPGNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB3553E20BF011E003CCF66 /* MPGNotification.m */; };
+		FA06C5F72324369A002C4A11 /* UIColor+branding.m in Sources */ = {isa = PBXBuildFile; fileRef = BD098BBB1BC6C7EE00A87FC8 /* UIColor+branding.m */; };
+		FA06C5F82324369A002C4A11 /* PressAndHoldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD098BC31BC6CA3900A87FC8 /* PressAndHoldViewController.swift */; };
+		FA06C5F92324369A002C4A11 /* CLLocation+DMSFormatting.m in Sources */ = {isa = PBXBuildFile; fileRef = BD098BF41BC7C93D00A87FC8 /* CLLocation+DMSFormatting.m */; };
+		FA06C5FA2324369A002C4A11 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2687C71B453816008C03EF /* Sequence.swift */; };
+		FA06C5FB2324369A002C4A11 /* BezierGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = BD098BE11BC7C30800A87FC8 /* BezierGraph.m */; };
+		FA06C5FC2324369A002C4A11 /* OptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB81881BCBFFC700F84AB6 /* OptionsTableViewController.swift */; };
+		FA06C5FD2324369A002C4A11 /* GradientOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7144DA1BBA899000E7A34B /* GradientOverlayView.swift */; };
+		FA06C5FE2324369A002C4A11 /* WifiDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2687B41B4536E3008C03EF /* WifiDispatcher.swift */; };
+		FA06C5FF2324369A002C4A11 /* TTNumberPadView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD098BAA1BC6C6E400A87FC8 /* TTNumberPadView.m */; };
+		FA06C6002324369A002C4A11 /* A440SineWaveGenerator.c in Sources */ = {isa = PBXBuildFile; fileRef = BD2987B31B4D256F007F8B71 /* A440SineWaveGenerator.c */; };
+		FA06C6012324369A002C4A11 /* LeftPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1FA2181BBE9361002C7AEB /* LeftPanelViewController.swift */; };
+		FA06C6022324369A002C4A11 /* PreciseTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = BD16F9FE1B4C2EDE00DD0486 /* PreciseTimer.m */; };
+		FA06C6032324369A002C4A11 /* WiFiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB81751BCBE70400F84AB6 /* WiFiViewController.swift */; };
+		FA06C6042324369A002C4A11 /* UnwrappableLifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD16F9FA1B4AA2EC00DD0486 /* UnwrappableLifecycle.swift */; };
+		FA06C6052324369A002C4A11 /* ConnectToVolumeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1133C41BB3EED1006ED87A /* ConnectToVolumeTransition.swift */; };
+		FA06C6062324369A002C4A11 /* PeekabooViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7D54211BCBB1DF0030219D /* PeekabooViewController.swift */; };
+		FA06C6072324369A002C4A11 /* CableReleaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD934FE21BD52A9100527872 /* CableReleaseViewController.swift */; };
+		FA06C6082324369A002C4A11 /* KitToConnectTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1133C21BB3EED1006ED87A /* KitToConnectTransition.swift */; };
+		FA06C6092324369A002C4A11 /* TTNumberInput.m in Sources */ = {isa = PBXBuildFile; fileRef = BD098BA81BC6C6E400A87FC8 /* TTNumberInput.m */; };
+		FA06C60A2324369A002C4A11 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2687AB1B4535B5008C03EF /* Unit.swift */; };
+		FA06C60B2324369A002C4A11 /* MotionSensorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7D54201BCBB1DF0030219D /* MotionSensorViewController.swift */; };
+		FA06C60C2324369A002C4A11 /* AstronomicalCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAB4AE11B677F66009EB328 /* AstronomicalCalculator.m */; };
+		FA06C60D2324369A002C4A11 /* SequenceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB4ADE1B677C54009EB328 /* SequenceCalculator.swift */; };
+		FA06C60E2324369A002C4A11 /* BFPaperTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1FB4DD1BCE757F00B7A95C /* BFPaperTableViewCell.m */; };
+		FA06C60F2324369A002C4A11 /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2987B61B4D256F007F8B71 /* AudioPlayer.m */; };
+		FA06C6102324369A002C4A11 /* CameraToManualFocusTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1133C61BB3EED1006ED87A /* CameraToManualFocusTransition.swift */; };
+		FA06C6112324369A002C4A11 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD44D261BB1619300B98FF6 /* Array.swift */; };
+		FA06C6122324369A002C4A11 /* ShutterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7144C81BBA877B00E7A34B /* ShutterButton.swift */; };
+		FA06C6132324369A002C4A11 /* GeoLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAB4AE51B677F66009EB328 /* GeoLocation.m */; };
+		FA06C6142324369A002C4A11 /* VibrationSensorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7D541F1BCBB1DF0030219D /* VibrationSensorViewController.swift */; };
+		FA06C6152324369A002C4A11 /* LeHdrTimelapseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB816E1BCBDBCD00F84AB6 /* LeHdrTimelapseViewController.swift */; };
+		FA06C6162324369A002C4A11 /* OnboardingNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1133FA1BB3F01A006ED87A /* OnboardingNavigationViewController.swift */; };
+		FA06C6172324369A002C4A11 /* SoundSensorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7D541E1BCBB1DF0030219D /* SoundSensorViewController.swift */; };
+		FA06C6182324369A002C4A11 /* ManualFocusToTestTriggerTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1133C71BB3EED1006ED87A /* ManualFocusToTestTriggerTransition.swift */; };
+		FA06C6192324369A002C4A11 /* TimelapseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD098BD11BC7BFE300A87FC8 /* TimelapseViewController.swift */; };
+		FA06C61A2324369A002C4A11 /* Intervalometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2687C11B4537CF008C03EF /* Intervalometer.swift */; };
+		FA06C61B2324369A002C4A11 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2687A91B453583008C03EF /* Time.swift */; };
+		FA06C61C2324369A002C4A11 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1133FC1BB3F01A006ED87A /* SplashViewController.swift */; };
+		FA06C61D2324369A002C4A11 /* CubicBezierInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = BD098BEA1BC7C53900A87FC8 /* CubicBezierInterpolator.m */; };
+		FA06C61E2324369A002C4A11 /* TTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD098B851BC5282B00A87FC8 /* TTViewController.swift */; };
+		FA06C61F2324369A002C4A11 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD44D291BB1619300B98FF6 /* UIFont.swift */; };
+		FA06C6202324369A002C4A11 /* Pulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2687BB1B45378E008C03EF /* Pulse.swift */; };
+		FA06C6212324369A002C4A11 /* CableSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1134251BB3F1C5006ED87A /* CableSelectorViewController.swift */; };
+		FA06C6222324369A002C4A11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE1F1AB1B1C9FE800FE6EB7 /* AppDelegate.swift */; };
+		FA06C6232324369A002C4A11 /* SLRConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD44D491BB163B200B98FF6 /* SLRConstants.swift */; };
+		FA06C6242324369A002C4A11 /* AppleWatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7144BD1BB94F4600E7A34B /* AppleWatchManager.swift */; };
+		FA06C6252324369A002C4A11 /* UIDevice+Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7D54301BCBBB550030219D /* UIDevice+Camera.m */; };
+		FA06C6262324369A002C4A11 /* ControlPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = BD098BE31BC7C30800A87FC8 /* ControlPoint.m */; };
+		FA06C6272324369A002C4A11 /* SubSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB818A1BCBFFC700F84AB6 /* SubSettingsViewController.swift */; };
+		FA06C6282324369A002C4A11 /* VolumeToCameraTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1133C51BB3EED1006ED87A /* VolumeToCameraTransition.swift */; };
+		FA06C6292324369A002C4A11 /* DistanceLapseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD098BCF1BC7BFE300A87FC8 /* DistanceLapseViewController.swift */; };
+		FA06C62A2324369A002C4A11 /* DongleObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD11343A1BB3F416006ED87A /* DongleObserver.swift */; };
+		FA06C62B2324369A002C4A11 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2687CE1B4593EB008C03EF /* Constants.swift */; };
+		FA06C62C2324369A002C4A11 /* BrampingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD098BCE1BC7BFE300A87FC8 /* BrampingViewController.swift */; };
+		FA06C62D2324369A002C4A11 /* SettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C6821D423BAD00C560CD /* SettingsManager.m */; };
+		FA06C62E2324369A002C4A11 /* VolumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1134001BB3F01A006ED87A /* VolumeViewController.swift */; };
+		FA06C62F2324369A002C4A11 /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD64647F1BF21F7B00B2324B /* SeparatorView.swift */; };
+		FA06C6302324369A002C4A11 /* GradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD098C001BC7CB0000A87FC8 /* GradientView.m */; };
+		FA06C6312324369A002C4A11 /* TTCircularSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = BD098BAE1BC6C6E400A87FC8 /* TTCircularSlider.m */; };
+		FA06C6322324369A002C4A11 /* NSString+TimeFormatting.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAB81821BCBFBF300F84AB6 /* NSString+TimeFormatting.m */; };
+		FA06C6332324369A002C4A11 /* CircleTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD098C411BC7FF9C00A87FC8 /* CircleTimer.swift */; };
+		FA06C6342324369A002C4A11 /* SunriseAndSunset.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAB4AE71B677F66009EB328 /* SunriseAndSunset.m */; };
+		FA06C6352324369A002C4A11 /* KitSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1133FD1BB3F01A006ED87A /* KitSelectorViewController.swift */; };
+		FA06C6362324369A002C4A11 /* RemoteClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD85A7281B6A1F2200317254 /* RemoteClient.swift */; };
+		FA06C6372324369A002C4A11 /* NeutralDensityCalculatorNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA56926E217E587C00A4575F /* NeutralDensityCalculatorNavigationController.swift */; };
+		FA06C6382324369A002C4A11 /* WearablesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7144BE1BB94F4600E7A34B /* WearablesManager.swift */; };
+		FA06C6392324369A002C4A11 /* Dispatchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2687B91B45375F008C03EF /* Dispatchable.swift */; };
+		FA06C63A2324369A002C4A11 /* UIBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1133ED1BB3EFE4006ED87A /* UIBezierPath.swift */; };
+		FA06C63B2324369A002C4A11 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1133FB1BB3F01A006ED87A /* OnboardingViewController.swift */; };
+		FA06C63C2324369A002C4A11 /* DispatchableLifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD16F9F81B4AA22B00DD0486 /* DispatchableLifecycle.swift */; };
+		FA06C63D2324369A002C4A11 /* CLLocationManager+Services.m in Sources */ = {isa = PBXBuildFile; fileRef = BD098BF81BC7C93D00A87FC8 /* CLLocationManager+Services.m */; };
+		FA06C63E2324369A002C4A11 /* DispatchableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2687CC1B457AC7008C03EF /* DispatchableType.swift */; };
+		FA06C63F2324369A002C4A11 /* HorizontalPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = BD098BFD1BC7CAED00A87FC8 /* HorizontalPicker.m */; };
+		FA06C6402324369A002C4A11 /* SequenceLifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD46CA141B56A30900B60B1E /* SequenceLifecycle.swift */; };
+		FA06C6412324369A002C4A11 /* SimpleCableReleaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD098BC11BC6CA3900A87FC8 /* SimpleCableReleaseViewController.swift */; };
+		FA06C6422324369A002C4A11 /* RotationNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1FA20E1BBE838A002C7AEB /* RotationNavigationViewController.swift */; };
+		FA06C6432324369A002C4A11 /* AudioListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = BD7144CE1BBA884D00E7A34B /* AudioListener.mm */; };
+		FA06C6442324369A002C4A11 /* Unwrappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD5CE981B4D76F8001EFA05 /* Unwrappable.swift */; };
+		FA06C6452324369A002C4A11 /* RemoteOutputServer.m in Sources */ = {isa = PBXBuildFile; fileRef = BD56C1761B58060800928054 /* RemoteOutputServer.m */; };
+		FA06C6462324369A002C4A11 /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD098B791BC2946E00A87FC8 /* CenterViewController.swift */; };
+		FA06C6472324369A002C4A11 /* SensorDelayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB818B1BCBFFC700F84AB6 /* SensorDelayViewController.swift */; };
+		FA06C6482324369A002C4A11 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C69C1D423F6800C560CD /* FeedbackViewController.swift */; };
+		FA06C6492324369A002C4A11 /* ConnectKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1133FF1BB3F01A006ED87A /* ConnectKitViewController.swift */; };
+		FA06C64A2324369A002C4A11 /* KitToCameraSelectorTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1133C11BB3EED1006ED87A /* KitToCameraSelectorTransition.swift */; };
+		FA06C64B2324369A002C4A11 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD17D55E1C0CB16100843404 /* Activity.swift */; };
+		FA06C64C2324369A002C4A11 /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2687B21B4536C3008C03EF /* Dispatcher.swift */; };
+		FA06C64D2324369A002C4A11 /* UnwrappableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD5CE9C1B4D7FAE001EFA05 /* UnwrappableType.swift */; };
+		FA06C64E2324369A002C4A11 /* TimedReleaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD098BC51BC6CA3900A87FC8 /* TimedReleaseViewController.swift */; };
+		FA06C64F2324369A002C4A11 /* SunriseSunsetCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAB4ADC1B677B59009EB328 /* SunriseSunsetCalculator.m */; };
+		FA06C6502324369A002C4A11 /* TimerStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD098C3F1BC7FF9200A87FC8 /* TimerStyleKit.swift */; };
+		FA06C6512324369A002C4A11 /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2687AD1B45361A008C03EF /* Symbol.swift */; };
+		FA06C6522324369A002C4A11 /* CableSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = BD11342B1BB3F29A006ED87A /* CableSelector.m */; };
+		FA06C6542324369A002C4A11 /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1FA20F1BBE838A002C7AEB /* MainNavigationViewController.swift */; };
+		FA06C6552324369A002C4A11 /* ManualFocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1134021BB3F01A006ED87A /* ManualFocusViewController.swift */; };
+		FA06C6562324369A002C4A11 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1134011BB3F01A006ED87A /* CameraViewController.swift */; };
+		FA06C6572324369A002C4A11 /* SplitLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1133B11BB18EE8006ED87A /* SplitLayoutViewController.swift */; };
+		FA06C6582324369A002C4A11 /* CachedPushNoAnimationStoryboardSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = BD098BE81BC7C53900A87FC8 /* CachedPushNoAnimationStoryboardSegue.m */; };
+		FA06C6592324369A002C4A11 /* ModeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD934FDE1BD4F3E500527872 /* ModeTableViewCell.swift */; };
+		FA06C65A2324369A002C4A11 /* Modular.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2687BF1B4537AF008C03EF /* Modular.swift */; };
+		FA06C65B2324369A002C4A11 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0098551BCD1CE40062C7C8 /* UIImage+ImageEffects.m */; };
+		FA06C65C2324369A002C4A11 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = BD56C1851B58067F00928054 /* Constants.m */; };
+		FA06C65D2324369A002C4A11 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BD56C17F1B58061C00928054 /* Reachability.m */; };
+		FA06C65E2324369A002C4A11 /* TimeWarpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD098BD21BC7BFE300A87FC8 /* TimeWarpViewController.swift */; };
+		FA06C65F2324369A002C4A11 /* DongleCableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1133EE1BB3EFE4006ED87A /* DongleCableView.swift */; };
+		FA06C6602324369A002C4A11 /* CameraSelectorToConnectTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1133C31BB3EED1006ED87A /* CameraSelectorToConnectTransition.swift */; };
+		FA06C6612324369A002C4A11 /* TestTriggertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1134031BB3F01A006ED87A /* TestTriggertViewController.swift */; };
+		FA06C6622324369A002C4A11 /* SharedConstansts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD44D271BB1619300B98FF6 /* SharedConstansts.swift */; };
+		FA06C6632324369A002C4A11 /* AccelerometerFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7D542D1BCBB9680030219D /* AccelerometerFilter.m */; };
+		FA06C6672324369A002C4A11 /* Modes.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDD75BD91BE77AAB0014DA3D /* Modes.plist */; };
+		FA06C6682324369A002C4A11 /* sensorResetDelays.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD098C061BC7D08E00A87FC8 /* sensorResetDelays.plist */; };
+		FA06C6692324369A002C4A11 /* HDRModes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD75BBD1BE77A690014DA3D /* HDRModes.storyboard */; };
+		FA06C66A2324369A002C4A11 /* StoreLinks.JSON in Resources */ = {isa = PBXBuildFile; fileRef = BD1134291BB3F29A006ED87A /* StoreLinks.JSON */; };
+		FA06C66B2324369A002C4A11 /* Feedback.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD75B9A1BE7799C0014DA3D /* Feedback.storyboard */; };
+		FA06C66C2324369A002C4A11 /* WifiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDD75BD21BE77A8E0014DA3D /* WifiCell.xib */; };
+		FA06C66D2324369A002C4A11 /* SensorModes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD75BB61BE77A5C0014DA3D /* SensorModes.storyboard */; };
+		FA06C66E2324369A002C4A11 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1FA20C1BBE806A002C7AEB /* LaunchScreen.xib */; };
+		FA06C66F2324369A002C4A11 /* PeekabooDataSource.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD098C041BC7D08E00A87FC8 /* PeekabooDataSource.plist */; };
+		FA06C6702324369A002C4A11 /* NDFilter.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD098C0B1BC7D08E00A87FC8 /* NDFilter.plist */; };
+		FA06C6712324369A002C4A11 /* numberOfExposures.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD098C071BC7D08E00A87FC8 /* numberOfExposures.plist */; };
+		FA06C6722324369A002C4A11 /* TimelapseProPromotion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BD098B7B1BC29A2100A87FC8 /* TimelapseProPromotion.jpg */; };
+		FA06C6732324369A002C4A11 /* OnboardingImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD1134181BB3F098006ED87A /* OnboardingImages.xcassets */; };
+		FA06C6742324369A002C4A11 /* ShutterSpeed.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD098C0A1BC7D08E00A87FC8 /* ShutterSpeed.plist */; };
+		FA06C6752324369A002C4A11 /* speedUnits.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDD75CDF1BEA56310014DA3D /* speedUnits.plist */; };
+		FA06C6762324369A002C4A11 /* evValues.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD098C091BC7D08E00A87FC8 /* evValues.plist */; };
+		FA06C6772324369A002C4A11 /* ModeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD934FDC1BD4F2FC00527872 /* ModeTableViewCell.xib */; };
+		FA06C6782324369A002C4A11 /* CableSelector.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD75BEB1BE77BB50014DA3D /* CableSelector.storyboard */; };
+		FA06C6792324369A002C4A11 /* RemoteModes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD75BC41BE77A750014DA3D /* RemoteModes.storyboard */; };
+		FA06C67A2324369A002C4A11 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDD44D371BB1620500B98FF6 /* OpenSans-Regular.ttf */; };
+		FA06C67B2324369A002C4A11 /* TimelapseModes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD75BAF1BE77A4D0014DA3D /* TimelapseModes.storyboard */; };
+		FA06C67C2324369A002C4A11 /* sensorDelays.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD098C051BC7D08E00A87FC8 /* sensorDelays.plist */; };
+		FA06C67D2324369A002C4A11 /* iTunesConnect.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E23FEBC1BFF3AC50021E659 /* iTunesConnect.strings */; };
+		FA06C67E2324369A002C4A11 /* Options.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDD75BDE1BE77AC50014DA3D /* Options.plist */; };
+		FA06C67F2324369A002C4A11 /* pulseLengthsPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BDD4C3A51BEB7F4F008CA311 /* pulseLengthsPlist.strings */; };
+		FA06C6802324369A002C4A11 /* OptionsPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BDD4C3841BEA829B008CA311 /* OptionsPlist.strings */; };
+		FA06C6812324369A002C4A11 /* ModesPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BDD4C37B1BEA828D008CA311 /* ModesPlist.strings */; };
+		FA06C6822324369A002C4A11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EE1F1B21B1C9FE800FE6EB7 /* Main.storyboard */; };
+		FA06C6832324369A002C4A11 /* Calculators.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD75BCB1BE77A800014DA3D /* Calculators.storyboard */; };
+		FA06C6842324369A002C4A11 /* speedUnitsPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BDD4C3AB1BEB7F55008CA311 /* speedUnitsPlist.strings */; };
+		FA06C6852324369A002C4A11 /* CableReleaseModes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD75BA11BE779E20014DA3D /* CableReleaseModes.storyboard */; };
+		FA06C6862324369A002C4A11 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDD44D361BB1620500B98FF6 /* OpenSans-Bold.ttf */; };
+		FA06C6872324369A002C4A11 /* pulseLengths.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDD75CD91BEA56280014DA3D /* pulseLengths.plist */; };
+		FA06C6882324369A002C4A11 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD75BF31BE77BC90014DA3D /* Onboarding.storyboard */; };
+		FA06C6892324369A002C4A11 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EE1F1B51B1C9FE800FE6EB7 /* Images.xcassets */; };
+		FA06C68A2324369A002C4A11 /* CameraChooser.JSON in Resources */ = {isa = PBXBuildFile; fileRef = BD1134281BB3F29A006ED87A /* CameraChooser.JSON */; };
+		FA06C68B2324369A002C4A11 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BDD75CA61BE91D050014DA3D /* InfoPlist.strings */; };
+		FA06C68C2324369A002C4A11 /* distanceUnits.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDD75CE51BEA56380014DA3D /* distanceUnits.plist */; };
+		FA06C68D2324369A002C4A11 /* Options.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD75BA81BE779F10014DA3D /* Options.storyboard */; };
+		FA06C68E2324369A002C4A11 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BDD75C6E1BE7B8DA0014DA3D /* Localizable.strings */; };
+		FA06C68F2324369A002C4A11 /* CableSelectorImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD11341F1BB3F160006ED87A /* CableSelectorImages.xcassets */; };
+		FA06C6902324369A002C4A11 /* middleExposures.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD098C081BC7D08E00A87FC8 /* middleExposures.plist */; };
+		FA06C6912324369A002C4A11 /* distanceUnitsPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BDD4C39C1BEB7F41008CA311 /* distanceUnitsPlist.strings */; };
+		FA06C6922324369A002C4A11 /* SplashImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BD11341B1BB3F0FB006ED87A /* SplashImage.jpg */; };
 		FA23B3EA208B79D500263445 /* TTCircleTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23B3E9208B79D500263445 /* TTCircleTimer.swift */; };
 		FA56926F217E587C00A4575F /* NeutralDensityCalculatorNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA56926E217E587C00A4575F /* NeutralDensityCalculatorNavigationController.swift */; };
+		FA6E879323243E7B009590DF /* Modes Mac.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA6E879023243E75009590DF /* Modes Mac.plist */; };
 		FAB3553F20BF011E003CCF66 /* MPGNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB3553E20BF011E003CCF66 /* MPGNotification.m */; };
 		FAB6639020B4D1AD003C256E /* OptionsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB6638F20B4D1AD003C256E /* OptionsNavigationController.swift */; };
 /* End PBXBuildFile section */
@@ -275,11 +467,42 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FA06C6932324369A002C4A11 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA06C6942324369A002C4A11 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA06C6962324369A002C4A11 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		12771AFFFA9B463F93474F9C /* Pods-TriggertrapSLR Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TriggertrapSLR Mac.release.xcconfig"; path = "Pods/Target Support Files/Pods-TriggertrapSLR Mac/Pods-TriggertrapSLR Mac.release.xcconfig"; sourceTree = "<group>"; };
 		2A67406A758D2F2F0B332A3B /* Pods-TriggertrapSLR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TriggertrapSLR.release.xcconfig"; path = "Pods/Target Support Files/Pods-TriggertrapSLR/Pods-TriggertrapSLR.release.xcconfig"; sourceTree = "<group>"; };
-		45C94759E9ADAD35B7D584C7 /* Pods_TriggertrapSLR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TriggertrapSLR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7569F278FF52CCFCB509F824 /* Pods-TriggertrapSLR Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TriggertrapSLR Mac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TriggertrapSLR Mac/Pods-TriggertrapSLR Mac.debug.xcconfig"; sourceTree = "<group>"; };
 		844F872778F016FF771D8B21 /* Pods-TriggertrapTLP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TriggertrapTLP.release.xcconfig"; path = "Pods/Target Support Files/Pods-TriggertrapTLP/Pods-TriggertrapTLP.release.xcconfig"; sourceTree = "<group>"; };
 		9E23FEBB1BFF3AC50021E659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/iTunesConnect.strings; sourceTree = "<group>"; };
 		9E23FEBD1BFF3ACB0021E659 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/iTunesConnect.strings; sourceTree = "<group>"; };
@@ -638,9 +861,18 @@
 		BDD75CE71BEA563A0014DA3D /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = it; path = it.lproj/distanceUnits.plist; sourceTree = "<group>"; };
 		BDD75CE81BEA563B0014DA3D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = de; path = de.lproj/distanceUnits.plist; sourceTree = "<group>"; };
 		CB967E2D798D1D1B89F18478 /* libPods-TriggertrapTLP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TriggertrapTLP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD0EABEDE2EC72F98FAC1644 /* Pods_TriggertrapSLR_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TriggertrapSLR_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF051A1D93B1F5CCBE291968 /* Pods-TriggertrapSLR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TriggertrapSLR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TriggertrapSLR/Pods-TriggertrapSLR.debug.xcconfig"; sourceTree = "<group>"; };
+		FA06C69B2324369A002C4A11 /* TriggertrapSLR Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TriggertrapSLR Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA06C69C2324369B002C4A11 /* TriggertrapSLR copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TriggertrapSLR copy-Info.plist"; path = "/Users/Alex/Documents/Xcode/triggertrap-ios/TriggertrapSLR copy-Info.plist"; sourceTree = "<absolute>"; };
+		FA06C69D232436AB002C4A11 /* TriggertrapSLR Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TriggertrapSLR Mac.entitlements"; sourceTree = "<group>"; };
 		FA23B3E9208B79D500263445 /* TTCircleTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTCircleTimer.swift; sourceTree = "<group>"; };
 		FA56926E217E587C00A4575F /* NeutralDensityCalculatorNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeutralDensityCalculatorNavigationController.swift; sourceTree = "<group>"; };
+		FA6E879123243E75009590DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = "Base.lproj/Modes Mac.plist"; sourceTree = "<group>"; };
+		FA6E879423243F65009590DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = "en.lproj/Modes Mac.plist"; sourceTree = "<group>"; };
+		FA6E879523243F69009590DF /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "en-GB"; path = "en-GB.lproj/Modes Mac.plist"; sourceTree = "<group>"; };
+		FA6E879623243F6A009590DF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = de; path = "de.lproj/Modes Mac.plist"; sourceTree = "<group>"; };
+		FA6E879723243F6A009590DF /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = it; path = "it.lproj/Modes Mac.plist"; sourceTree = "<group>"; };
 		FAB3553D20BF011E003CCF66 /* MPGNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPGNotification.h; sourceTree = "<group>"; };
 		FAB3553E20BF011E003CCF66 /* MPGNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPGNotification.m; sourceTree = "<group>"; };
 		FAB6638F20B4D1AD003C256E /* OptionsNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsNavigationController.swift; sourceTree = "<group>"; };
@@ -665,7 +897,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DF0B459EB8E6F5EC09B5C5C /* Pods_TriggertrapSLR.framework in Frameworks */,
+				1DF0B459EB8E6F5EC09B5C5C /* (null) in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,6 +915,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FA06C6642324369A002C4A11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C27BE94075250620411351D /* Pods_TriggertrapSLR_Mac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -690,7 +930,7 @@
 			isa = PBXGroup;
 			children = (
 				CB967E2D798D1D1B89F18478 /* libPods-TriggertrapTLP.a */,
-				45C94759E9ADAD35B7D584C7 /* Pods_TriggertrapSLR.framework */,
+				DD0EABEDE2EC72F98FAC1644 /* Pods_TriggertrapSLR_Mac.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -698,6 +938,7 @@
 		9EE1F13A1B1C9DFD00FE6EB7 = {
 			isa = PBXGroup;
 			children = (
+				FA06C69D232436AB002C4A11 /* TriggertrapSLR Mac.entitlements */,
 				9EE1F1A81B1C9FE800FE6EB7 /* TriggertrapSLR */,
 				9EE1F1D31B1CA17B00FE6EB7 /* TriggertrapKit */,
 				9EE1F1FD1B1CA5CB00FE6EB7 /* TriggertrapUIKit */,
@@ -709,6 +950,7 @@
 				9EE1F1441B1C9DFD00FE6EB7 /* Products */,
 				B117DE22060B1C8BDF0E6BE6 /* Pods */,
 				79374477B2F7DCA0830A2DD5 /* Frameworks */,
+				FA06C69C2324369B002C4A11 /* TriggertrapSLR copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -720,6 +962,7 @@
 				BDD4C3C41BF0E750008CA311 /* Triggertrap Watch Kit Extension.appex */,
 				BD0965FB1BF9EE49000C581B /* Triggertrap WatchKit 1 Extension.appex */,
 				BD09660A1BF9EE49000C581B /* Triggertrap WatchKit 1 App.app */,
+				FA06C69B2324369A002C4A11 /* TriggertrapSLR Mac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -748,6 +991,7 @@
 				BDD4C37B1BEA828D008CA311 /* ModesPlist.strings */,
 				BDD4C3841BEA829B008CA311 /* OptionsPlist.strings */,
 				BDD75C9D1BE917B00014DA3D /* Info.plist */,
+				FA6E879023243E75009590DF /* Modes Mac.plist */,
 				BDD75BD91BE77AAB0014DA3D /* Modes.plist */,
 				BDD75BDE1BE77AC50014DA3D /* Options.plist */,
 				9E23FEBC1BFF3AC50021E659 /* iTunesConnect.strings */,
@@ -807,6 +1051,8 @@
 				2A67406A758D2F2F0B332A3B /* Pods-TriggertrapSLR.release.xcconfig */,
 				B581D1CB9BAA094F37476D5C /* Pods-TriggertrapTLP.debug.xcconfig */,
 				844F872778F016FF771D8B21 /* Pods-TriggertrapTLP.release.xcconfig */,
+				7569F278FF52CCFCB509F824 /* Pods-TriggertrapSLR Mac.debug.xcconfig */,
+				12771AFFFA9B463F93474F9C /* Pods-TriggertrapSLR Mac.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1623,6 +1869,29 @@
 			productReference = BDD4C3C41BF0E750008CA311 /* Triggertrap Watch Kit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
+		FA06C5CC2324369A002C4A11 /* TriggertrapSLR Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA06C6982324369A002C4A11 /* Build configuration list for PBXNativeTarget "TriggertrapSLR Mac" */;
+			buildPhases = (
+				FA06C5CD2324369A002C4A11 /* [CP] Check Pods Manifest.lock */,
+				FA06C5CE2324369A002C4A11 /* Sources */,
+				FA06C6642324369A002C4A11 /* Frameworks */,
+				FA06C6662324369A002C4A11 /* Resources */,
+				FA06C6932324369A002C4A11 /* Embed Frameworks */,
+				FA06C6942324369A002C4A11 /* Embed Watch Content */,
+				FA06C6952324369A002C4A11 /* Update Main Stroryboard Strings */,
+				FA06C6962324369A002C4A11 /* Embed App Extensions */,
+				FA06C6972324369A002C4A11 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TriggertrapSLR Mac";
+			productName = TriggertrapSLR;
+			productReference = FA06C69B2324369A002C4A11 /* TriggertrapSLR Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1688,6 +1957,7 @@
 			projectRoot = "";
 			targets = (
 				9EE1F1A61B1C9FE800FE6EB7 /* TriggertrapSLR */,
+				FA06C5CC2324369A002C4A11 /* TriggertrapSLR Mac */,
 				BDD4C3B71BF0E750008CA311 /* Triggertrap Watch Kit */,
 				BDD4C3C31BF0E750008CA311 /* Triggertrap Watch Kit Extension */,
 				BD0966091BF9EE49000C581B /* Triggertrap WatchKit 1 App */,
@@ -1701,7 +1971,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDD75BD71BE77AAB0014DA3D /* Modes.plist in Resources */,
 				BD098C111BC7D08E00A87FC8 /* sensorResetDelays.plist in Resources */,
 				BDD75BBB1BE77A690014DA3D /* HDRModes.storyboard in Resources */,
 				BD11342E1BB3F29A006ED87A /* StoreLinks.JSON in Resources */,
@@ -1783,6 +2052,58 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FA06C6662324369A002C4A11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA06C6672324369A002C4A11 /* Modes.plist in Resources */,
+				FA06C6682324369A002C4A11 /* sensorResetDelays.plist in Resources */,
+				FA6E879323243E7B009590DF /* Modes Mac.plist in Resources */,
+				FA06C6692324369A002C4A11 /* HDRModes.storyboard in Resources */,
+				FA06C66A2324369A002C4A11 /* StoreLinks.JSON in Resources */,
+				FA06C66B2324369A002C4A11 /* Feedback.storyboard in Resources */,
+				FA06C66C2324369A002C4A11 /* WifiCell.xib in Resources */,
+				FA06C66D2324369A002C4A11 /* SensorModes.storyboard in Resources */,
+				FA06C66E2324369A002C4A11 /* LaunchScreen.xib in Resources */,
+				FA06C66F2324369A002C4A11 /* PeekabooDataSource.plist in Resources */,
+				FA06C6702324369A002C4A11 /* NDFilter.plist in Resources */,
+				FA06C6712324369A002C4A11 /* numberOfExposures.plist in Resources */,
+				FA06C6722324369A002C4A11 /* TimelapseProPromotion.jpg in Resources */,
+				FA06C6732324369A002C4A11 /* OnboardingImages.xcassets in Resources */,
+				FA06C6742324369A002C4A11 /* ShutterSpeed.plist in Resources */,
+				FA06C6752324369A002C4A11 /* speedUnits.plist in Resources */,
+				FA06C6762324369A002C4A11 /* evValues.plist in Resources */,
+				FA06C6772324369A002C4A11 /* ModeTableViewCell.xib in Resources */,
+				FA06C6782324369A002C4A11 /* CableSelector.storyboard in Resources */,
+				FA06C6792324369A002C4A11 /* RemoteModes.storyboard in Resources */,
+				FA06C67A2324369A002C4A11 /* OpenSans-Regular.ttf in Resources */,
+				FA06C67B2324369A002C4A11 /* TimelapseModes.storyboard in Resources */,
+				FA06C67C2324369A002C4A11 /* sensorDelays.plist in Resources */,
+				FA06C67D2324369A002C4A11 /* iTunesConnect.strings in Resources */,
+				FA06C67E2324369A002C4A11 /* Options.plist in Resources */,
+				FA06C67F2324369A002C4A11 /* pulseLengthsPlist.strings in Resources */,
+				FA06C6802324369A002C4A11 /* OptionsPlist.strings in Resources */,
+				FA06C6812324369A002C4A11 /* ModesPlist.strings in Resources */,
+				FA06C6822324369A002C4A11 /* Main.storyboard in Resources */,
+				FA06C6832324369A002C4A11 /* Calculators.storyboard in Resources */,
+				FA06C6842324369A002C4A11 /* speedUnitsPlist.strings in Resources */,
+				FA06C6852324369A002C4A11 /* CableReleaseModes.storyboard in Resources */,
+				FA06C6862324369A002C4A11 /* OpenSans-Bold.ttf in Resources */,
+				FA06C6872324369A002C4A11 /* pulseLengths.plist in Resources */,
+				FA06C6882324369A002C4A11 /* Onboarding.storyboard in Resources */,
+				FA06C6892324369A002C4A11 /* Images.xcassets in Resources */,
+				FA06C68A2324369A002C4A11 /* CameraChooser.JSON in Resources */,
+				FA06C68B2324369A002C4A11 /* InfoPlist.strings in Resources */,
+				FA06C68C2324369A002C4A11 /* distanceUnits.plist in Resources */,
+				FA06C68D2324369A002C4A11 /* Options.storyboard in Resources */,
+				FA06C68E2324369A002C4A11 /* Localizable.strings in Resources */,
+				FA06C68F2324369A002C4A11 /* CableSelectorImages.xcassets in Resources */,
+				FA06C6902324369A002C4A11 /* middleExposures.plist in Resources */,
+				FA06C6912324369A002C4A11 /* distanceUnitsPlist.strings in Resources */,
+				FA06C6922324369A002C4A11 /* SplashImage.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -1834,6 +2155,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "#!/bin/sh\n# Update storyboard string files\n#\n# by 2013 André Pinto andredsp@gmail.com\n# based on http://forums.macrumors.com/showthread.php?t=1467446\n\nstoryboardExt=\".storyboard\"\nstringsExt=\".strings\"\nnewStringsExt=\".strings.new\"\noldStringsExt=\".strings.old\"\nlocaleDirExt=\".lproj\"\nbaselprojName=\"Base.lproj\"\n\n# Find Base internationalization folders\nfind . -name \"$baselprojName\" | while read baselprojPath\ndo\n# Get Base project dir\nbaselprojDir=$(dirname \"$baselprojPath\")\n\n# Find storyboard file full path inside base project folder\nfind \"$baselprojPath\" -name \"*$storyboardExt\" | while read storyboardPath\ndo\n# Get Base strings file full path\nbaseStringsPath=$(echo \"$storyboardPath\" | sed \"s/$storyboardExt/$stringsExt/\")\n\n# Get storyboard file name and folder\nstoryboardFile=$(basename \"$storyboardPath\")\nstoryboardDir=$(dirname \"$storyboardPath\")\n\n#Get the full path of the storyboard and the temporary string files. This is the fix for ibtool error\nstoryboardFullPath=$(echo $(echo `pwd`)$(echo \"$storyboardPath\" | cut  -c2-))\nnewBaseStringsFullPath=$(echo `pwd`\"/Main.strings.new\")\n\necho \"Full path of the storyboard $storyboardFullPath\"\necho \"Full path of the temporary string files $newBaseStringsFullPath\"\n\n# Get New Base strings file full path and strings file name\nstringsFile=$(basename \"$baseStringsPath\")\n\n# Create strings file only when storyboard file newer\nnewer=$(find \"$storyboardPath\" -prune -newer \"$baseStringsPath\")\n[ -f \"$baseStringsPath\" -a -z \"$newer\" ] && {\n    echo \"$storyboardFile file not modified.\"\n    continue\n}\n\necho \"Creating default $stringsFile for $storyboardFile...\"\n\nibtool --export-strings-file \"$newBaseStringsFullPath\" \"$storyboardFullPath\"\niconv -f UTF-16 -t UTF-8 \"$newBaseStringsFullPath\" > \"$baseStringsPath\"\nrm \"$newBaseStringsFullPath\"\n\n# Get all locale strings folder with same parent as Base\nls -d \"$baselprojDir/\"*\"$localeDirExt\" | while read localeStringsDir\ndo\n# Skip Base strings folder\n[ \"$localeStringsDir\" = \"$storyboardDir\" ] && continue\n\nlocaleDir=$(basename \"$localeStringsDir\")\nlocaleStringsPath=\"$localeStringsDir/$stringsFile\"\n\n# Just copy base strings file on first time\nif [ ! -e \"$localeStringsPath\" ]; then\necho \"Copying default $stringsFile for $localeDir...\"\ncp \"$baseStringsPath\" \"$localeStringsPath\"\nelse\necho \"Merging $stringsFile changes for $localeDir...\"\noldLocaleStringsPath=$(echo \"$localeStringsPath\" | sed \"s/$stringsExt/$oldStringsExt/\")\ncp \"$localeStringsPath\" \"$oldLocaleStringsPath\"\n\n# Merge baseStringsPath to localeStringsPath\nawk '\nNR == FNR && /^\\/\\*/ {\n    x=$0\n    getline\n    a[x]=$0\n    next\n}\n/^\\/\\*/ {\n    x=$0\n    print\n    getline\n    $0=a[x]?a[x]:$0\n    printf $0\"\\n\\n\"\n}'  \"$oldLocaleStringsPath\" \"$baseStringsPath\" > \"$localeStringsPath\"\n\nrm \"$oldLocaleStringsPath\"\nfi\ndone\ndone\ndone";
+		};
+		FA06C5CD2324369A002C4A11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TriggertrapSLR Mac-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA06C6952324369A002C4A11 /* Update Main Stroryboard Strings */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Update Main Stroryboard Strings";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n# Update storyboard string files\n#\n# by 2013 André Pinto andredsp@gmail.com\n# based on http://forums.macrumors.com/showthread.php?t=1467446\n\nstoryboardExt=\".storyboard\"\nstringsExt=\".strings\"\nnewStringsExt=\".strings.new\"\noldStringsExt=\".strings.old\"\nlocaleDirExt=\".lproj\"\nbaselprojName=\"Base.lproj\"\n\n# Find Base internationalization folders\nfind . -name \"$baselprojName\" | while read baselprojPath\ndo\n# Get Base project dir\nbaselprojDir=$(dirname \"$baselprojPath\")\n\n# Find storyboard file full path inside base project folder\nfind \"$baselprojPath\" -name \"*$storyboardExt\" | while read storyboardPath\ndo\n# Get Base strings file full path\nbaseStringsPath=$(echo \"$storyboardPath\" | sed \"s/$storyboardExt/$stringsExt/\")\n\n# Get storyboard file name and folder\nstoryboardFile=$(basename \"$storyboardPath\")\nstoryboardDir=$(dirname \"$storyboardPath\")\n\n#Get the full path of the storyboard and the temporary string files. This is the fix for ibtool error\nstoryboardFullPath=$(echo $(echo `pwd`)$(echo \"$storyboardPath\" | cut  -c2-))\nnewBaseStringsFullPath=$(echo `pwd`\"/Main.strings.new\")\n\necho \"Full path of the storyboard $storyboardFullPath\"\necho \"Full path of the temporary string files $newBaseStringsFullPath\"\n\n# Get New Base strings file full path and strings file name\nstringsFile=$(basename \"$baseStringsPath\")\n\n# Create strings file only when storyboard file newer\nnewer=$(find \"$storyboardPath\" -prune -newer \"$baseStringsPath\")\n[ -f \"$baseStringsPath\" -a -z \"$newer\" ] && {\n    echo \"$storyboardFile file not modified.\"\n    continue\n}\n\necho \"Creating default $stringsFile for $storyboardFile...\"\n\nibtool --export-strings-file \"$newBaseStringsFullPath\" \"$storyboardFullPath\"\niconv -f UTF-16 -t UTF-8 \"$newBaseStringsFullPath\" > \"$baseStringsPath\"\nrm \"$newBaseStringsFullPath\"\n\n# Get all locale strings folder with same parent as Base\nls -d \"$baselprojDir/\"*\"$localeDirExt\" | while read localeStringsDir\ndo\n# Skip Base strings folder\n[ \"$localeStringsDir\" = \"$storyboardDir\" ] && continue\n\nlocaleDir=$(basename \"$localeStringsDir\")\nlocaleStringsPath=\"$localeStringsDir/$stringsFile\"\n\n# Just copy base strings file on first time\nif [ ! -e \"$localeStringsPath\" ]; then\necho \"Copying default $stringsFile for $localeDir...\"\ncp \"$baseStringsPath\" \"$localeStringsPath\"\nelse\necho \"Merging $stringsFile changes for $localeDir...\"\noldLocaleStringsPath=$(echo \"$localeStringsPath\" | sed \"s/$stringsExt/$oldStringsExt/\")\ncp \"$localeStringsPath\" \"$oldLocaleStringsPath\"\n\n# Merge baseStringsPath to localeStringsPath\nawk '\nNR == FNR && /^\\/\\*/ {\n    x=$0\n    getline\n    a[x]=$0\n    next\n}\n/^\\/\\*/ {\n    x=$0\n    print\n    getline\n    $0=a[x]?a[x]:$0\n    printf $0\"\\n\\n\"\n}'  \"$oldLocaleStringsPath\" \"$baseStringsPath\" > \"$localeStringsPath\"\n\nrm \"$oldLocaleStringsPath\"\nfi\ndone\ndone\ndone";
+		};
+		FA06C6972324369A002C4A11 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TriggertrapSLR Mac/Pods-TriggertrapSLR Mac-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TriggertrapSLR Mac/Pods-TriggertrapSLR Mac-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TriggertrapSLR Mac/Pods-TriggertrapSLR Mac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -2010,6 +2380,160 @@
 				BDD4C3CE1BF0E750008CA311 /* ExtensionDelegate.swift in Sources */,
 				BDD4C3CC1BF0E750008CA311 /* InterfaceController.swift in Sources */,
 				BDD4C3D21BF0E750008CA311 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA06C5CE2324369A002C4A11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA06C5CF2324369A002C4A11 /* CLLocation+GPS.m in Sources */,
+				FA06C5D02324369A002C4A11 /* Repeat.swift in Sources */,
+				FA06C5D12324369A002C4A11 /* SelfTimerViewController.swift in Sources */,
+				FA06C5D22324369A002C4A11 /* OutputDispatcher.swift in Sources */,
+				FA06C5D32324369A002C4A11 /* TTTimeInput.m in Sources */,
+				FA06C5D42324369A002C4A11 /* QuickReleaseViewController.swift in Sources */,
+				FA06C5D52324369A002C4A11 /* Delay.swift in Sources */,
+				FA06C5D62324369A002C4A11 /* SettingsTableViewController.swift in Sources */,
+				FA06C5D72324369A002C4A11 /* TTCircleTimer.swift in Sources */,
+				FA06C5D82324369A002C4A11 /* NeutralDensityCalculatorViewController.swift in Sources */,
+				FA06C5D92324369A002C4A11 /* HeadphoneDispatcher.swift in Sources */,
+				FA06C5DA2324369A002C4A11 /* WifiCell.swift in Sources */,
+				FA06C5DB2324369A002C4A11 /* AstronomicalCalendar.m in Sources */,
+				FA06C5DC2324369A002C4A11 /* TimelapseProViewController.swift in Sources */,
+				FA06C5DD2324369A002C4A11 /* MCPanGestureRecognizer.m in Sources */,
+				FA06C5DE2324369A002C4A11 /* SidebarTableViewController.swift in Sources */,
+				FA06C5E02324369A002C4A11 /* UserActivityManager.swift in Sources */,
+				FA06C5E12324369A002C4A11 /* SCTransition.m in Sources */,
+				FA06C5E22324369A002C4A11 /* LeHdrViewController.swift in Sources */,
+				FA06C5E32324369A002C4A11 /* SCPercentDrivenInteractiveTransition.m in Sources */,
+				FA06C5E42324369A002C4A11 /* NavigationControllerDelegate.swift in Sources */,
+				FA06C5E52324369A002C4A11 /* MCPanelViewController.m in Sources */,
+				FA06C5E62324369A002C4A11 /* WearablesViewController.swift in Sources */,
+				FA06C5E72324369A002C4A11 /* SequenceManager.swift in Sources */,
+				FA06C5E82324369A002C4A11 /* StarTrailViewController.swift in Sources */,
+				FA06C5E92324369A002C4A11 /* SensorViewController.swift in Sources */,
+				FA06C5EA2324369A002C4A11 /* MathAdditions.c in Sources */,
+				FA06C5EB2324369A002C4A11 /* MirrorLockup.swift in Sources */,
+				FA06C5EC2324369A002C4A11 /* CameraSelectorViewController.swift in Sources */,
+				FA06C5ED2324369A002C4A11 /* SunriseSunsetCalculatorViewController.swift in Sources */,
+				FA06C5EE2324369A002C4A11 /* BorderButton.swift in Sources */,
+				FA06C5EF2324369A002C4A11 /* UIColor.swift in Sources */,
+				FA06C5F02324369A002C4A11 /* AccelerationAnimation.m in Sources */,
+				FA06C5F12324369A002C4A11 /* PressAndLockViewController.swift in Sources */,
+				FA06C5F22324369A002C4A11 /* OptionsNavigationController.swift in Sources */,
+				FA06C5F32324369A002C4A11 /* CustomTransition.swift in Sources */,
+				FA06C5F42324369A002C4A11 /* Functions.swift in Sources */,
+				FA06C5F52324369A002C4A11 /* MeterTable.cpp in Sources */,
+				FA06C5F62324369A002C4A11 /* MPGNotification.m in Sources */,
+				FA06C5F72324369A002C4A11 /* UIColor+branding.m in Sources */,
+				FA06C5F82324369A002C4A11 /* PressAndHoldViewController.swift in Sources */,
+				FA06C5F92324369A002C4A11 /* CLLocation+DMSFormatting.m in Sources */,
+				FA06C5FA2324369A002C4A11 /* Sequence.swift in Sources */,
+				FA06C5FB2324369A002C4A11 /* BezierGraph.m in Sources */,
+				FA06C5FC2324369A002C4A11 /* OptionsTableViewController.swift in Sources */,
+				FA06C5FD2324369A002C4A11 /* GradientOverlayView.swift in Sources */,
+				FA06C5FE2324369A002C4A11 /* WifiDispatcher.swift in Sources */,
+				FA06C5FF2324369A002C4A11 /* TTNumberPadView.m in Sources */,
+				FA06C6002324369A002C4A11 /* A440SineWaveGenerator.c in Sources */,
+				FA06C6012324369A002C4A11 /* LeftPanelViewController.swift in Sources */,
+				FA06C6022324369A002C4A11 /* PreciseTimer.m in Sources */,
+				FA06C6032324369A002C4A11 /* WiFiViewController.swift in Sources */,
+				FA06C6042324369A002C4A11 /* UnwrappableLifecycle.swift in Sources */,
+				FA06C6052324369A002C4A11 /* ConnectToVolumeTransition.swift in Sources */,
+				FA06C6062324369A002C4A11 /* PeekabooViewController.swift in Sources */,
+				FA06C6072324369A002C4A11 /* CableReleaseViewController.swift in Sources */,
+				FA06C6082324369A002C4A11 /* KitToConnectTransition.swift in Sources */,
+				FA06C6092324369A002C4A11 /* TTNumberInput.m in Sources */,
+				FA06C60A2324369A002C4A11 /* Unit.swift in Sources */,
+				FA06C60B2324369A002C4A11 /* MotionSensorViewController.swift in Sources */,
+				FA06C60C2324369A002C4A11 /* AstronomicalCalculator.m in Sources */,
+				FA06C60D2324369A002C4A11 /* SequenceCalculator.swift in Sources */,
+				FA06C60E2324369A002C4A11 /* BFPaperTableViewCell.m in Sources */,
+				FA06C60F2324369A002C4A11 /* AudioPlayer.m in Sources */,
+				FA06C6102324369A002C4A11 /* CameraToManualFocusTransition.swift in Sources */,
+				FA06C6112324369A002C4A11 /* Array.swift in Sources */,
+				FA06C6122324369A002C4A11 /* ShutterButton.swift in Sources */,
+				FA06C6132324369A002C4A11 /* GeoLocation.m in Sources */,
+				FA06C6142324369A002C4A11 /* VibrationSensorViewController.swift in Sources */,
+				FA06C6152324369A002C4A11 /* LeHdrTimelapseViewController.swift in Sources */,
+				FA06C6162324369A002C4A11 /* OnboardingNavigationViewController.swift in Sources */,
+				FA06C6172324369A002C4A11 /* SoundSensorViewController.swift in Sources */,
+				FA06C6182324369A002C4A11 /* ManualFocusToTestTriggerTransition.swift in Sources */,
+				FA06C6192324369A002C4A11 /* TimelapseViewController.swift in Sources */,
+				FA06C61A2324369A002C4A11 /* Intervalometer.swift in Sources */,
+				FA06C61B2324369A002C4A11 /* Time.swift in Sources */,
+				FA06C61C2324369A002C4A11 /* SplashViewController.swift in Sources */,
+				FA06C61D2324369A002C4A11 /* CubicBezierInterpolator.m in Sources */,
+				FA06C61E2324369A002C4A11 /* TTViewController.swift in Sources */,
+				FA06C61F2324369A002C4A11 /* UIFont.swift in Sources */,
+				FA06C6202324369A002C4A11 /* Pulse.swift in Sources */,
+				FA06C6212324369A002C4A11 /* CableSelectorViewController.swift in Sources */,
+				FA06C6222324369A002C4A11 /* AppDelegate.swift in Sources */,
+				FA06C6232324369A002C4A11 /* SLRConstants.swift in Sources */,
+				FA06C6242324369A002C4A11 /* AppleWatchManager.swift in Sources */,
+				FA06C6252324369A002C4A11 /* UIDevice+Camera.m in Sources */,
+				FA06C6262324369A002C4A11 /* ControlPoint.m in Sources */,
+				FA06C6272324369A002C4A11 /* SubSettingsViewController.swift in Sources */,
+				FA06C6282324369A002C4A11 /* VolumeToCameraTransition.swift in Sources */,
+				FA06C6292324369A002C4A11 /* DistanceLapseViewController.swift in Sources */,
+				FA06C62A2324369A002C4A11 /* DongleObserver.swift in Sources */,
+				FA06C62B2324369A002C4A11 /* Constants.swift in Sources */,
+				FA06C62C2324369A002C4A11 /* BrampingViewController.swift in Sources */,
+				FA06C62D2324369A002C4A11 /* SettingsManager.m in Sources */,
+				FA06C62E2324369A002C4A11 /* VolumeViewController.swift in Sources */,
+				FA06C62F2324369A002C4A11 /* SeparatorView.swift in Sources */,
+				FA06C6302324369A002C4A11 /* GradientView.m in Sources */,
+				FA06C6312324369A002C4A11 /* TTCircularSlider.m in Sources */,
+				FA06C6322324369A002C4A11 /* NSString+TimeFormatting.m in Sources */,
+				FA06C6332324369A002C4A11 /* CircleTimer.swift in Sources */,
+				FA06C6342324369A002C4A11 /* SunriseAndSunset.m in Sources */,
+				FA06C6352324369A002C4A11 /* KitSelectorViewController.swift in Sources */,
+				FA06C6362324369A002C4A11 /* RemoteClient.swift in Sources */,
+				FA06C6372324369A002C4A11 /* NeutralDensityCalculatorNavigationController.swift in Sources */,
+				FA06C6382324369A002C4A11 /* WearablesManager.swift in Sources */,
+				FA06C6392324369A002C4A11 /* Dispatchable.swift in Sources */,
+				FA06C63A2324369A002C4A11 /* UIBezierPath.swift in Sources */,
+				FA06C63B2324369A002C4A11 /* OnboardingViewController.swift in Sources */,
+				FA06C63C2324369A002C4A11 /* DispatchableLifecycle.swift in Sources */,
+				FA06C63D2324369A002C4A11 /* CLLocationManager+Services.m in Sources */,
+				FA06C63E2324369A002C4A11 /* DispatchableType.swift in Sources */,
+				FA06C63F2324369A002C4A11 /* HorizontalPicker.m in Sources */,
+				FA06C6402324369A002C4A11 /* SequenceLifecycle.swift in Sources */,
+				FA06C6412324369A002C4A11 /* SimpleCableReleaseViewController.swift in Sources */,
+				FA06C6422324369A002C4A11 /* RotationNavigationViewController.swift in Sources */,
+				FA06C6432324369A002C4A11 /* AudioListener.mm in Sources */,
+				FA06C6442324369A002C4A11 /* Unwrappable.swift in Sources */,
+				FA06C6452324369A002C4A11 /* RemoteOutputServer.m in Sources */,
+				FA06C6462324369A002C4A11 /* CenterViewController.swift in Sources */,
+				FA06C6472324369A002C4A11 /* SensorDelayViewController.swift in Sources */,
+				FA06C6482324369A002C4A11 /* FeedbackViewController.swift in Sources */,
+				FA06C6492324369A002C4A11 /* ConnectKitViewController.swift in Sources */,
+				FA06C64A2324369A002C4A11 /* KitToCameraSelectorTransition.swift in Sources */,
+				FA06C64B2324369A002C4A11 /* Activity.swift in Sources */,
+				FA06C64C2324369A002C4A11 /* Dispatcher.swift in Sources */,
+				FA06C64D2324369A002C4A11 /* UnwrappableType.swift in Sources */,
+				FA06C64E2324369A002C4A11 /* TimedReleaseViewController.swift in Sources */,
+				FA06C64F2324369A002C4A11 /* SunriseSunsetCalculator.m in Sources */,
+				FA06C6502324369A002C4A11 /* TimerStyleKit.swift in Sources */,
+				FA06C6512324369A002C4A11 /* Symbol.swift in Sources */,
+				FA06C6522324369A002C4A11 /* CableSelector.m in Sources */,
+				FA06C6542324369A002C4A11 /* MainNavigationViewController.swift in Sources */,
+				FA06C6552324369A002C4A11 /* ManualFocusViewController.swift in Sources */,
+				FA06C6562324369A002C4A11 /* CameraViewController.swift in Sources */,
+				FA06C6572324369A002C4A11 /* SplitLayoutViewController.swift in Sources */,
+				FA06C6582324369A002C4A11 /* CachedPushNoAnimationStoryboardSegue.m in Sources */,
+				FA06C6592324369A002C4A11 /* ModeTableViewCell.swift in Sources */,
+				FA06C65A2324369A002C4A11 /* Modular.swift in Sources */,
+				FA06C65B2324369A002C4A11 /* UIImage+ImageEffects.m in Sources */,
+				FA06C65C2324369A002C4A11 /* Constants.m in Sources */,
+				FA06C65D2324369A002C4A11 /* Reachability.m in Sources */,
+				FA06C65E2324369A002C4A11 /* TimeWarpViewController.swift in Sources */,
+				FA06C65F2324369A002C4A11 /* DongleCableView.swift in Sources */,
+				FA06C6602324369A002C4A11 /* CameraSelectorToConnectTransition.swift in Sources */,
+				FA06C6612324369A002C4A11 /* TestTriggertViewController.swift in Sources */,
+				FA06C6622324369A002C4A11 /* SharedConstansts.swift in Sources */,
+				FA06C6632324369A002C4A11 /* AccelerometerFilter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2341,6 +2865,18 @@
 				BDB657971C0C53D1009FE760 /* en-GB */,
 			);
 			name = distanceUnits.plist;
+			sourceTree = "<group>";
+		};
+		FA6E879023243E75009590DF /* Modes Mac.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA6E879123243E75009590DF /* Base */,
+				FA6E879423243F65009590DF /* en */,
+				FA6E879523243F69009590DF /* en-GB */,
+				FA6E879623243F6A009590DF /* de */,
+				FA6E879723243F6A009590DF /* it */,
+			);
+			name = "Modes Mac.plist";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -2742,6 +3278,93 @@
 			};
 			name = Release;
 		};
+		FA06C6992324369A002C4A11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7569F278FF52CCFCB509F824 /* Pods-TriggertrapSLR Mac.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(EMBEDDED_CONTENT_CONTAINS_SWIFT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "TriggertrapSLR Mac.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = S4JEZRL8YY;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
+				INFOPLIST_FILE = "TriggertrapSLR copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_execute;
+				OTHER_SWIFT_FLAGS = "-DSLR -DDEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.triggertrap.Triggertrap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TriggertrapSLR/TriggertrapSLR-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		FA06C69A2324369A002C4A11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12771AFFFA9B463F93474F9C /* Pods-TriggertrapSLR Mac.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(EMBEDDED_CONTENT_CONTAINS_SWIFT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "TriggertrapSLR Mac.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution: Triggertrap Ltd";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = S4JEZRL8YY;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
+				INFOPLIST_FILE = "TriggertrapSLR copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_execute;
+				OTHER_SWIFT_FLAGS = "-DSLR";
+				PRODUCT_BUNDLE_IDENTIFIER = com.triggertrap.Triggertrap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "TriggertrapSLR/TriggertrapSLR-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2795,6 +3418,15 @@
 			buildConfigurations = (
 				BDD4C3DE1BF0E751008CA311 /* Debug */,
 				BDD4C3DF1BF0E751008CA311 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA06C6982324369A002C4A11 /* Build configuration list for PBXNativeTarget "TriggertrapSLR Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA06C6992324369A002C4A11 /* Debug */,
+				FA06C69A2324369A002C4A11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

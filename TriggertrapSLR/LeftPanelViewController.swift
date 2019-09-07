@@ -26,8 +26,14 @@ class LeftPanelViewController: UIViewController {
         self.tableView.separatorColor = UIColor.clear
         
         tableView.register(UINib(nibName: "ModeTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: "ModeTableViewCell")
-        
-        modes = NSArray(contentsOfFile: pathForResource("Modes")) 
+
+        #if targetEnvironment(macCatalyst)
+        modes = NSArray(contentsOfFile: pathForResource("Modes Mac"))
+        #else
+        modes = NSArray(contentsOfFile: pathForResource("Modes"))
+        #endif
+
+
         
         NotificationCenter.default.addObserver(self, selector: #selector(LeftPanelViewController.removeActiveCell(_:)), name: NSNotification.Name(rawValue: "DidRemoveActiveViewController"), object: nil) 
     }

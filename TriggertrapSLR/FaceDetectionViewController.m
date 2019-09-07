@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Triggertrap Ltd. All rights reserved.
 //
 
+#if !TARGET_OS_MACCATALYST  
 #import "FaceDetectionViewController.h"
 #import <CoreImage/CoreImage.h>
 #import "UIDevice+Camera.h"
@@ -296,3 +297,5 @@
 //}
 
 @end
+
+#endif

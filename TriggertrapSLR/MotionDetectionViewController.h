@@ -6,8 +6,9 @@
 //  Copyright (c) 2014 Triggertrap Ltd. All rights reserved.
 //
 
+#if !TARGET_OS_MACCATALYST
 #import <UIKit/UIKit.h>
-@import GPUImage;
+#import <GPUImage/GPUImage.h>;
 
 @class MotionDetectionViewController;
 
@@ -30,3 +31,5 @@
 @property (nonatomic, weak) id <MotionDelegate> delegate;
 
 @end
+
+#endif

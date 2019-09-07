@@ -6,7 +6,6 @@ inhibit_all_warnings!
 
 def common_pods
     pod 'CTFeedback'
-    pod 'GPUImage'
     pod 'pop'
     pod 'TTCounterLabel'
     pod 'CocoaAsyncSocket'
@@ -14,6 +13,11 @@ def common_pods
     pod 'MPGNotification'
 end
 
+target 'TriggertrapSLR Mac' do
+    common_pods
+end
+
 target 'TriggertrapSLR' do
     common_pods
+    pod 'GPUImage'
 end
