@@ -223,7 +223,6 @@ class NeutralDensityCalculatorViewController: SplitLayoutViewController, Horizon
         super.performThemeUpdate()
         
         if isEmbedded {
-            self.leftButton?.removeFromSuperview()
             self.rightButton?.removeFromSuperview()
             
             // Update the color of the Cancel/OK buttons

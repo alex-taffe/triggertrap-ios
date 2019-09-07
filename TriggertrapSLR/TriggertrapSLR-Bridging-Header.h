@@ -19,7 +19,6 @@
 #import "RemoteOutputServer.h"
 
 // Menu
-#import "MCPanelViewController.h"
 #import "BFPaperTableViewCell.h"
 
 // TriggertrapUIKit

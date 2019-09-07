@@ -1,116 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4hi-an-0Ol">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14865.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wgm-aB-7Hf">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14819.2"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Sidebar Table View Controller-->
-        <scene sceneID="zI1-7D-bqr">
+        <!--Detail Navigation Controller-->
+        <scene sceneID="5vY-Pn-ie8">
             <objects>
-                <tableViewController id="lLc-T9-KVy" customClass="SidebarTableViewController" customModule="TriggertrapSLR" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Inz-Jz-RxP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                <navigationController id="PRi-X8-qDT" customClass="DetailNavigationController" customModule="TriggertrapSLR" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qMS-Th-YGB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="MeQ-Sp-WDL" kind="relationship" relationship="rootViewController" id="yGB-0S-CRG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ebI-j9-IA3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2146" y="833"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xEm-tz-tsQ">
+            <objects>
+                <viewController id="MeQ-Sp-WDL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IWC-Zl-FtW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <sections/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="5w5-aU-GQ5"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ssd-CA-8ao"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fti-hy-gM7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2890" y="833"/>
+        </scene>
+        <!--Left Panel View Controller-->
+        <scene sceneID="HI7-kz-pJc">
+            <objects>
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="VS1-hX-n1i" customClass="LeftPanelViewController" customModule="TriggertrapSLR" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="y1G-mk-iAo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="LL3-hY-Fms">
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LL3-hY-Fms" id="MpW-WP-5Sc">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="lLc-T9-KVy" id="Kbj-kH-5Rm"/>
-                            <outlet property="delegate" destination="lLc-T9-KVy" id="QiI-OP-3nO"/>
+                            <outlet property="dataSource" destination="VS1-hX-n1i" id="WzK-kk-QRO"/>
+                            <outlet property="delegate" destination="VS1-hX-n1i" id="tVX-B1-TeO"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="BVB-Ia-sGy"/>
+                    <navigationItem key="navigationItem" id="56n-a2-K1L"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FzE-Qf-SJS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oZv-vs-0eF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="570" y="-177"/>
-        </scene>
-        <!--Main Navigation View Controller-->
-        <scene sceneID="rXE-JL-iTe">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4hi-an-0Ol" customClass="MainNavigationViewController" customModule="TriggertrapSLR" customModuleProvider="target" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Scc-fB-irh">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.84712600708007812" green="0.032903812825679779" blue="0.084094814956188202" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="lLc-T9-KVy" kind="relationship" relationship="rootViewController" id="ohO-p6-Pe1"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mxn-OX-0X6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-135" y="-177"/>
-        </scene>
-        <!--LeftPanelViewController-->
-        <scene sceneID="Ji1-Vv-9Ye">
-            <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="iXj-J5-eTK" userLabel="LeftPanelViewController" customClass="LeftPanelViewController" customModule="TriggertrapSLR" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nuL-jf-H3I">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="AJc-Ez-qKK">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <sections/>
-                                <connections>
-                                    <outlet property="dataSource" destination="iXj-J5-eTK" id="o4c-Gg-BBP"/>
-                                    <outlet property="delegate" destination="iXj-J5-eTK" id="pSR-AF-4Qh"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="AJc-Ez-qKK" firstAttribute="top" secondItem="I6L-4H-n6o" secondAttribute="top" id="72A-1o-VqZ"/>
-                            <constraint firstItem="AJc-Ez-qKK" firstAttribute="leading" secondItem="nuL-jf-H3I" secondAttribute="leading" id="F4Y-7L-llY"/>
-                            <constraint firstAttribute="trailing" secondItem="AJc-Ez-qKK" secondAttribute="trailing" id="HnB-5Y-AGV"/>
-                            <constraint firstAttribute="bottom" secondItem="AJc-Ez-qKK" secondAttribute="bottom" id="VRx-b1-KRh"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="I6L-4H-n6o"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Ew8-0J-FNA"/>
-                    <connections>
-                        <outlet property="tableView" destination="AJc-Ez-qKK" id="Vpv-LN-iMN"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8pb-gY-55A" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="535" y="621"/>
+            <point key="canvasLocation" x="3224" y="-26"/>
         </scene>
         <!--Rotation Navigation View Controller-->
-        <scene sceneID="Z5M-sA-UtV">
+        <scene sceneID="UMZ-Od-ikk">
             <objects>
-                <navigationController storyboardIdentifier="LeftPanelNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="Anv-xA-P9V" customClass="RotationNavigationViewController" customModule="TriggertrapSLR" customModuleProvider="target" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="IZ5-Xx-tz3">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                <navigationController id="SLj-5S-22z" customClass="RotationNavigationViewController" customModule="TriggertrapSLR" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qhQ-g4-MOR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.84712600708007812" green="0.032903812825679779" blue="0.084094814956188202" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
                     </navigationBar>
-                    <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="iXj-J5-eTK" kind="relationship" relationship="rootViewController" id="UWz-PB-Bp9"/>
+                        <segue destination="VS1-hX-n1i" kind="relationship" relationship="rootViewController" id="cjd-cm-n5r"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Cnt-8O-xKr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1xb-Me-SdV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-162" y="621"/>
+            <point key="canvasLocation" x="2270" y="-27"/>
+        </scene>
+        <!--Sidebar Table View Controller-->
+        <scene sceneID="76C-Ko-xPQ">
+            <objects>
+                <splitViewController id="wgm-aB-7Hf" customClass="SidebarTableViewController" customModule="TriggertrapSLR" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="SLj-5S-22z" kind="relationship" relationship="masterViewController" id="iwS-5E-gS7"/>
+                        <segue destination="PRi-X8-qDT" kind="relationship" relationship="detailViewController" id="tZI-ZA-bPj"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kxy-e7-1jg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1316" y="305"/>
         </scene>
     </scenes>
 </document>

@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 import CoreSpotlight
 
-class SidebarTableViewController: UITableViewController, UINavigationControllerDelegate, NSUserActivityDelegate {
+class SidebarTableViewController: UISplitViewController, UINavigationControllerDelegate, NSUserActivityDelegate {
     
     // MARK: - Properties
     
@@ -23,6 +23,8 @@ class SidebarTableViewController: UITableViewController, UINavigationControllerD
     fileprivate var visibleModeIdentifier: String? 
     
     // MARK: - Lifecycle
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +32,7 @@ class SidebarTableViewController: UITableViewController, UINavigationControllerD
         
         
         NotificationCenter.default.addObserver(self, selector: #selector(SidebarTableViewController.sidebarDidSelectCellWithIdentifier(_:)), name: NSNotification.Name(rawValue: "SidebarDidSelectCellWithIdentifier"), object: nil)
+
         
         if let lastSelectedViewControllerIdentifier = UserDefaults.standard.object(forKey: ConstDefaultLastSelectedMode) as? String, let storyboardName = StoryboardNameForViewControllerIdentifier(lastSelectedViewControllerIdentifier) {
             
@@ -40,8 +43,11 @@ class SidebarTableViewController: UITableViewController, UINavigationControllerD
             visibleModeIdentifier = lastSelectedViewControllerIdentifier
             
             createUserActivityWithIdentifier(lastSelectedViewControllerIdentifier)
+
+            let navigationController = DetailNavigationController()
+            navigationController.setViewControllers([viewController], animated: false)
             
-            CachedPushNoAnimationStoryboardSegue(identifier: lastSelectedViewControllerIdentifier, source: self, destination: viewController).perform()
+            self.showDetailViewController(navigationController, sender: nil)
             
         } else {
             
@@ -52,7 +58,10 @@ class SidebarTableViewController: UITableViewController, UINavigationControllerD
             
             createUserActivityWithIdentifier(ConstSimpleCableReleaseModeIdentifier)
             
-            CachedPushNoAnimationStoryboardSegue(identifier: ConstSimpleCableReleaseModeIdentifier, source: self, destination: viewController).perform()
+            let navigationController = DetailNavigationController()
+            navigationController.setViewControllers([viewController], animated: false)
+
+            self.showDetailViewController(navigationController, sender: nil)
         }
     } 
     
@@ -133,8 +142,12 @@ class SidebarTableViewController: UITableViewController, UINavigationControllerD
             let viewController = storyboard.instantiateViewController(withIdentifier: identifier)
             
             createUserActivityWithIdentifier(identifier)
-            
-            CachedPushNoAnimationStoryboardSegue(identifier: identifier, source: self, destination: viewController).perform()
+
+            let navigationController = DetailNavigationController()
+            navigationController.setViewControllers([viewController], animated: false)
+
+            self.showDetailViewController(navigationController, sender: nil)
+
         }
     }
 

@@ -14,8 +14,7 @@ import UIKit
     
     @IBInspectable var displayMenuButton: Bool = true
     @IBInspectable var displayOptionsButton: Bool = true
-    
-    var leftButton: UIButton?
+
     var rightButton: UIButton?
     
     required init?(coder aDecoder: NSCoder) {
@@ -25,19 +24,6 @@ import UIKit
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if displayMenuButton {
-            
-            leftButton = UIButton(frame: CGRect(x: 0, y: 0, width: 22, height: 22))
-            leftButton?.addTarget(self.navigationController, action: Selector(("menuButtonTapped:")), for: UIControl.Event.touchDown)
-            leftButton?.setBackgroundImage(#imageLiteral(resourceName: "MenuIcon"), for: .normal)
-            
-            let leftBarButton = UIBarButtonItem(customView: leftButton!)
-            leftBarButton.style = UIBarButtonItem.Style.plain
-            
-            // This does not need translation.
-            leftBarButton.accessibilityLabel = "Menu"
-            self.navigationItem.leftBarButtonItem = leftBarButton
-        }
         
         if displayOptionsButton {
             // Set the right bar button item.

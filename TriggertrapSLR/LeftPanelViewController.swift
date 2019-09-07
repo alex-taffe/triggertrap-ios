@@ -8,10 +8,9 @@
 
 import UIKit
 
-class LeftPanelViewController: UIViewController {
+class LeftPanelViewController: UITableViewController {
     
     // Cable Release modes
-    @IBOutlet var tableView: UITableView! 
     
     fileprivate let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
@@ -32,8 +31,6 @@ class LeftPanelViewController: UIViewController {
         #else
         modes = NSArray(contentsOfFile: pathForResource("Modes"))
         #endif
-
-
         
         NotificationCenter.default.addObserver(self, selector: #selector(LeftPanelViewController.removeActiveCell(_:)), name: NSNotification.Name(rawValue: "DidRemoveActiveViewController"), object: nil) 
     }
@@ -88,17 +85,19 @@ class LeftPanelViewController: UIViewController {
     }
 }
 
-extension LeftPanelViewController: UITableViewDataSource {
+//MARK: Datasource
+
+extension LeftPanelViewController {
     
-    func numberOfSections(in tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return modes?.count ?? 0
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return ((modes?[section] as AnyObject).object(at: 1) as! NSArray).count 
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ModeTableViewCell", for: indexPath) as! ModeTableViewCell
         
@@ -139,7 +138,7 @@ extension LeftPanelViewController: UITableViewDataSource {
         return cell
     }
     
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let sectionBackgroundView = UIView(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.width, height: 22.0))
         sectionBackgroundView.backgroundColor = UIColor.triggertrap_backgroundColor(1.0)
         
@@ -162,15 +161,15 @@ extension LeftPanelViewController: UITableViewDataSource {
     } 
 }
 
-extension LeftPanelViewController: UITableViewDelegate {
+//MARK: Table Delegate
+
+extension LeftPanelViewController {
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let cell = tableView.cellForRow(at: indexPath) as! ModeTableViewCell
         
         guard let identifier = cell.identifier else {
-            tableView.deselectRow(at: indexPath, animated: true)
-            self.dismiss(animated: true, completion: nil)
             return
         }
         
@@ -186,8 +185,6 @@ extension LeftPanelViewController: UITableViewDelegate {
         } else {
             NotificationCenter.default.post(name: Notification.Name(rawValue: "SidebarDidSelectCellWithIdentifier"), object:identifier)
         }
-        
-        tableView.deselectRow(at: indexPath, animated: true)
-        self.dismiss(animated: true, completion: nil)
+         
     }
 }

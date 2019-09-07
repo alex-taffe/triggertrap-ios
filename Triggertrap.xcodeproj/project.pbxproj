@@ -15,9 +15,6 @@
 		9EE1F1AC1B1C9FE800FE6EB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE1F1AB1B1C9FE800FE6EB7 /* AppDelegate.swift */; };
 		9EE1F1B41B1C9FE800FE6EB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EE1F1B21B1C9FE800FE6EB7 /* Main.storyboard */; };
 		9EE1F1B61B1C9FE800FE6EB7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EE1F1B51B1C9FE800FE6EB7 /* Images.xcassets */; };
-		BD0098561BCD1CE40062C7C8 /* MCPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0098511BCD1CE40062C7C8 /* MCPanelViewController.m */; };
-		BD0098571BCD1CE40062C7C8 /* MCPanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0098531BCD1CE40062C7C8 /* MCPanGestureRecognizer.m */; };
-		BD0098581BCD1CE40062C7C8 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0098551BCD1CE40062C7C8 /* UIImage+ImageEffects.m */; };
 		BD0966001BF9EE49000C581B /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0965FF1BF9EE49000C581B /* InterfaceController.swift */; };
 		BD0966061BF9EE49000C581B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD0966051BF9EE49000C581B /* Assets.xcassets */; };
 		BD09660B1BF9EE49000C581B /* Triggertrap WatchKit 1 App.app in Resources */ = {isa = PBXBuildFile; fileRef = BD09660A1BF9EE49000C581B /* Triggertrap WatchKit 1 App.app */; };
@@ -99,7 +96,6 @@
 		BD17D55F1C0CB16100843404 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD17D55E1C0CB16100843404 /* Activity.swift */; };
 		BD1FA20D1BBE806A002C7AEB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1FA20C1BBE806A002C7AEB /* LaunchScreen.xib */; };
 		BD1FA2111BBE838A002C7AEB /* RotationNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1FA20E1BBE838A002C7AEB /* RotationNavigationViewController.swift */; };
-		BD1FA2121BBE838A002C7AEB /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1FA20F1BBE838A002C7AEB /* MainNavigationViewController.swift */; };
 		BD1FA2131BBE838A002C7AEB /* SidebarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1FA2101BBE838A002C7AEB /* SidebarTableViewController.swift */; };
 		BD1FA2191BBE9361002C7AEB /* LeftPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1FA2181BBE9361002C7AEB /* LeftPanelViewController.swift */; };
 		BD1FB4DE1BCE757F00B7A95C /* BFPaperTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1FB4DD1BCE757F00B7A95C /* BFPaperTableViewCell.m */; };
@@ -224,14 +220,12 @@
 		FA06C5DA2324369A002C4A11 /* WifiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB81761BCBE70400F84AB6 /* WifiCell.swift */; };
 		FA06C5DB2324369A002C4A11 /* AstronomicalCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAB4AE31B677F66009EB328 /* AstronomicalCalendar.m */; };
 		FA06C5DC2324369A002C4A11 /* TimelapseProViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD098B751BC28CFE00A87FC8 /* TimelapseProViewController.swift */; };
-		FA06C5DD2324369A002C4A11 /* MCPanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0098531BCD1CE40062C7C8 /* MCPanGestureRecognizer.m */; };
 		FA06C5DE2324369A002C4A11 /* SidebarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1FA2101BBE838A002C7AEB /* SidebarTableViewController.swift */; };
 		FA06C5E02324369A002C4A11 /* UserActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD17D55A1C0CAC5200843404 /* UserActivityManager.swift */; };
 		FA06C5E12324369A002C4A11 /* SCTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1133BF1BB3EED1006ED87A /* SCTransition.m */; };
 		FA06C5E22324369A002C4A11 /* LeHdrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB816D1BCBDBCD00F84AB6 /* LeHdrViewController.swift */; };
 		FA06C5E32324369A002C4A11 /* SCPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1133BD1BB3EED1006ED87A /* SCPercentDrivenInteractiveTransition.m */; };
 		FA06C5E42324369A002C4A11 /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1133C81BB3EED1006ED87A /* NavigationControllerDelegate.swift */; };
-		FA06C5E52324369A002C4A11 /* MCPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0098511BCD1CE40062C7C8 /* MCPanelViewController.m */; };
 		FA06C5E62324369A002C4A11 /* WearablesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB81741BCBE70400F84AB6 /* WearablesViewController.swift */; };
 		FA06C5E72324369A002C4A11 /* SequenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2687C91B45382D008C03EF /* SequenceManager.swift */; };
 		FA06C5E82324369A002C4A11 /* StarTrailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD098BD01BC7BFE300A87FC8 /* StarTrailViewController.swift */; };
@@ -341,14 +335,12 @@
 		FA06C6502324369A002C4A11 /* TimerStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD098C3F1BC7FF9200A87FC8 /* TimerStyleKit.swift */; };
 		FA06C6512324369A002C4A11 /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2687AD1B45361A008C03EF /* Symbol.swift */; };
 		FA06C6522324369A002C4A11 /* CableSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = BD11342B1BB3F29A006ED87A /* CableSelector.m */; };
-		FA06C6542324369A002C4A11 /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1FA20F1BBE838A002C7AEB /* MainNavigationViewController.swift */; };
 		FA06C6552324369A002C4A11 /* ManualFocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1134021BB3F01A006ED87A /* ManualFocusViewController.swift */; };
 		FA06C6562324369A002C4A11 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1134011BB3F01A006ED87A /* CameraViewController.swift */; };
 		FA06C6572324369A002C4A11 /* SplitLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1133B11BB18EE8006ED87A /* SplitLayoutViewController.swift */; };
 		FA06C6582324369A002C4A11 /* CachedPushNoAnimationStoryboardSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = BD098BE81BC7C53900A87FC8 /* CachedPushNoAnimationStoryboardSegue.m */; };
 		FA06C6592324369A002C4A11 /* ModeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD934FDE1BD4F3E500527872 /* ModeTableViewCell.swift */; };
 		FA06C65A2324369A002C4A11 /* Modular.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2687BF1B4537AF008C03EF /* Modular.swift */; };
-		FA06C65B2324369A002C4A11 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0098551BCD1CE40062C7C8 /* UIImage+ImageEffects.m */; };
 		FA06C65C2324369A002C4A11 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = BD56C1851B58067F00928054 /* Constants.m */; };
 		FA06C65D2324369A002C4A11 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BD56C17F1B58061C00928054 /* Reachability.m */; };
 		FA06C65E2324369A002C4A11 /* TimeWarpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD098BD21BC7BFE300A87FC8 /* TimeWarpViewController.swift */; };
@@ -404,6 +396,8 @@
 		FA23B3EA208B79D500263445 /* TTCircleTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23B3E9208B79D500263445 /* TTCircleTimer.swift */; };
 		FA56926F217E587C00A4575F /* NeutralDensityCalculatorNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA56926E217E587C00A4575F /* NeutralDensityCalculatorNavigationController.swift */; };
 		FA6E879323243E7B009590DF /* Modes Mac.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA6E879023243E75009590DF /* Modes Mac.plist */; };
+		FA6E879923244710009590DF /* DetailNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E879823244710009590DF /* DetailNavigationController.swift */; };
+		FA6E879A23244710009590DF /* DetailNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E879823244710009590DF /* DetailNavigationController.swift */; };
 		FAB3553F20BF011E003CCF66 /* MPGNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB3553E20BF011E003CCF66 /* MPGNotification.m */; };
 		FAB6639020B4D1AD003C256E /* OptionsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB6638F20B4D1AD003C256E /* OptionsNavigationController.swift */; };
 /* End PBXBuildFile section */
@@ -516,12 +510,6 @@
 		9EE1F1B31B1C9FE800FE6EB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9EE1F1B51B1C9FE800FE6EB7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B581D1CB9BAA094F37476D5C /* Pods-TriggertrapTLP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TriggertrapTLP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TriggertrapTLP/Pods-TriggertrapTLP.debug.xcconfig"; sourceTree = "<group>"; };
-		BD0098501BCD1CE40062C7C8 /* MCPanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCPanelViewController.h; sourceTree = "<group>"; };
-		BD0098511BCD1CE40062C7C8 /* MCPanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCPanelViewController.m; sourceTree = "<group>"; };
-		BD0098521BCD1CE40062C7C8 /* MCPanGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCPanGestureRecognizer.h; sourceTree = "<group>"; };
-		BD0098531BCD1CE40062C7C8 /* MCPanGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCPanGestureRecognizer.m; sourceTree = "<group>"; };
-		BD0098541BCD1CE40062C7C8 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
-		BD0098551BCD1CE40062C7C8 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		BD0965FB1BF9EE49000C581B /* Triggertrap WatchKit 1 Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Triggertrap WatchKit 1 Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD0965FE1BF9EE49000C581B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		BD0965FF1BF9EE49000C581B /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
@@ -631,7 +619,6 @@
 		BD17D55E1C0CB16100843404 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		BD1FA20C1BBE806A002C7AEB /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		BD1FA20E1BBE838A002C7AEB /* RotationNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotationNavigationViewController.swift; sourceTree = "<group>"; };
-		BD1FA20F1BBE838A002C7AEB /* MainNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
 		BD1FA2101BBE838A002C7AEB /* SidebarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarTableViewController.swift; sourceTree = "<group>"; };
 		BD1FA2181BBE9361002C7AEB /* LeftPanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftPanelViewController.swift; sourceTree = "<group>"; };
 		BD1FB4DC1BCE757F00B7A95C /* BFPaperTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFPaperTableViewCell.h; sourceTree = "<group>"; };
@@ -873,6 +860,7 @@
 		FA6E879523243F69009590DF /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "en-GB"; path = "en-GB.lproj/Modes Mac.plist"; sourceTree = "<group>"; };
 		FA6E879623243F6A009590DF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = de; path = "de.lproj/Modes Mac.plist"; sourceTree = "<group>"; };
 		FA6E879723243F6A009590DF /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = it; path = "it.lproj/Modes Mac.plist"; sourceTree = "<group>"; };
+		FA6E879823244710009590DF /* DetailNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNavigationController.swift; sourceTree = "<group>"; };
 		FAB3553D20BF011E003CCF66 /* MPGNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPGNotification.h; sourceTree = "<group>"; };
 		FAB3553E20BF011E003CCF66 /* MPGNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPGNotification.m; sourceTree = "<group>"; };
 		FAB6638F20B4D1AD003C256E /* OptionsNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsNavigationController.swift; sourceTree = "<group>"; };
@@ -1055,19 +1043,6 @@
 				12771AFFFA9B463F93474F9C /* Pods-TriggertrapSLR Mac.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		BD00984F1BCD1C9C0062C7C8 /* MCPanelViewController */ = {
-			isa = PBXGroup;
-			children = (
-				BD0098501BCD1CE40062C7C8 /* MCPanelViewController.h */,
-				BD0098511BCD1CE40062C7C8 /* MCPanelViewController.m */,
-				BD0098521BCD1CE40062C7C8 /* MCPanGestureRecognizer.h */,
-				BD0098531BCD1CE40062C7C8 /* MCPanGestureRecognizer.m */,
-				BD0098541BCD1CE40062C7C8 /* UIImage+ImageEffects.h */,
-				BD0098551BCD1CE40062C7C8 /* UIImage+ImageEffects.m */,
-			);
-			name = MCPanelViewController;
 			sourceTree = "<group>";
 		};
 		BD0965FC1BF9EE49000C581B /* Triggertrap WatchKit 1 Extension */ = {
@@ -1639,7 +1614,6 @@
 			isa = PBXGroup;
 			children = (
 				BD17D5601C0CBFF500843404 /* NSUserActivity */,
-				BD00984F1BCD1C9C0062C7C8 /* MCPanelViewController */,
 				BDAB81841BCBFDA900F84AB6 /* Categories */,
 				BD7D542C1BCBB9680030219D /* AccelerometerFilter.h */,
 				BD7D542D1BCBB9680030219D /* AccelerometerFilter.m */,
@@ -1678,9 +1652,9 @@
 				BD098B851BC5282B00A87FC8 /* TTViewController.swift */,
 				BD1FA2181BBE9361002C7AEB /* LeftPanelViewController.swift */,
 				BD1FA20E1BBE838A002C7AEB /* RotationNavigationViewController.swift */,
-				BD1FA20F1BBE838A002C7AEB /* MainNavigationViewController.swift */,
 				9E67C69C1D423F6800C560CD /* FeedbackViewController.swift */,
 				BD1FA2101BBE838A002C7AEB /* SidebarTableViewController.swift */,
+				FA6E879823244710009590DF /* DetailNavigationController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -2226,7 +2200,6 @@
 				BDAB817A1BCBE70400F84AB6 /* WifiCell.swift in Sources */,
 				BDAB4AEC1B677F66009EB328 /* AstronomicalCalendar.m in Sources */,
 				BD098B761BC28CFE00A87FC8 /* TimelapseProViewController.swift in Sources */,
-				BD0098571BCD1CE40062C7C8 /* MCPanGestureRecognizer.m in Sources */,
 				BD1FA2131BBE838A002C7AEB /* SidebarTableViewController.swift in Sources */,
 				BD7D542B1BCBB26F0030219D /* FaceDetectionViewController.m in Sources */,
 				BD17D55B1C0CAC5200843404 /* UserActivityManager.swift in Sources */,
@@ -2234,7 +2207,6 @@
 				BDAB816F1BCBDBCD00F84AB6 /* LeHdrViewController.swift in Sources */,
 				BD1133CA1BB3EED1006ED87A /* SCPercentDrivenInteractiveTransition.m in Sources */,
 				BD1133DE1BB3EED1006ED87A /* NavigationControllerDelegate.swift in Sources */,
-				BD0098561BCD1CE40062C7C8 /* MCPanelViewController.m in Sources */,
 				BDAB81781BCBE70400F84AB6 /* WearablesViewController.swift in Sources */,
 				BDD44B0A1BA98B0300B98FF6 /* SequenceManager.swift in Sources */,
 				BD098BD51BC7BFE300A87FC8 /* StarTrailViewController.swift in Sources */,
@@ -2272,6 +2244,7 @@
 				BD1133D21BB3EED1006ED87A /* KitToConnectTransition.swift in Sources */,
 				BD098BB11BC6C6E400A87FC8 /* TTNumberInput.m in Sources */,
 				BDD44B1D1BA98B0300B98FF6 /* Unit.swift in Sources */,
+				FA6E879923244710009590DF /* DetailNavigationController.swift in Sources */,
 				BD7D54241BCBB1DF0030219D /* MotionSensorViewController.swift in Sources */,
 				BDAB4AEB1B677F66009EB328 /* AstronomicalCalculator.m in Sources */,
 				BDAB4ADF1B677C54009EB328 /* SequenceCalculator.swift in Sources */,
@@ -2345,14 +2318,12 @@
 				BDD44B1E1BA98B0300B98FF6 /* Symbol.swift in Sources */,
 				BD1134301BB3F29A006ED87A /* CableSelector.m in Sources */,
 				BD7D542A1BCBB26F0030219D /* MotionDetectionViewController.m in Sources */,
-				BD1FA2121BBE838A002C7AEB /* MainNavigationViewController.swift in Sources */,
 				BD1134141BB3F01A006ED87A /* ManualFocusViewController.swift in Sources */,
 				BD1134121BB3F01A006ED87A /* CameraViewController.swift in Sources */,
 				BD1133B21BB18EE8006ED87A /* SplitLayoutViewController.swift in Sources */,
 				BD098BED1BC7C53900A87FC8 /* CachedPushNoAnimationStoryboardSegue.m in Sources */,
 				BD934FDF1BD4F3E600527872 /* ModeTableViewCell.swift in Sources */,
 				BDD44B0C1BA98B0300B98FF6 /* Modular.swift in Sources */,
-				BD0098581BCD1CE40062C7C8 /* UIImage+ImageEffects.m in Sources */,
 				BDD44AFD1BA98ADB00B98FF6 /* Constants.m in Sources */,
 				BDD44B021BA98B0300B98FF6 /* Reachability.m in Sources */,
 				BD098BD71BC7BFE300A87FC8 /* TimeWarpViewController.swift in Sources */,
@@ -2401,14 +2372,12 @@
 				FA06C5DA2324369A002C4A11 /* WifiCell.swift in Sources */,
 				FA06C5DB2324369A002C4A11 /* AstronomicalCalendar.m in Sources */,
 				FA06C5DC2324369A002C4A11 /* TimelapseProViewController.swift in Sources */,
-				FA06C5DD2324369A002C4A11 /* MCPanGestureRecognizer.m in Sources */,
 				FA06C5DE2324369A002C4A11 /* SidebarTableViewController.swift in Sources */,
 				FA06C5E02324369A002C4A11 /* UserActivityManager.swift in Sources */,
 				FA06C5E12324369A002C4A11 /* SCTransition.m in Sources */,
 				FA06C5E22324369A002C4A11 /* LeHdrViewController.swift in Sources */,
 				FA06C5E32324369A002C4A11 /* SCPercentDrivenInteractiveTransition.m in Sources */,
 				FA06C5E42324369A002C4A11 /* NavigationControllerDelegate.swift in Sources */,
-				FA06C5E52324369A002C4A11 /* MCPanelViewController.m in Sources */,
 				FA06C5E62324369A002C4A11 /* WearablesViewController.swift in Sources */,
 				FA06C5E72324369A002C4A11 /* SequenceManager.swift in Sources */,
 				FA06C5E82324369A002C4A11 /* StarTrailViewController.swift in Sources */,
@@ -2514,18 +2483,17 @@
 				FA06C64C2324369A002C4A11 /* Dispatcher.swift in Sources */,
 				FA06C64D2324369A002C4A11 /* UnwrappableType.swift in Sources */,
 				FA06C64E2324369A002C4A11 /* TimedReleaseViewController.swift in Sources */,
+				FA6E879A23244710009590DF /* DetailNavigationController.swift in Sources */,
 				FA06C64F2324369A002C4A11 /* SunriseSunsetCalculator.m in Sources */,
 				FA06C6502324369A002C4A11 /* TimerStyleKit.swift in Sources */,
 				FA06C6512324369A002C4A11 /* Symbol.swift in Sources */,
 				FA06C6522324369A002C4A11 /* CableSelector.m in Sources */,
-				FA06C6542324369A002C4A11 /* MainNavigationViewController.swift in Sources */,
 				FA06C6552324369A002C4A11 /* ManualFocusViewController.swift in Sources */,
 				FA06C6562324369A002C4A11 /* CameraViewController.swift in Sources */,
 				FA06C6572324369A002C4A11 /* SplitLayoutViewController.swift in Sources */,
 				FA06C6582324369A002C4A11 /* CachedPushNoAnimationStoryboardSegue.m in Sources */,
 				FA06C6592324369A002C4A11 /* ModeTableViewCell.swift in Sources */,
 				FA06C65A2324369A002C4A11 /* Modular.swift in Sources */,
-				FA06C65B2324369A002C4A11 /* UIImage+ImageEffects.m in Sources */,
 				FA06C65C2324369A002C4A11 /* Constants.m in Sources */,
 				FA06C65D2324369A002C4A11 /* Reachability.m in Sources */,
 				FA06C65E2324369A002C4A11 /* TimeWarpViewController.swift in Sources */,

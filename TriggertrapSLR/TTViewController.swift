@@ -126,9 +126,7 @@ class TTViewController: SplitLayoutViewController, DispatchableLifecycle, Sequen
         if let _ = feedbackViewController {
             self.feedbackViewController.performThemeUpdate()
         }
-        
-        self.leftButton?.setBackgroundImage(#imageLiteral(resourceName: "MenuIcon"), for: .normal)
-        self.leftButton?.tintColor = UIColor.triggertrap_fillColor(1)
+    
         
         self.rightButton?.setBackgroundImage(#imageLiteral(resourceName: "OptionsIcon"), for: .normal)
         self.rightButton?.tintColor = UIColor.triggertrap_fillColor(1)
