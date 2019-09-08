@@ -110,20 +110,6 @@
 			</dict>
 			<dict>
 				<key>title</key>
-				<string>Timelapse Pro</string>
-				<key>identifier</key>
-				<string>Timelapse Pro</string>
-				<key>description</key>
-				<string>Advanced Timelapse</string>
-				<key>icon</key>
-				<string>TimelapseProIcon</string>
-				<key>wearablesSupported</key>
-				<true/>
-				<key>remoteSupported</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>title</key>
 				<string>TimeWarp</string>
 				<key>identifier</key>
 				<string>TimeWarp</string>
