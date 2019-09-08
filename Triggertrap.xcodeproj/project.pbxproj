@@ -14,7 +14,6 @@
 		9E67C69D1D423F6800C560CD /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C69C1D423F6800C560CD /* FeedbackViewController.swift */; };
 		9EE1F1AC1B1C9FE800FE6EB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE1F1AB1B1C9FE800FE6EB7 /* AppDelegate.swift */; };
 		9EE1F1B41B1C9FE800FE6EB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EE1F1B21B1C9FE800FE6EB7 /* Main.storyboard */; };
-		9EE1F1B61B1C9FE800FE6EB7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EE1F1B51B1C9FE800FE6EB7 /* Images.xcassets */; };
 		BD0966001BF9EE49000C581B /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0965FF1BF9EE49000C581B /* InterfaceController.swift */; };
 		BD0966061BF9EE49000C581B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD0966051BF9EE49000C581B /* Assets.xcassets */; };
 		BD09660B1BF9EE49000C581B /* Triggertrap WatchKit 1 App.app in Resources */ = {isa = PBXBuildFile; fileRef = BD09660A1BF9EE49000C581B /* Triggertrap WatchKit 1 App.app */; };
@@ -96,7 +95,7 @@
 		BD17D55F1C0CB16100843404 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD17D55E1C0CB16100843404 /* Activity.swift */; };
 		BD1FA20D1BBE806A002C7AEB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1FA20C1BBE806A002C7AEB /* LaunchScreen.xib */; };
 		BD1FA2111BBE838A002C7AEB /* RotationNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1FA20E1BBE838A002C7AEB /* RotationNavigationViewController.swift */; };
-		BD1FA2131BBE838A002C7AEB /* SidebarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1FA2101BBE838A002C7AEB /* SidebarTableViewController.swift */; };
+		BD1FA2131BBE838A002C7AEB /* SideBarSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1FA2101BBE838A002C7AEB /* SideBarSplitViewController.swift */; };
 		BD1FA2191BBE9361002C7AEB /* LeftPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1FA2181BBE9361002C7AEB /* LeftPanelViewController.swift */; };
 		BD1FB4DE1BCE757F00B7A95C /* BFPaperTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1FB4DD1BCE757F00B7A95C /* BFPaperTableViewCell.m */; };
 		BD6464801BF21F7B00B2324B /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD64647F1BF21F7B00B2324B /* SeparatorView.swift */; };
@@ -220,7 +219,7 @@
 		FA06C5DA2324369A002C4A11 /* WifiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB81761BCBE70400F84AB6 /* WifiCell.swift */; };
 		FA06C5DB2324369A002C4A11 /* AstronomicalCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAB4AE31B677F66009EB328 /* AstronomicalCalendar.m */; };
 		FA06C5DC2324369A002C4A11 /* TimelapseProViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD098B751BC28CFE00A87FC8 /* TimelapseProViewController.swift */; };
-		FA06C5DE2324369A002C4A11 /* SidebarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1FA2101BBE838A002C7AEB /* SidebarTableViewController.swift */; };
+		FA06C5DE2324369A002C4A11 /* SideBarSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1FA2101BBE838A002C7AEB /* SideBarSplitViewController.swift */; };
 		FA06C5E02324369A002C4A11 /* UserActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD17D55A1C0CAC5200843404 /* UserActivityManager.swift */; };
 		FA06C5E12324369A002C4A11 /* SCTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1133BF1BB3EED1006ED87A /* SCTransition.m */; };
 		FA06C5E22324369A002C4A11 /* LeHdrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB816D1BCBDBCD00F84AB6 /* LeHdrViewController.swift */; };
@@ -382,7 +381,6 @@
 		FA06C6862324369A002C4A11 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDD44D361BB1620500B98FF6 /* OpenSans-Bold.ttf */; };
 		FA06C6872324369A002C4A11 /* pulseLengths.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDD75CD91BEA56280014DA3D /* pulseLengths.plist */; };
 		FA06C6882324369A002C4A11 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD75BF31BE77BC90014DA3D /* Onboarding.storyboard */; };
-		FA06C6892324369A002C4A11 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EE1F1B51B1C9FE800FE6EB7 /* Images.xcassets */; };
 		FA06C68A2324369A002C4A11 /* CameraChooser.JSON in Resources */ = {isa = PBXBuildFile; fileRef = BD1134281BB3F29A006ED87A /* CameraChooser.JSON */; };
 		FA06C68B2324369A002C4A11 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BDD75CA61BE91D050014DA3D /* InfoPlist.strings */; };
 		FA06C68C2324369A002C4A11 /* distanceUnits.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDD75CE51BEA56380014DA3D /* distanceUnits.plist */; };
@@ -398,6 +396,8 @@
 		FA6E879923244710009590DF /* DetailNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E879823244710009590DF /* DetailNavigationController.swift */; };
 		FA6E879A23244710009590DF /* DetailNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E879823244710009590DF /* DetailNavigationController.swift */; };
 		FA6E879B232448C7009590DF /* Modes.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDD75BD91BE77AAB0014DA3D /* Modes.plist */; };
+		FA6E879C232452D1009590DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EE1F1B51B1C9FE800FE6EB7 /* Images.xcassets */; };
+		FA6E879D232452E6009590DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EE1F1B51B1C9FE800FE6EB7 /* Images.xcassets */; };
 		FAB3553F20BF011E003CCF66 /* MPGNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB3553E20BF011E003CCF66 /* MPGNotification.m */; };
 		FAB6639020B4D1AD003C256E /* OptionsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB6638F20B4D1AD003C256E /* OptionsNavigationController.swift */; };
 /* End PBXBuildFile section */
@@ -619,7 +619,7 @@
 		BD17D55E1C0CB16100843404 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		BD1FA20C1BBE806A002C7AEB /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		BD1FA20E1BBE838A002C7AEB /* RotationNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotationNavigationViewController.swift; sourceTree = "<group>"; };
-		BD1FA2101BBE838A002C7AEB /* SidebarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarTableViewController.swift; sourceTree = "<group>"; };
+		BD1FA2101BBE838A002C7AEB /* SideBarSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarSplitViewController.swift; sourceTree = "<group>"; };
 		BD1FA2181BBE9361002C7AEB /* LeftPanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftPanelViewController.swift; sourceTree = "<group>"; };
 		BD1FB4DC1BCE757F00B7A95C /* BFPaperTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFPaperTableViewCell.h; sourceTree = "<group>"; };
 		BD1FB4DD1BCE757F00B7A95C /* BFPaperTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFPaperTableViewCell.m; sourceTree = "<group>"; };
@@ -1653,7 +1653,7 @@
 				BD1FA2181BBE9361002C7AEB /* LeftPanelViewController.swift */,
 				BD1FA20E1BBE838A002C7AEB /* RotationNavigationViewController.swift */,
 				9E67C69C1D423F6800C560CD /* FeedbackViewController.swift */,
-				BD1FA2101BBE838A002C7AEB /* SidebarTableViewController.swift */,
+				BD1FA2101BBE838A002C7AEB /* SideBarSplitViewController.swift */,
 				FA6E879823244710009590DF /* DetailNavigationController.swift */,
 			);
 			name = Controller;
@@ -1979,10 +1979,10 @@
 				BDD44D3B1BB1620500B98FF6 /* OpenSans-Bold.ttf in Resources */,
 				BDD75CD71BEA56280014DA3D /* pulseLengths.plist in Resources */,
 				BDD75BF01BE77BC90014DA3D /* Onboarding.storyboard in Resources */,
-				9EE1F1B61B1C9FE800FE6EB7 /* Images.xcassets in Resources */,
 				BD11342C1BB3F29A006ED87A /* CameraChooser.JSON in Resources */,
 				BDD75CA41BE91D050014DA3D /* InfoPlist.strings in Resources */,
 				BDD75CE31BEA56380014DA3D /* distanceUnits.plist in Resources */,
+				FA6E879C232452D1009590DF /* Images.xcassets in Resources */,
 				BDD75BA61BE779F10014DA3D /* Options.storyboard in Resources */,
 				BDD75CA01BE91BEF0014DA3D /* Localizable.strings in Resources */,
 				BD1134201BB3F160006ED87A /* CableSelectorImages.xcassets in Resources */,
@@ -2065,10 +2065,10 @@
 				FA06C6862324369A002C4A11 /* OpenSans-Bold.ttf in Resources */,
 				FA06C6872324369A002C4A11 /* pulseLengths.plist in Resources */,
 				FA06C6882324369A002C4A11 /* Onboarding.storyboard in Resources */,
-				FA06C6892324369A002C4A11 /* Images.xcassets in Resources */,
 				FA06C68A2324369A002C4A11 /* CameraChooser.JSON in Resources */,
 				FA06C68B2324369A002C4A11 /* InfoPlist.strings in Resources */,
 				FA06C68C2324369A002C4A11 /* distanceUnits.plist in Resources */,
+				FA6E879D232452E6009590DF /* Images.xcassets in Resources */,
 				FA06C68D2324369A002C4A11 /* Options.storyboard in Resources */,
 				FA06C68E2324369A002C4A11 /* Localizable.strings in Resources */,
 				FA06C68F2324369A002C4A11 /* CableSelectorImages.xcassets in Resources */,
@@ -2200,7 +2200,7 @@
 				BDAB817A1BCBE70400F84AB6 /* WifiCell.swift in Sources */,
 				BDAB4AEC1B677F66009EB328 /* AstronomicalCalendar.m in Sources */,
 				BD098B761BC28CFE00A87FC8 /* TimelapseProViewController.swift in Sources */,
-				BD1FA2131BBE838A002C7AEB /* SidebarTableViewController.swift in Sources */,
+				BD1FA2131BBE838A002C7AEB /* SideBarSplitViewController.swift in Sources */,
 				BD7D542B1BCBB26F0030219D /* FaceDetectionViewController.m in Sources */,
 				BD17D55B1C0CAC5200843404 /* UserActivityManager.swift in Sources */,
 				BD1133CC1BB3EED1006ED87A /* SCTransition.m in Sources */,
@@ -2372,7 +2372,7 @@
 				FA06C5DA2324369A002C4A11 /* WifiCell.swift in Sources */,
 				FA06C5DB2324369A002C4A11 /* AstronomicalCalendar.m in Sources */,
 				FA06C5DC2324369A002C4A11 /* TimelapseProViewController.swift in Sources */,
-				FA06C5DE2324369A002C4A11 /* SidebarTableViewController.swift in Sources */,
+				FA06C5DE2324369A002C4A11 /* SideBarSplitViewController.swift in Sources */,
 				FA06C5E02324369A002C4A11 /* UserActivityManager.swift in Sources */,
 				FA06C5E12324369A002C4A11 /* SCTransition.m in Sources */,
 				FA06C5E22324369A002C4A11 /* LeHdrViewController.swift in Sources */,

@@ -122,6 +122,7 @@ class SplitLayoutViewController: CenterViewController {
         self.view.backgroundColor = UIColor.triggertrap_fillColor()
         
         self.navigationController?.navigationBar.barTintColor = UIColor.triggertrap_primaryColor(1.0)
+        self.navigationController?.navigationBar.tintColor = UIColor.triggertrap_iconColor()
         
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.triggertrap_metric_regular(23.0), NSAttributedString.Key.foregroundColor: UIColor.triggertrap_iconColor(1.0)]
         

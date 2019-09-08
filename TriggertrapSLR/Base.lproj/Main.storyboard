@@ -11,11 +11,15 @@
         <!--Detail Navigation Controller-->
         <scene sceneID="5vY-Pn-ie8">
             <objects>
-                <navigationController id="PRi-X8-qDT" customClass="DetailNavigationController" customModule="TriggertrapSLR" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qMS-Th-YGB">
+                <navigationController storyboardIdentifier="detailNavController" id="PRi-X8-qDT" customClass="DetailNavigationController" customModule="TriggertrapSLR" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="qMS-Th-YGB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bAB-vL-ZU3">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="MeQ-Sp-WDL" kind="relationship" relationship="rootViewController" id="yGB-0S-CRG"/>
                     </connections>
@@ -29,7 +33,7 @@
             <objects>
                 <viewController id="MeQ-Sp-WDL" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IWC-Zl-FtW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="5w5-aU-GQ5"/>
@@ -45,7 +49,7 @@
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="VS1-hX-n1i" customClass="LeftPanelViewController" customModule="TriggertrapSLR" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="y1G-mk-iAo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
@@ -73,9 +77,10 @@
         <scene sceneID="UMZ-Od-ikk">
             <objects>
                 <navigationController id="SLj-5S-22z" customClass="RotationNavigationViewController" customModule="TriggertrapSLR" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qhQ-g4-MOR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="qhQ-g4-MOR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </navigationBar>
                     <connections>
                         <segue destination="VS1-hX-n1i" kind="relationship" relationship="rootViewController" id="cjd-cm-n5r"/>
@@ -85,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="2270" y="-27"/>
         </scene>
-        <!--Sidebar Table View Controller-->
+        <!--Side Bar Split View Controller-->
         <scene sceneID="76C-Ko-xPQ">
             <objects>
-                <splitViewController id="wgm-aB-7Hf" customClass="SidebarTableViewController" customModule="TriggertrapSLR" customModuleProvider="target" sceneMemberID="viewController">
+                <splitViewController id="wgm-aB-7Hf" customClass="SideBarSplitViewController" customModule="TriggertrapSLR" customModuleProvider="target" sceneMemberID="viewController">
                     <connections>
                         <segue destination="SLj-5S-22z" kind="relationship" relationship="masterViewController" id="iwS-5E-gS7"/>
                         <segue destination="PRi-X8-qDT" kind="relationship" relationship="detailViewController" id="tZI-ZA-bPj"/>

@@ -68,7 +68,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let identifier = userActivity.title, identifier != UserDefaults.standard.object(forKey: ConstDefaultLastSelectedMode) as? String {
             
             // Get the destination view controller from the identifier
-            if let rootViewController = self.window?.rootViewController as? DetailNavigationController, let sidebarViewController = rootViewController.viewControllers.first as? SidebarTableViewController, let storyboardName = StoryboardNameForViewControllerIdentifier(identifier) {
+            if let rootViewController = self.window?.rootViewController as? DetailNavigationController, let sidebarViewController = rootViewController.viewControllers.first as? SideBarSplitViewController, let storyboardName = StoryboardNameForViewControllerIdentifier(identifier) {
                     
                 // Save the identifer to the user defaults for the last selected mode
                 UserDefaults.standard.set(identifier, forKey: ConstDefaultLastSelectedMode)

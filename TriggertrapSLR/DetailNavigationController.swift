@@ -10,10 +10,16 @@ import UIKit
 
 class DetailNavigationController: UINavigationController {
 
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return AppTheme() == .normal ? .lightContent : .default
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.navigationBar.isTranslucent = false
+
     }
     
 
@@ -47,5 +53,7 @@ class DetailNavigationController: UINavigationController {
         destinationController.modalPresentationCapturesStatusBarAppearance = true
 
         self.present(viewController, animated: true, completion: nil)
+
+
     } 
 }

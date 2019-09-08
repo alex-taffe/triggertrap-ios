@@ -20,6 +20,8 @@ class RotationNavigationViewController: UINavigationController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.navigationItem.rightBarButtonItem?.tintColor = UIColor.triggertrap_iconColor()
+        self.navigationItem.leftBarButtonItem?.tintColor = UIColor.triggertrap_iconColor()
     }
 
     override func didReceiveMemoryWarning() {

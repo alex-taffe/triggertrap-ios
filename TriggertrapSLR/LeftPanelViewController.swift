@@ -32,7 +32,15 @@ class LeftPanelViewController: UITableViewController {
         modes = NSArray(contentsOfFile: pathForResource("Modes"))
         #endif
         
-        NotificationCenter.default.addObserver(self, selector: #selector(LeftPanelViewController.removeActiveCell(_:)), name: NSNotification.Name(rawValue: "DidRemoveActiveViewController"), object: nil) 
+        NotificationCenter.default.addObserver(self, selector: #selector(LeftPanelViewController.removeActiveCell(_:)), name: NSNotification.Name(rawValue: "DidRemoveActiveViewController"), object: nil)
+
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 125, height: 30.729166666667))
+        imageView.image = UIImage(named: "TriggertrapLogo")
+
+        let imageViewContainer = UIImageView(frame: CGRect(x: 0, y: 0, width: 125, height: 30.729166666667))
+        imageViewContainer.addSubview(imageView)
+
+        self.navigationItem.titleView = imageViewContainer
     }
     
     deinit {
