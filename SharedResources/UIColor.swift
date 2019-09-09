@@ -62,6 +62,16 @@ public extension UIColor {
     }
     
     class func triggertrap_iconColor (_ alpha: CGFloat = 1.0) -> UIColor {
+        if #available(iOS 13.0, *) {
+            return UIColor { (traitCollection: UITraitCollection) -> UIColor in
+                if traitCollection.userInterfaceStyle == .light {
+                    return UIColor.white
+                } else {
+                    return UIColor(hex: 0x999999)
+                }
+            }
+
+        }
         switch AppTheme() {
         case .normal:
             return UIColor(hex: 0xFFFFFF, alpha: alpha)

@@ -129,7 +129,7 @@ class TTViewController: SplitLayoutViewController, DispatchableLifecycle, Sequen
     
         
         self.rightButton?.setBackgroundImage(#imageLiteral(resourceName: "OptionsIcon"), for: .normal)
-        self.rightButton?.tintColor = UIColor.triggertrap_fillColor(1)
+        self.rightButton?.tintColor = UIColor.triggertrap_iconColor()
         
         self.bulbButton?.setImage(ImageWithColor(UIImage(named: "BulbIcon")!, color: UIColor.triggertrap_primaryColor()), for: UIControl.State())
         self.bulbButton?.imageView?.contentMode = .scaleAspectFit

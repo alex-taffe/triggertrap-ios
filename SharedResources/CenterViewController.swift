@@ -31,6 +31,7 @@ import UIKit
             rightButton = UIButton(frame: CGRect(x: 0, y: 0, width: 22, height: 22))
             rightButton?.addTarget(self.navigationController, action: Selector(("optionsButtonTapped:")), for: UIControl.Event.touchDown)
             rightButton?.setBackgroundImage(#imageLiteral(resourceName: "OptionsIcon"), for: .normal)
+            self.rightButton?.tintColor = UIColor.triggertrap_iconColor()
             let rightBarButton = UIBarButtonItem(customView: rightButton!)
             rightBarButton.style = UIBarButtonItem.Style.plain
             self.navigationItem.rightBarButtonItem = rightBarButton

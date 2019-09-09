@@ -35,9 +35,11 @@ class LeftPanelViewController: UITableViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(LeftPanelViewController.removeActiveCell(_:)), name: NSNotification.Name(rawValue: "DidRemoveActiveViewController"), object: nil)
 
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 125, height: 30.729166666667))
-        imageView.image = UIImage(named: "TriggertrapLogo")
+        imageView.image = UIImage(named: "TriggertrapLogo")?.withRenderingMode(.alwaysTemplate)
+        imageView.tintColor = UIColor.triggertrap_iconColor()
 
         let imageViewContainer = UIImageView(frame: CGRect(x: 0, y: 0, width: 125, height: 30.729166666667))
+        imageViewContainer.tintColor = UIColor.triggertrap_iconColor()
         imageViewContainer.addSubview(imageView)
 
         self.navigationItem.titleView = imageViewContainer
