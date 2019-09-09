@@ -117,7 +117,7 @@
     NSInteger pos = [indexPath indexAtPosition:1];
     UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
     if(@available(iOS 11.0, *))
-       if(pos >= 9 && UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone && orientation == UIInterfaceOrientationPortrait)
+       if(pos >= 9 && UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPhone && orientation == UIInterfaceOrientationPortrait)
            return CGSizeMake((self.frame.size.width) / 3, (self.frame.size.height - self.safeAreaInsets.bottom) / 4 + self.safeAreaInsets.bottom);
     return CGSizeMake((self.frame.size.width) / 3, (self.frame.size.height) / 4);
 }
@@ -195,7 +195,7 @@
 
     //this if can't be collapsed or the compiler freaks out
     if (@available(iOS 11.0, *)){
-        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone && orientation == UIInterfaceOrientationPortrait){
+        if (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPhone && orientation == UIInterfaceOrientationPortrait){
             if(pos == 9){
                 button.contentVerticalAlignment = UIControlContentVerticalAlignmentTop;
                 button.contentEdgeInsets = UIEdgeInsetsMake((button.frame.size.height - self.safeAreaInsets.bottom) / 4, 0, 0, 0);
