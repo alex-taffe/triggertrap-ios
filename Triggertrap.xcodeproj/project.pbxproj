@@ -852,7 +852,7 @@
 		CB967E2D798D1D1B89F18478 /* libPods-TriggertrapTLP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TriggertrapTLP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD0EABEDE2EC72F98FAC1644 /* Pods_TriggertrapSLR_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TriggertrapSLR_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF051A1D93B1F5CCBE291968 /* Pods-TriggertrapSLR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TriggertrapSLR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TriggertrapSLR/Pods-TriggertrapSLR.debug.xcconfig"; sourceTree = "<group>"; };
-		FA06C69B2324369A002C4A11 /* TriggertrapSLR Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TriggertrapSLR Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA06C69B2324369A002C4A11 /* Triggertrap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Triggertrap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA06C69D232436AB002C4A11 /* TriggertrapSLR Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TriggertrapSLR Mac.entitlements"; sourceTree = "<group>"; };
 		FA23B3E9208B79D500263445 /* TTCircleTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTCircleTimer.swift; sourceTree = "<group>"; };
 		FA40EF362326AF9B009AE6B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -952,7 +952,7 @@
 				BDD4C3C41BF0E750008CA311 /* Triggertrap Watch Kit Extension.appex */,
 				BD0965FB1BF9EE49000C581B /* Triggertrap WatchKit 1 Extension.appex */,
 				BD09660A1BF9EE49000C581B /* Triggertrap WatchKit 1 App.app */,
-				FA06C69B2324369A002C4A11 /* TriggertrapSLR Mac.app */,
+				FA06C69B2324369A002C4A11 /* Triggertrap.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1867,7 +1867,7 @@
 			);
 			name = "TriggertrapSLR Mac";
 			productName = TriggertrapSLR;
-			productReference = FA06C69B2324369A002C4A11 /* TriggertrapSLR Mac.app */;
+			productReference = FA06C69B2324369A002C4A11 /* Triggertrap.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -3283,7 +3283,7 @@
 				MACH_O_TYPE = mh_execute;
 				OTHER_SWIFT_FLAGS = "-DSLR -DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.triggertrap.Triggertrap;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Triggertrap;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTS_MACCATALYST = YES;
@@ -3327,7 +3327,7 @@
 				MACH_O_TYPE = mh_execute;
 				OTHER_SWIFT_FLAGS = "-DSLR";
 				PRODUCT_BUNDLE_IDENTIFIER = com.triggertrap.Triggertrap;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Triggertrap;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTS_MACCATALYST = YES;
