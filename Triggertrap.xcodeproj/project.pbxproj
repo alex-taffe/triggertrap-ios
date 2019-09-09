@@ -391,6 +391,8 @@
 		FA06C6912324369A002C4A11 /* distanceUnitsPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BDD4C39C1BEB7F41008CA311 /* distanceUnitsPlist.strings */; };
 		FA06C6922324369A002C4A11 /* SplashImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BD11341B1BB3F0FB006ED87A /* SplashImage.jpg */; };
 		FA23B3EA208B79D500263445 /* TTCircleTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23B3E9208B79D500263445 /* TTCircleTimer.swift */; };
+		FA40EF372326AF9C009AE6B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40EF362326AF9B009AE6B7 /* SceneDelegate.swift */; };
+		FA40EF382326AFA6009AE6B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40EF362326AF9B009AE6B7 /* SceneDelegate.swift */; };
 		FA56926F217E587C00A4575F /* NeutralDensityCalculatorNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA56926E217E587C00A4575F /* NeutralDensityCalculatorNavigationController.swift */; };
 		FA6E879323243E7B009590DF /* Modes Mac.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA6E879023243E75009590DF /* Modes Mac.plist */; };
 		FA6E879923244710009590DF /* DetailNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E879823244710009590DF /* DetailNavigationController.swift */; };
@@ -851,9 +853,10 @@
 		DD0EABEDE2EC72F98FAC1644 /* Pods_TriggertrapSLR_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TriggertrapSLR_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF051A1D93B1F5CCBE291968 /* Pods-TriggertrapSLR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TriggertrapSLR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TriggertrapSLR/Pods-TriggertrapSLR.debug.xcconfig"; sourceTree = "<group>"; };
 		FA06C69B2324369A002C4A11 /* TriggertrapSLR Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TriggertrapSLR Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA06C69C2324369B002C4A11 /* TriggertrapSLR copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TriggertrapSLR copy-Info.plist"; path = "/Users/Alex/Documents/Xcode/triggertrap-ios/TriggertrapSLR copy-Info.plist"; sourceTree = "<absolute>"; };
 		FA06C69D232436AB002C4A11 /* TriggertrapSLR Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TriggertrapSLR Mac.entitlements"; sourceTree = "<group>"; };
 		FA23B3E9208B79D500263445 /* TTCircleTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTCircleTimer.swift; sourceTree = "<group>"; };
+		FA40EF362326AF9B009AE6B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FA40EF7B2326B7A2009AE6B7 /* Info-Mac.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Mac.plist"; sourceTree = "<group>"; };
 		FA56926E217E587C00A4575F /* NeutralDensityCalculatorNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeutralDensityCalculatorNavigationController.swift; sourceTree = "<group>"; };
 		FA6E879123243E75009590DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = "Base.lproj/Modes Mac.plist"; sourceTree = "<group>"; };
 		FA6E879423243F65009590DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = "en.lproj/Modes Mac.plist"; sourceTree = "<group>"; };
@@ -938,7 +941,6 @@
 				9EE1F1441B1C9DFD00FE6EB7 /* Products */,
 				B117DE22060B1C8BDF0E6BE6 /* Pods */,
 				79374477B2F7DCA0830A2DD5 /* Frameworks */,
-				FA06C69C2324369B002C4A11 /* TriggertrapSLR copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -960,6 +962,7 @@
 			children = (
 				BDD44D491BB163B200B98FF6 /* SLRConstants.swift */,
 				9EE1F1AB1B1C9FE800FE6EB7 /* AppDelegate.swift */,
+				FA40EF362326AF9B009AE6B7 /* SceneDelegate.swift */,
 				BDD44D0B1BB15D9B00B98FF6 /* Model */,
 				BDD44D0C1BB15DA100B98FF6 /* View */,
 				BDD44D0D1BB15DA500B98FF6 /* Controller */,
@@ -979,6 +982,7 @@
 				BDD4C37B1BEA828D008CA311 /* ModesPlist.strings */,
 				BDD4C3841BEA829B008CA311 /* OptionsPlist.strings */,
 				BDD75C9D1BE917B00014DA3D /* Info.plist */,
+				FA40EF7B2326B7A2009AE6B7 /* Info-Mac.plist */,
 				FA6E879023243E75009590DF /* Modes Mac.plist */,
 				BDD75BD91BE77AAB0014DA3D /* Modes.plist */,
 				BDD75BDE1BE77AC50014DA3D /* Options.plist */,
@@ -2320,6 +2324,7 @@
 				BD7D542A1BCBB26F0030219D /* MotionDetectionViewController.m in Sources */,
 				BD1134141BB3F01A006ED87A /* ManualFocusViewController.swift in Sources */,
 				BD1134121BB3F01A006ED87A /* CameraViewController.swift in Sources */,
+				FA40EF372326AF9C009AE6B7 /* SceneDelegate.swift in Sources */,
 				BD1133B21BB18EE8006ED87A /* SplitLayoutViewController.swift in Sources */,
 				BD098BED1BC7C53900A87FC8 /* CachedPushNoAnimationStoryboardSegue.m in Sources */,
 				BD934FDF1BD4F3E600527872 /* ModeTableViewCell.swift in Sources */,
@@ -2428,6 +2433,7 @@
 				FA06C6152324369A002C4A11 /* LeHdrTimelapseViewController.swift in Sources */,
 				FA06C6162324369A002C4A11 /* OnboardingNavigationViewController.swift in Sources */,
 				FA06C6172324369A002C4A11 /* SoundSensorViewController.swift in Sources */,
+				FA40EF382326AFA6009AE6B7 /* SceneDelegate.swift in Sources */,
 				FA06C6182324369A002C4A11 /* ManualFocusToTestTriggerTransition.swift in Sources */,
 				FA06C6192324369A002C4A11 /* TimelapseViewController.swift in Sources */,
 				FA06C61A2324369A002C4A11 /* Intervalometer.swift in Sources */,
@@ -3268,7 +3274,7 @@
 					"$(inherited)",
 					"COCOAPODS=1",
 				);
-				INFOPLIST_FILE = "TriggertrapSLR copy-Info.plist";
+				INFOPLIST_FILE = "TriggertrapSLR/Info-Mac.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3312,7 +3318,7 @@
 					"$(inherited)",
 					"COCOAPODS=1",
 				);
-				INFOPLIST_FILE = "TriggertrapSLR copy-Info.plist";
+				INFOPLIST_FILE = "TriggertrapSLR/Info-Mac.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

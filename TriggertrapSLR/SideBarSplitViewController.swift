@@ -29,6 +29,9 @@ class SideBarSplitViewController: UISplitViewController, UINavigationControllerD
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.delegate = self
+
+        //TODO: Apply this for mac in the future to get transparency, but currently colors are wrong
+        //self.primaryBackgroundStyle = .sidebar
         
         
         NotificationCenter.default.addObserver(self, selector: #selector(SideBarSplitViewController.sidebarDidSelectCellWithIdentifier(_:)), name: NSNotification.Name(rawValue: "SidebarDidSelectCellWithIdentifier"), object: nil)

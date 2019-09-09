@@ -11,11 +11,7 @@
 @implementation UIDevice (Camera)
 
 - (BOOL)hasCamera {
-    if ([self hasRearCamera] || [self hasFrontCamera]) {
-        return YES;
-    } else {
-        return NO;
-    }
+    return ([self hasRearCamera] || [self hasFrontCamera]);
 }
 
 - (BOOL)hasFrontCamera {
