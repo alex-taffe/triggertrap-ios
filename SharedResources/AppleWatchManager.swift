@@ -87,19 +87,15 @@ class AppleWatchManager: NSObject {
     }
 }
 
-@available(iOS 9.0, *)
 extension AppleWatchManager: WCSessionDelegate {
-    @available(iOS 9.3, *)
     func sessionDidDeactivate(_ session: WCSession) {
         
     }
 
-    @available(iOS 9.3, *)
     func sessionDidBecomeInactive(_ session: WCSession) {
         
     }
 
-    @available(iOS 9.3, *)
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         
     }

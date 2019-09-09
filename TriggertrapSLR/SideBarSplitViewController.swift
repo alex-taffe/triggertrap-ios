@@ -160,7 +160,6 @@ class SideBarSplitViewController: UISplitViewController, UINavigationControllerD
         }
     }
 
-    @available(iOS 8.0, *)
     func userActivityWillSave(_ userActivity: NSUserActivity) {
         userActivity.addUserInfoEntries(from: ["mode": userActivity.title!])
     }

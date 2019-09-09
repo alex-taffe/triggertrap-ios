@@ -18,7 +18,6 @@ struct Activity {
 }
 
 extension Activity {
-    @available(iOS 9.0, *)
     func searchableAttributeSet() -> CSSearchableItemAttributeSet {
         let attr = CSSearchableItemAttributeSet(itemContentType: "com.triggertrap.Triggertrap")
         attr.title = title
