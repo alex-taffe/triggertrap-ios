@@ -59,7 +59,13 @@ class SettingsTableViewController : UITableViewController {
         super.viewDidLoad()
         
         // Hide previous screen title from the back button in case we use SettingsTableViewController as initial screen as opposed to OptionsTableViewController
+        #if targetEnvironment(macCatalyst)
+        self.navigationItem.hidesBackButton = true
+        self.navigationItem.backBarButtonItem = nil
+        self.navigationItem.leftBarButtonItem = nil
+        #else
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItem.Style.plain, target: nil, action: nil)
+        #endif
         self.tableView.tableFooterView = UIView(frame: CGRect.zero)
 
         if #available(iOS 13.0, *) {
@@ -75,7 +81,12 @@ class SettingsTableViewController : UITableViewController {
     }
     
     @IBAction func nightTimeInfoTapped(_ sender: Any) {
+        #if targetEnvironment(macCatalyst)
+        let alert = UIAlertController(title: "This option has moved", message: "macOS now has dark mode built in. Please visit System Preferences>General to enable or disable it.", preferredStyle: .alert)
+        #else
         let alert = UIAlertController(title: "This option has moved", message: "iOS 13 now has dark mode built in. Either visit Settings or Control Center to enable or disable it.", preferredStyle: .alert)
+        #endif
+
         let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
 
         alert.addAction(action)

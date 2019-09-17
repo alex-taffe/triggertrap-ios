@@ -131,8 +131,13 @@ class SplitLayoutViewController: CenterViewController {
         
         self.separatorView?.backgroundColor = UIColor.triggertrap_accentColor(1.0)
 
+
+        #if targetEnvironment(macCatalyst)
+        self.rightButton = nil
+        #else
         self.rightButton?.setBackgroundImage(#imageLiteral(resourceName: "OptionsIcon"), for: .normal)
         self.rightButton?.tintColor = UIColor.triggertrap_iconColor()
+        #endif
         
         self.viewControllerTheme = AppTheme()
     }

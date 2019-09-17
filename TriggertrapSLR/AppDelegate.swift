@@ -12,7 +12,7 @@ import CoreSpotlight
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
+
     var window: UIWindow?
     
     fileprivate func generateStringsFromPlists() { 
@@ -58,6 +58,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = UIColor.triggertrap_fillColor(1.0)
 
         DongleObserver.sharedInstance.dongleConnectedToPhone()
+
+
         
         return true
     }
@@ -68,6 +70,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.
+        if options.userActivities.first?.activityType == "com.triggertrap.Triggertrap.openPreferences" {
+            // Load our new window configuration
+            return UISceneConfiguration(name: "Preferences Configuration", sessionRole: connectingSceneSession.role)
+        }
+
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
 
@@ -180,6 +187,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         viewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
         vc.present(viewController, animated: true, completion: nil)
+    }
+
+    // MARK: Mac Menubar
+    override func buildMenu(with builder: UIMenuBuilder) {
+        // Ensure that the builder is modifying the menu bar system.
+        guard builder.system == UIMenuSystem.main else { return }
+
+        let preferences = UIKeyCommand(title: "Preferences...",
+                                       action: #selector(showPreferences),
+                                       input: ",",
+                                       modifierFlags: .command)
+
+        // Use the .displayInline option to avoid displaying the menu as a submenu,
+        // and to separate it from the other menu elements using a line separator.
+        let newMenu = UIMenu(title: "", options: .displayInline, children: [preferences])
+
+        // Insert menu item at the top of the File menu.
+        builder.insertSibling(newMenu, afterMenu: .about)
+    }
+
+    @objc func showPreferences(){
+        let userActivity = NSUserActivity(activityType: "com.triggertrap.Triggertrap.openPreferences")
+
+        UIApplication.shared.requestSceneSessionActivation(nil, userActivity: userActivity, options: nil) { (e) in
+          // If we happen to have an error
+          print("error", e)
+        }
     }
 
 }

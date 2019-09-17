@@ -389,6 +389,7 @@
 		FA6E879D232452E6009590DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EE1F1B51B1C9FE800FE6EB7 /* Images.xcassets */; };
 		FAB3553F20BF011E003CCF66 /* MPGNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB3553E20BF011E003CCF66 /* MPGNotification.m */; };
 		FAB6639020B4D1AD003C256E /* OptionsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB6638F20B4D1AD003C256E /* OptionsNavigationController.swift */; };
+		FAE62D4E23311DDC002AC8E6 /* PreferencesSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE62D4C23311DD5002AC8E6 /* PreferencesSceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -822,6 +823,7 @@
 		FAB3553D20BF011E003CCF66 /* MPGNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPGNotification.h; sourceTree = "<group>"; };
 		FAB3553E20BF011E003CCF66 /* MPGNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPGNotification.m; sourceTree = "<group>"; };
 		FAB6638F20B4D1AD003C256E /* OptionsNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsNavigationController.swift; sourceTree = "<group>"; };
+		FAE62D4C23311DD5002AC8E6 /* PreferencesSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesSceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -886,6 +888,7 @@
 				BDD44D491BB163B200B98FF6 /* SLRConstants.swift */,
 				9EE1F1AB1B1C9FE800FE6EB7 /* AppDelegate.swift */,
 				FA40EF362326AF9B009AE6B7 /* SceneDelegate.swift */,
+				FAE62D4C23311DD5002AC8E6 /* PreferencesSceneDelegate.swift */,
 				BDD44D0B1BB15D9B00B98FF6 /* Model */,
 				BDD44D0C1BB15DA100B98FF6 /* View */,
 				BDD44D0D1BB15DA500B98FF6 /* Controller */,
@@ -2240,6 +2243,7 @@
 				FA06C6322324369A002C4A11 /* NSString+TimeFormatting.m in Sources */,
 				FA06C6332324369A002C4A11 /* CircleTimer.swift in Sources */,
 				FA06C6342324369A002C4A11 /* SunriseAndSunset.m in Sources */,
+				FAE62D4E23311DDC002AC8E6 /* PreferencesSceneDelegate.swift in Sources */,
 				FA06C6352324369A002C4A11 /* KitSelectorViewController.swift in Sources */,
 				FA06C6362324369A002C4A11 /* RemoteClient.swift in Sources */,
 				FA06C6372324369A002C4A11 /* NeutralDensityCalculatorNavigationController.swift in Sources */,

@@ -92,6 +92,7 @@ class LeftPanelViewController: UITableViewController {
             self.tableView.backgroundColor = UIColor.triggertrap_backgroundColor(1.0)
             self.navigationController?.navigationBar.barTintColor = UIColor.triggertrap_primaryColor(1.0)
         }
+        
     }
 }
 
@@ -178,6 +179,7 @@ extension LeftPanelViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let cell = tableView.cellForRow(at: indexPath) as! ModeTableViewCell
+        cell.backgroundColor = .systemGray5
         
         guard let identifier = cell.identifier else {
             return
@@ -196,5 +198,16 @@ extension LeftPanelViewController {
             NotificationCenter.default.post(name: Notification.Name(rawValue: "SidebarDidSelectCellWithIdentifier"), object:identifier)
         }
          
+    }
+
+    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath) as! ModeTableViewCell
+        cell.backgroundColor = UIColor { (traitCollection: UITraitCollection) -> UIColor in
+            if traitCollection.userInterfaceStyle == .light {
+                return .white
+            } else {
+                return .black
+            }
+        }
     }
 }

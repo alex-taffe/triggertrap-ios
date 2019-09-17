@@ -127,9 +127,15 @@ class TTViewController: SplitLayoutViewController, DispatchableLifecycle, Sequen
             self.feedbackViewController.performThemeUpdate()
         }
     
-        
+
+
+        #if targetEnvironment(macCatalyst)
+        self.rightButton = nil
+        #else
         self.rightButton?.setBackgroundImage(#imageLiteral(resourceName: "OptionsIcon"), for: .normal)
         self.rightButton?.tintColor = UIColor.triggertrap_iconColor()
+        #endif
+
         
         self.bulbButton?.setImage(ImageWithColor(UIImage(named: "BulbIcon")!, color: UIColor.triggertrap_primaryColor()), for: UIControl.State())
         self.bulbButton?.imageView?.contentMode = .scaleAspectFit

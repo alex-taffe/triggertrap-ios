@@ -27,7 +27,10 @@ import UIKit
         
         if displayOptionsButton {
             // Set the right bar button item.
-            
+
+            #if targetEnvironment(macCatalyst)
+            self.rightButton = nil
+            #else
             rightButton = UIButton(frame: CGRect(x: 0, y: 0, width: 22, height: 22))
             rightButton?.addTarget(self.navigationController, action: Selector(("optionsButtonTapped:")), for: UIControl.Event.touchDown)
             rightButton?.setBackgroundImage(#imageLiteral(resourceName: "OptionsIcon"), for: .normal)
@@ -35,6 +38,9 @@ import UIKit
             let rightBarButton = UIBarButtonItem(customView: rightButton!)
             rightBarButton.style = UIBarButtonItem.Style.plain
             self.navigationItem.rightBarButtonItem = rightBarButton
+            #endif
+            
+
         }
     }
 }
