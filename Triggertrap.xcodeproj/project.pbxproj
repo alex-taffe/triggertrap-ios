@@ -390,6 +390,7 @@
 		FAB3553F20BF011E003CCF66 /* MPGNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB3553E20BF011E003CCF66 /* MPGNotification.m */; };
 		FAB6639020B4D1AD003C256E /* OptionsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB6638F20B4D1AD003C256E /* OptionsNavigationController.swift */; };
 		FAE62D4E23311DDC002AC8E6 /* PreferencesSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE62D4C23311DD5002AC8E6 /* PreferencesSceneDelegate.swift */; };
+		FAE62D512331380F002AC8E6 /* TutorialSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE62D4F2331378A002AC8E6 /* TutorialSceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -824,6 +825,7 @@
 		FAB3553E20BF011E003CCF66 /* MPGNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPGNotification.m; sourceTree = "<group>"; };
 		FAB6638F20B4D1AD003C256E /* OptionsNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsNavigationController.swift; sourceTree = "<group>"; };
 		FAE62D4C23311DD5002AC8E6 /* PreferencesSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesSceneDelegate.swift; sourceTree = "<group>"; };
+		FAE62D4F2331378A002AC8E6 /* TutorialSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialSceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -889,6 +891,7 @@
 				9EE1F1AB1B1C9FE800FE6EB7 /* AppDelegate.swift */,
 				FA40EF362326AF9B009AE6B7 /* SceneDelegate.swift */,
 				FAE62D4C23311DD5002AC8E6 /* PreferencesSceneDelegate.swift */,
+				FAE62D4F2331378A002AC8E6 /* TutorialSceneDelegate.swift */,
 				BDD44D0B1BB15D9B00B98FF6 /* Model */,
 				BDD44D0C1BB15DA100B98FF6 /* View */,
 				BDD44D0D1BB15DA500B98FF6 /* Controller */,
@@ -2214,6 +2217,7 @@
 				FA06C6162324369A002C4A11 /* OnboardingNavigationViewController.swift in Sources */,
 				FA06C6172324369A002C4A11 /* SoundSensorViewController.swift in Sources */,
 				FA40EF382326AFA6009AE6B7 /* SceneDelegate.swift in Sources */,
+				FAE62D512331380F002AC8E6 /* TutorialSceneDelegate.swift in Sources */,
 				FA06C6182324369A002C4A11 /* ManualFocusToTestTriggerTransition.swift in Sources */,
 				FA06C6192324369A002C4A11 /* TimelapseViewController.swift in Sources */,
 				FA06C61A2324369A002C4A11 /* Intervalometer.swift in Sources */,

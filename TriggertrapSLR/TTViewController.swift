@@ -58,6 +58,8 @@ class TTViewController: SplitLayoutViewController, DispatchableLifecycle, Sequen
         
         NotificationCenter.default.removeObserver(self)
         NotificationCenter.default.addObserver(self, selector: #selector(TTViewController.enableShutterButton), name: NSNotification.Name(rawValue: FeedbackViewHideAnimationCompleted), object: nil)
+
+        NotificationCenter.default.addObserver(self, selector: #selector(TTViewController.showTutorial), name: NSNotification.Name(rawValue: ShowTutorial), object: nil)
         
         NotificationCenter.default.addObserver(self, selector: #selector(TTViewController.activeViewControllerLostFocus), name: NSNotification.Name(rawValue: "ActiveViewControllerLostFocus"), object: nil)
         
@@ -146,6 +148,14 @@ class TTViewController: SplitLayoutViewController, DispatchableLifecycle, Sequen
     // Enable shutter button when another mode finishes
     @objc func enableShutterButton() {
         shutterButtonEnabled(true)
+    }
+
+    @objc func showTutorial() {
+        let delayTime = DispatchTime.now() + Double(Int64(0.5 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
+
+        DispatchQueue.main.asyncAfter(deadline: delayTime) {
+            self.appDelegate.presentTutorial(self)
+        }
     }
     
     // When Menu or Options is shown the active view controller gets notified that it has lost focus. Quick Release and Press and Hold use this method to stop the mode in case user is holding the button and trying to open the menu/options.

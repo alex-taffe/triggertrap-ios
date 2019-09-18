@@ -81,3 +81,7 @@ let ConstUserActivityKeywords = ["camera", "photo", "shot", "picture", "trigger"
 // MARK: - ND Calculator
 
 let ConstMinDuration = 150.0
+
+// MARK: - Tutorial
+
+let ShowTutorial = "ShowTutorial"

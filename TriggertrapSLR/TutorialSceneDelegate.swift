@@ -1,5 +1,5 @@
 //
-//  PreferencesSceneDelegate.swift
+//  TutorialSceneDelegate.swift
 //  TriggertrapSLR
 //
 //  Created by Alex Taffe on 9/17/19.
@@ -9,7 +9,7 @@
 import UIKit
 
 @available(iOS 13.0, *)
-class PreferencesSceneDelegate: UIResponder, UIWindowSceneDelegate {
+class TutorialSceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
@@ -22,16 +22,38 @@ class PreferencesSceneDelegate: UIResponder, UIWindowSceneDelegate {
             return
         }
 
-        
+        let onboardingStoryboard = UIStoryboard(name: constStoryboardIdentifierOnboarding, bundle: Bundle.main)
 
-        let storyboard = UIStoryboard(name: "Options", bundle: nil)
-        let settingsController = storyboard.instantiateViewController(withIdentifier: "settingsController")
+        var viewControllerIdentifier: String?
+
+        if (UserDefaults.standard.object(forKey: constSplashScreenIdentifier) != nil) {
+            viewControllerIdentifier = constMobileKitIdentifier
+        } else {
+            viewControllerIdentifier = constSplashScreenIdentifier
+            UserDefaults.standard.set(true, forKey: constSplashScreenIdentifier)
+            UserDefaults.standard.synchronize()
+        }
+
+        // Make sure that the identifier is not nil (in case it gets changed by mistake)
+        if let viewControllerIdentifier = viewControllerIdentifier {
+
+            let viewController = onboardingStoryboard.instantiateViewController(withIdentifier: viewControllerIdentifier)
+            let navController = onboardingStoryboard.instantiateInitialViewController() as! UINavigationController
+
+            navController.viewControllers = [viewController]
+
+//            navController.modalPresentationStyle = UIModalPresentationStyle.formSheet
+//
+//            let detailNavigationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "detailNavController") as! DetailNavigationController
+//            detailNavigationController.pushViewController(settingsController, animated: false)
+
+            window?.rootViewController = navController
+        } else {
+            print("Warning: View Controller Identifier is nil. Cannot show onboarding")
+        }
 
 
-        let detailNavigationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "detailNavController") as! DetailNavigationController
-        detailNavigationController.pushViewController(settingsController, animated: false)
 
-        window?.rootViewController = detailNavigationController
 
         //settingsController.navigationItem.backBarButtonItem = nil
 
@@ -79,4 +101,5 @@ class PreferencesSceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
 }
+
 

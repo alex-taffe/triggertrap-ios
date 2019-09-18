@@ -73,6 +73,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if options.userActivities.first?.activityType == "com.triggertrap.Triggertrap.openPreferences" {
             // Load our new window configuration
             return UISceneConfiguration(name: "Preferences Configuration", sessionRole: connectingSceneSession.role)
+        } else if options.userActivities.first?.activityType == "com.triggertrap.Triggertrap.openTutorial" {
+            // Load our new window configuration
+            return UISceneConfiguration(name: "Tutorial Configuration", sessionRole: connectingSceneSession.role)
         }
 
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
@@ -199,16 +202,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                        input: ",",
                                        modifierFlags: .command)
 
-        // Use the .displayInline option to avoid displaying the menu as a submenu,
-        // and to separate it from the other menu elements using a line separator.
-        let newMenu = UIMenu(title: "", options: .displayInline, children: [preferences])
 
-        // Insert menu item at the top of the File menu.
-        builder.insertSibling(newMenu, afterMenu: .about)
+        let preferencesMenu = UIMenu(title: "", options: .displayInline, children: [preferences])
+
+        let help = UICommand(title: "Triggertrap Help", action: #selector(showHelp))
+        let helpMenu = UIMenu(title: "", options: .displayInline, children: [help])
+
+        builder.insertSibling(preferencesMenu, afterMenu: .about)
+        builder.replaceChildren(ofMenu: .help) { (menu) -> [UIMenuElement] in
+            return [helpMenu]
+        }
+
+        builder.remove(menu: .format)
+        builder.remove(menu: .newScene)
+
     }
 
     @objc func showPreferences(){
         let userActivity = NSUserActivity(activityType: "com.triggertrap.Triggertrap.openPreferences")
+
+        UIApplication.shared.requestSceneSessionActivation(nil, userActivity: userActivity, options: nil) { (e) in
+          // If we happen to have an error
+          print("error", e)
+        }
+    }
+
+    @objc func showHelp(){
+        let userActivity = NSUserActivity(activityType: "com.triggertrap.Triggertrap.openTutorial")
 
         UIApplication.shared.requestSceneSessionActivation(nil, userActivity: userActivity, options: nil) { (e) in
           // If we happen to have an error
