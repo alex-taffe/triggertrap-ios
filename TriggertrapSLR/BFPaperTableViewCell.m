@@ -105,7 +105,11 @@ static CGFloat const bfPaperCell_fadeConstant                    = 0.15f;
     self.backgroundColorFadeLayer.backgroundColor = self.backgroundFadeColor.CGColor;
     [self.contentView.layer insertSublayer:self.backgroundColorFadeLayer atIndex:0];
     
-    self.activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleMedium];
+    if (@available(iOS 13.0, *)) {
+        self.activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleMedium];
+    } else {
+        self.activityIndicator =  [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    }
     self.activityIndicator.color = [UIColor TTRedColour];
     self.activityIndicator.hidesWhenStopped = YES;
     

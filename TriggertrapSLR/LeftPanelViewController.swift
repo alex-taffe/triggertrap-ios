@@ -179,7 +179,11 @@ extension LeftPanelViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let cell = tableView.cellForRow(at: indexPath) as! ModeTableViewCell
-        cell.backgroundColor = .systemGray5
+        if #available(iOS 13.0, *) {
+            cell.backgroundColor = .systemGray5
+        } else {
+            cell.backgroundColor = UIColor(red: 229 / 255, green: 229 / 255, blue: 234 / 255, alpha: 1)
+        }
         
         guard let identifier = cell.identifier else {
             return
@@ -202,12 +206,16 @@ extension LeftPanelViewController {
 
     override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath) as! ModeTableViewCell
-        cell.backgroundColor = UIColor { (traitCollection: UITraitCollection) -> UIColor in
-            if traitCollection.userInterfaceStyle == .light {
-                return .white
-            } else {
-                return .black
+        if #available(iOS 13.0, *) {
+            cell.backgroundColor = UIColor { (traitCollection: UITraitCollection) -> UIColor in
+                if traitCollection.userInterfaceStyle == .light {
+                    return .white
+                } else {
+                    return .black
+                }
             }
+        } else {
+            cell.backgroundColor = .white
         }
     }
 }

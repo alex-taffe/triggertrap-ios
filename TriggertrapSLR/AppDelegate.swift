@@ -192,6 +192,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         vc.present(viewController, animated: true, completion: nil)
     }
 
+    #if targetEnvironment(macCatalyst)
     // MARK: Mac Menubar
     override func buildMenu(with builder: UIMenuBuilder) {
         // Ensure that the builder is modifying the menu bar system.
@@ -218,6 +219,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     }
 
+    @available(iOS 13.0, *)
     @objc func showPreferences(){
         let userActivity = NSUserActivity(activityType: "com.triggertrap.Triggertrap.openPreferences")
 
@@ -227,6 +229,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
+    @available(iOS 13.0, *)
     @objc func showHelp(){
         let userActivity = NSUserActivity(activityType: "com.triggertrap.Triggertrap.openTutorial")
 
@@ -235,6 +238,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
           print("error", e)
         }
     }
+
+    #endif
 
 }
 
