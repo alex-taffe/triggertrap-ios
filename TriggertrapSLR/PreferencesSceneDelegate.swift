@@ -22,8 +22,6 @@ class PreferencesSceneDelegate: UIResponder, UIWindowSceneDelegate {
             return
         }
 
-        
-
         let storyboard = UIStoryboard(name: "Options", bundle: nil)
         let settingsController = storyboard.instantiateViewController(withIdentifier: "settingsController")
 
@@ -32,8 +30,6 @@ class PreferencesSceneDelegate: UIResponder, UIWindowSceneDelegate {
         detailNavigationController.pushViewController(settingsController, animated: false)
 
         window?.rootViewController = detailNavigationController
-
-        //settingsController.navigationItem.backBarButtonItem = nil
 
         #if targetEnvironment(macCatalyst)
             if let windowScene = scene as? UIWindowScene {

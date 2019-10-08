@@ -45,4 +45,27 @@ class OnboardingNavigationViewController: UINavigationController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
+
+    override var keyCommands: [UIKeyCommand]? {
+        return [
+            UIKeyCommand(input: UIKeyCommand.inputRightArrow, modifierFlags: [], action: #selector(rightKeyPressed)),
+            UIKeyCommand(input: UIKeyCommand.inputLeftArrow, modifierFlags: [], action: #selector(leftKeyPressed))
+        ]
+    }
+
+    @objc func rightKeyPressed() {
+        guard let delegate = self.delegate as? NavigationControllerDelegate else {
+            print("Could not cast to navigation controller delegate")
+            return
+        }
+        delegate.rightKeyPressed()
+    }
+
+    @objc func leftKeyPressed() {
+        guard let delegate = self.delegate as? NavigationControllerDelegate else {
+            print("Could not cast to navigation controller delegate")
+            return
+        }
+        delegate.leftKeyPressed()
+    }
 }

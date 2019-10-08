@@ -838,7 +838,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Camera - Large" translatesAutoresizingMaskIntoConstraints="NO" id="JUv-hI-WYA">
-                                <rect key="frame" x="-202.5" y="215" width="320.00000000000006" height="238"/>
+                                <rect key="frame" x="-202.5" y="215" width="320" height="238"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="238" id="82s-px-aR0"/>
                                     <constraint firstAttribute="width" constant="320" id="TGt-Ai-YBc"/>
@@ -1292,7 +1292,7 @@
                                 <rect key="frame" x="219" y="43" width="163" height="363"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Popout Shape - Body" translatesAutoresizingMaskIntoConstraints="NO" id="6f2-vH-JEz">
-                                        <rect key="frame" x="89" y="150" width="72" height="213"/>
+                                        <rect key="frame" x="53" y="-63" width="144" height="426"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Popout Shape - Circle" translatesAutoresizingMaskIntoConstraints="NO" id="toZ-1N-EbM">
                                         <rect key="frame" x="0.0" y="0.0" width="163" height="163"/>
@@ -1670,7 +1670,7 @@
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Camera - Large" translatesAutoresizingMaskIntoConstraints="NO" id="c8S-re-1tI">
-                                <rect key="frame" x="-224" y="645.5" width="320.00000000000006" height="238"/>
+                                <rect key="frame" x="-224" y="645.5" width="320" height="238"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="238" id="T4s-3g-ZyW"/>
                                     <constraint firstAttribute="width" constant="320" id="wd3-qi-jxq"/>

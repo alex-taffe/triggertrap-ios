@@ -42,11 +42,6 @@ class TutorialSceneDelegate: UIResponder, UIWindowSceneDelegate {
 
             navController.viewControllers = [viewController]
 
-//            navController.modalPresentationStyle = UIModalPresentationStyle.formSheet
-//
-//            let detailNavigationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "detailNavController") as! DetailNavigationController
-//            detailNavigationController.pushViewController(settingsController, animated: false)
-
             window?.rootViewController = navController
         } else {
             print("Warning: View Controller Identifier is nil. Cannot show onboarding")

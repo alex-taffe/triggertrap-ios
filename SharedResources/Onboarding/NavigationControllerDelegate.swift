@@ -16,11 +16,43 @@ class NavigationControllerDelegate: NSObject, UINavigationControllerDelegate {
     var initialDirectionIsRight = false
     
     var interactionDisabled: Bool = false
+
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(NavigationControllerDelegate.panned(_:)))
         self.navigationController!.view.addGestureRecognizer(panGesture)
+    }
+
+    
+
+    @objc func rightKeyPressed() {
+        if self.navigationController?.topViewController!.isKind(of: TestTriggertViewController.self) != true {
+            self.interactionController = UIPercentDrivenInteractiveTransition()
+            self.navigationController?.topViewController!.performSegue(withIdentifier: "PushSegue", sender: nil)
+        }
+        if let interactionController = self.interactionController {
+            interactionController.finish()
+            interactionDisabled = true
+
+            self.interactionController = nil
+        }
+    }
+
+    @objc func leftKeyPressed() {
+        if self.navigationController?.topViewController!.isKind(of: KitSelectorViewController.self) != true && self.navigationController?.topViewController!.isKind(of: CameraSelectorViewController.self) != true && self.navigationController?.topViewController!.isKind(of: SplashViewController.self) != true {
+            
+            self.interactionController = UIPercentDrivenInteractiveTransition()
+            self.navigationController?.popViewController(animated: true)
+        }
+
+        if let interactionController = self.interactionController {
+            interactionController.finish()
+            interactionDisabled = true
+
+            self.interactionController = nil
+        }
     }
   
     @IBAction func panned(_ gestureRecognizer: UIPanGestureRecognizer) {
