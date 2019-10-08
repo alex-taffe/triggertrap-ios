@@ -14,6 +14,12 @@
 //#import "ActivityBar.h"
 //#import "TTViewController.h"
 
+@interface TTNumberInput()
+
+//@property (atomic, weak) id<UITextInputDelegate> textInputDelegate;
+//@property (atomic, strong) UITextRange *localSelectedTextRange;
+@end
+
 @implementation TTNumberInput
 
 @synthesize maxNumberLength;
@@ -66,9 +72,20 @@
     [self setup];
     
     [self addSubview:self.displayView];
+
+
+
+    /*UITextInteraction *selectionInteraction = [UITextInteraction textInteractionForMode:UITextInteractionModeEditable];
+    selectionInteraction.textInput = self;
+
+    [self addInteraction:selectionInteraction];*/
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(viewWillRotate) name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
+
+
 }
+
+
 
 - (void)viewWillRotate {
     
@@ -87,8 +104,8 @@
 //    if ([[TTActivityManager sharedInstance] runningActivity]) {
 //        [ActivityBar dismiss];
 //    }
-    
     [self openKeyboardInView:view covering:covered animate:YES];
+
 }
 
 - (void)openKeyboardInView:(UIView *)view covering:(UIView *)covered animate:(BOOL)animate {
@@ -102,12 +119,21 @@
     
     superView = view;
     coveredView = covered;
-    
+
+    [self becomeFirstResponder];
+
+    #if TARGET_OS_MACCATALYST
+    [self showOverlay];
+
+    #else
     if (self.keyboardCanBeDismissed) {
         [self showOverlay];
     }
-    
+
     [self showKeyboardWithAnimation:animate];
+    #endif
+    
+
 }
 
 - (void)normalise {
@@ -157,9 +183,11 @@
 }
 
 - (void)hideKeyboardWithAnimation:(BOOL)animate {
+    #if !TARGET_OS_MACCATALYST
     if (!_keyboardOpen) {
         return;
     }
+    #endif
     
     _keyboardOpen = NO;
     self.keyboardJustOpened = NO;
@@ -188,7 +216,8 @@
             [self setValue:self.initialValue];
         }
     }
-    
+
+
     if (animate) {
         CGRect rect = CGRectMake(coveredView.frame.origin.x,
                                  coveredView.frame.origin.y + coveredView.frame.size.height,
@@ -214,6 +243,8 @@
         numberPadView = nil;
         [self setNeedsDisplay];
     }
+
+    [self resignFirstResponder];
     
     // This will only show the activity bar if there is an activity
 //    if ([[TTActivityManager sharedInstance] runningActivity]) {
@@ -479,4 +510,172 @@
     }
 }
 
+#pragma mark - UIKeyInput
+
+- (void)insertText:(NSString *)text{
+    if([text isEqualToString:@"\t"] || [text isEqualToString:@"\n"]){
+        [self dismissKeypad];
+        return;
+    }
+
+    NSScanner* scan = [NSScanner scannerWithString:text];
+    int val;
+    [scan scanInt:&val];
+    if(![scan isAtEnd])
+        return;
+
+    [self digitPressed:val];
+}
+- (void)deleteBackward {
+    [self deletePressed];
+}
+- (BOOL)hasText {
+    return true;
+}
+
+- (BOOL)canBecomeFirstResponder {
+    return true;
+}
+
+#pragma mark - UITextInput
+/*
+This isn't strictly necessary, but would be nice at some point in the future for both mac and accessibility, just very time consuming to implement
+
+
+- (void)setSelectedTextRange:(UITextRange *)selectedTextRange {
+    //TODO: Implement
+    self.localSelectedTextRange = selectedTextRange;
+}
+
+- (NSString *)textInRange:(UITextRange *)range {
+    //TODO: Implement
+    range.start
+    return self.displayView.text;
+}
+
+- (void)replaceRange:(UITextRange *)range withText:(NSString *)text {
+    //TODO: Implement
+}
+
+- (UITextRange *)selectedTextRange {
+    //TODO: Implement
+    return self.localSelectedTextRange;
+}
+
+- (UITextRange *)markedTextRange {
+    //TODO: Implement
+    return [[UITextRange alloc] init];
+}
+
+- (NSDictionary<NSAttributedStringKey,id> *)markedTextStyle {
+    //TODO: Implement
+    return [[NSDictionary alloc] init];
+}
+
+- (void)setMarkedText:(NSString *)markedText selectedRange:(NSRange)selectedRange {
+    //TODO: Implement
+}
+
+- (void)unmarkText {
+    //TODO: Implement
+}
+
+- (UITextRange *)textRangeFromPosition:(UITextPosition *)fromPosition toPosition:(UITextPosition *)toPosition {
+    //TODO: Implement
+    return [[UITextRange alloc] init];
+}
+
+- (UITextPosition *)positionFromPosition:(UITextPosition *)position offset:(NSInteger)offset {
+    //TODO: Implement
+    return [[UITextPosition alloc] init];
+}
+
+- (UITextPosition *)positionFromPosition:(UITextPosition *)position inDirection:(UITextLayoutDirection)direction offset:(NSInteger)offset {
+    //TODO: Implement
+    return [[UITextPosition alloc] init];
+}
+
+- (UITextPosition *)beginningOfDocument {
+    //TODO: Implement
+    return [[UITextPosition alloc] init];
+}
+
+- (UITextPosition *)endOfDocument {
+    //TODO: Implement
+    return [[UITextPosition alloc] init];
+}
+
+- (NSComparisonResult)comparePosition:(UITextPosition *)position toPosition:(UITextPosition *)other {
+    //TODO: Implement
+    return NSOrderedAscending;
+}
+
+- (NSInteger)offsetFromPosition:(UITextPosition *)from toPosition:(UITextPosition *)toPosition {
+    //TODO: Implement
+    return 0;
+}
+
+- (UITextPosition *)positionWithinRange:(UITextRange *)range farthestInDirection:(UITextLayoutDirection)direction {
+    //TODO: Implement
+    return [[UITextPosition alloc] init];
+}
+
+- (UITextRange *)characterRangeByExtendingPosition:(UITextPosition *)position inDirection:(UITextLayoutDirection)direction {
+    //TODO: Implement
+    return [[UITextRange alloc] init];
+}
+
+- (NSWritingDirection)baseWritingDirectionForPosition:(UITextPosition *)position inDirection:(UITextStorageDirection)direction {
+    //TODO: Implement
+    return NSWritingDirectionLeftToRight;
+}
+
+- (void)setBaseWritingDirection:(NSWritingDirection)writingDirection forRange:(UITextRange *)range {
+    //TODO: Implement
+}
+
+- (CGRect)firstRectForRange:(UITextRange *)range {
+    //TODO: Implement
+    return CGRectMake(0, 0, 10, 10);
+}
+
+- (CGRect)caretRectForPosition:(UITextPosition *)position {
+    //TODO: Implement
+    return CGRectMake(0, 0, 10, 10);
+}
+
+- (UITextPosition *)closestPositionToPoint:(CGPoint)point {
+    //TODO: Implement
+    return [[UITextPosition alloc] init];
+}
+
+- (NSArray<UITextSelectionRect *> *)selectionRectsForRange:(UITextRange *)range {
+    //TODO: Implement
+    return [[NSArray alloc] init];
+}
+
+- (UITextPosition *)closestPositionToPoint:(CGPoint)point withinRange:(nonnull UITextRange *)range {
+    //TODO: Implement
+    return [[UITextPosition alloc] init];
+}
+
+- (UITextRange *)characterRangeAtPoint:(CGPoint)point {
+    //TODO: Implement
+    return [[UITextRange alloc] init];
+}
+
+- (id<UITextInputDelegate>)inputDelegate {
+    //TODO: Implement
+    return self.textInputDelegate;
+}
+
+- (id<UITextInputTokenizer>)tokenizer {
+    //TODO: Implement
+    return nil;
+}
+
+- (void)setInputDelegate:(id<UITextInputDelegate>)inputDelegate{
+    self.textInputDelegate = inputDelegate;
+}
+*/
 @end

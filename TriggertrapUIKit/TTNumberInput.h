@@ -26,7 +26,7 @@
 - (void)editingChanged;
 @end
 
-@interface TTNumberInput : UIControl <TTNumberPadViewDelegate> {
+@interface TTNumberInput : UIControl <TTNumberPadViewDelegate, UIKeyInput> {
     UIView *overlayView;
     UIView *coveredView;
     UIView *superView;
