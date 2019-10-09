@@ -17,15 +17,83 @@ class NavigationControllerDelegate: NSObject, UINavigationControllerDelegate {
     
     var interactionDisabled: Bool = false
 
+    #if targetEnvironment(macCatalyst)
+    var rightButton:UIButton!
+    var leftButton:UIButton!
+    #endif
+
 
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        guard let navigationController = self.navigationController else {
+            return
+        }
+
+        #if targetEnvironment(macCatalyst)
+
+        let configuration = UIImage.SymbolConfiguration(pointSize: 50, weight: .light, scale: .large)
+        self.rightButton = UIButton(type: .system)
+        self.rightButton.setImage(UIImage(systemName: "chevron.right", withConfiguration: configuration), for: .normal)
+        self.rightButton.tintColor = .darkText
+        self.rightButton.sizeToFit()
+        self.rightButton.translatesAutoresizingMaskIntoConstraints = false
+        self.rightButton.addTarget(self, action: #selector(rightKeyPressed), for: .touchUpInside)
+
+        self.leftButton = UIButton(type: .system)
+        self.leftButton.setImage(UIImage(systemName: "chevron.left", withConfiguration: configuration), for: .normal)
+        self.leftButton.tintColor = .darkText
+        self.leftButton.sizeToFit()
+        self.leftButton.translatesAutoresizingMaskIntoConstraints = false
+        self.leftButton.addTarget(self, action: #selector(leftKeyPressed), for: .touchUpInside)
+
+        navigationController.view.addSubview(self.rightButton)
+        navigationController.view.addSubview(self.leftButton)
+
+        //right button constraints
+        navigationController.view.addConstraints([
+
+            NSLayoutConstraint(item: self.rightButton!, attribute: .centerY, relatedBy: .equal, toItem: navigationController.view, attribute: .centerY, multiplier: 1, constant: -100),
+            NSLayoutConstraint(item: self.rightButton!, attribute: .trailing, relatedBy: .equal, toItem: navigationController.view, attribute: .trailing, multiplier: 1, constant: 0),
+             NSLayoutConstraint(item: self.rightButton!, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 100),
+             NSLayoutConstraint(item: self.rightButton!, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 100)
+
+        ])
+
+        //left button constraints
+        navigationController.view.addConstraints([
+
+            NSLayoutConstraint(item: self.leftButton!, attribute: .centerY, relatedBy: .equal, toItem: navigationController.view, attribute: .centerY, multiplier: 1, constant: -100),
+            NSLayoutConstraint(item: self.leftButton!, attribute: .leading, relatedBy: .equal, toItem: navigationController.view, attribute: .leading, multiplier: 1, constant: 0),
+             NSLayoutConstraint(item: self.leftButton!, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 100),
+             NSLayoutConstraint(item: self.leftButton!, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 100)
+
+        ])
+
+        self.leftButton.isHidden = true
+        self.leftButton.alpha = 0
+        #else
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(NavigationControllerDelegate.panned(_:)))
-        self.navigationController!.view.addGestureRecognizer(panGesture)
+        navigationController.view.addGestureRecognizer(panGesture)
+        #endif
     }
 
-    
+    func animateButton(button: UIButton, show: Bool) {
+        DispatchQueue.main.async {
+            if show {
+                button.isHidden = false
+                UIView.animate(withDuration: 0.4, animations: {
+                    button.alpha = 1
+                })
+            } else {
+                UIView.animate(withDuration: 0.4, animations: {
+                    button.alpha = 0
+                }) { (completed) in
+                    button.isHidden = true
+                }
+            }
+        }
+    }
 
     @objc func rightKeyPressed() {
         if self.navigationController?.topViewController!.isKind(of: TestTriggertViewController.self) != true {
@@ -38,6 +106,11 @@ class NavigationControllerDelegate: NSObject, UINavigationControllerDelegate {
 
             self.interactionController = nil
         }
+
+        #if targetEnvironment(macCatalyst)
+        self.animateButton(button: self.leftButton, show: !(self.navigationController?.topViewController!.isKind(of: KitSelectorViewController.self))!)
+        self.animateButton(button: self.rightButton, show: !(self.navigationController?.topViewController!.isKind(of: TestTriggertViewController.self))!)
+        #endif
     }
 
     @objc func leftKeyPressed() {
@@ -53,6 +126,11 @@ class NavigationControllerDelegate: NSObject, UINavigationControllerDelegate {
 
             self.interactionController = nil
         }
+        
+        #if targetEnvironment(macCatalyst)
+        self.animateButton(button: self.leftButton, show: !(self.navigationController?.topViewController!.isKind(of: KitSelectorViewController.self))!)
+        self.animateButton(button: self.rightButton, show: !(self.navigationController?.topViewController!.isKind(of: TestTriggertViewController.self))!)
+        #endif
     }
   
     @IBAction func panned(_ gestureRecognizer: UIPanGestureRecognizer) {
