@@ -49,8 +49,6 @@ class SideBarSplitViewController: UISplitViewController, UINavigationControllerD
 
             let navigationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "detailNavController") as! DetailNavigationController
             navigationController.setViewControllers([viewController], animated: false)
-            let menuButton = UIBarButtonItem(image: UIImage(named: "MenuIcon"), style: .plain, target: self, action: #selector(menuButtonTapped))
-            navigationController.navigationItem.leftBarButtonItem = menuButton
             
             self.showDetailViewController(navigationController, sender: nil)
             
@@ -65,8 +63,6 @@ class SideBarSplitViewController: UISplitViewController, UINavigationControllerD
             
             let navigationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "detailNavController") as! DetailNavigationController
             navigationController.setViewControllers([viewController], animated: false)
-            let menuButton = UIBarButtonItem(image: UIImage(named: "MenuIcon"), style: .plain, target: self, action: #selector(menuButtonTapped))
-            navigationController.navigationItem.leftBarButtonItem = menuButton
 
             self.showDetailViewController(navigationController, sender: nil)
         }
