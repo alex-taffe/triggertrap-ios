@@ -47,7 +47,11 @@ class DetailNavigationController: UINavigationController {
         let destinationController = storyboard.instantiateViewController(withIdentifier: "optionsController")
 
         // Present the options view controller in full screen
-        viewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+        if #available(iOS 13.0, *) {
+            viewController.modalPresentationStyle = .automatic
+        } else {
+            viewController.modalPresentationStyle = .fullScreen
+        }
         viewController.modalPresentationCapturesStatusBarAppearance = true
 
         destinationController.modalPresentationCapturesStatusBarAppearance = true
