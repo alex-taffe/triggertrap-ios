@@ -121,12 +121,6 @@ class SideBarSplitViewController: UISplitViewController, UINavigationControllerD
         
         let identifier = sender.object as! String
         
-        if identifier == visibleModeIdentifier {
-            // Return to the running mode
-            NotificationCenter.default.post(name: Notification.Name(rawValue: "DismissLeftPanel"), object:self)
-            return
-        }
-        
         self.navigationController?.popToRootViewController(animated: false)
         
         if let storyboardName = StoryboardNameForViewControllerIdentifier(identifier) {
@@ -148,8 +142,6 @@ class SideBarSplitViewController: UISplitViewController, UINavigationControllerD
 
             let navigationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "detailNavController") as! DetailNavigationController
             navigationController.setViewControllers([viewController], animated: false)
-            let menuButton = UIBarButtonItem(image: UIImage(named: "MenuIcon"), style: .plain, target: self, action: #selector(menuButtonTapped))
-            navigationController.navigationItem.leftBarButtonItem = menuButton
 
             self.showDetailViewController(navigationController, sender: nil)
 
@@ -159,25 +151,4 @@ class SideBarSplitViewController: UISplitViewController, UINavigationControllerD
     func userActivityWillSave(_ userActivity: NSUserActivity) {
         userActivity.addUserInfoEntries(from: ["mode": userActivity.title!])
     }
-
-    @objc func menuButtonTapped() {
-
-    //        // Inform the active view controller that it will loose focus - Quick Release and Press and Hold modes
-    //        NotificationCenter.default.post(name: Notification.Name(rawValue: "ActiveViewControllerLostFocus"), object: nil)
-    //
-    //        let storyboard = UIStoryboard(name: ConstStoryboardIdentifierOptions, bundle: Bundle.main)
-    //        let viewController = storyboard.instantiateInitialViewController()!
-    //
-    //        let destinationController = storyboard.instantiateViewController(withIdentifier: "optionsController")
-    //
-    //        // Present the options view controller in full screen
-    //        viewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
-    //        viewController.modalPresentationCapturesStatusBarAppearance = true
-    //
-    //        destinationController.modalPresentationCapturesStatusBarAppearance = true
-    //
-    //        self.present(viewController, animated: true, completion: nil)
-
-
-        }
 }
