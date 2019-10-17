@@ -58,26 +58,6 @@ class LeftPanelViewController: UITableViewController {
         self.navigationController?.navigationBar.barTintColor = UIColor.triggertrap_primaryColor(1.0)
     }
 
-
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews() 
-        
-        // Get superview if it exists
-        if let superview = self.view.superview {
-            
-            // Get the table view origin from the superview
-            let tableViewOrigin = superview.convert(self.tableView.frame.origin, from: self.view)
-            
-            // Get status bar size
-            let statusBarSize = UIApplication.shared.statusBarFrame.size
-            
-            // Change navigation bar height to the difference between table view origin and size of the status bar
-            if let navigationBarFrame = self.navigationController?.navigationBar.frame {
-                
-                self.navigationController?.navigationBar.frame = CGRect(x: navigationBarFrame.origin.x, y: navigationBarFrame.origin.y, width: navigationBarFrame.size.width, height: tableViewOrigin.y - statusBarSize.height)
-            }
-        }
-    }
     
     // MARK: - Notifications
     
