@@ -49,6 +49,8 @@ class SideBarSplitViewController: UISplitViewController, UINavigationControllerD
 
             let navigationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "detailNavController") as! DetailNavigationController
             navigationController.setViewControllers([viewController], animated: false)
+            navigationController.navigationItem.leftItemsSupplementBackButton = true
+            navigationController.navigationItem.leftBarButtonItem = self.displayModeButtonItem
             
             self.showDetailViewController(navigationController, sender: nil)
             
@@ -63,6 +65,8 @@ class SideBarSplitViewController: UISplitViewController, UINavigationControllerD
             
             let navigationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "detailNavController") as! DetailNavigationController
             navigationController.setViewControllers([viewController], animated: false)
+            navigationController.navigationItem.leftItemsSupplementBackButton = true
+            navigationController.navigationItem.leftBarButtonItem = self.displayModeButtonItem
 
             self.showDetailViewController(navigationController, sender: nil)
         }
@@ -142,6 +146,8 @@ class SideBarSplitViewController: UISplitViewController, UINavigationControllerD
 
             let navigationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "detailNavController") as! DetailNavigationController
             navigationController.setViewControllers([viewController], animated: false)
+            navigationController.navigationItem.leftItemsSupplementBackButton = true
+            navigationController.navigationItem.leftBarButtonItem = self.displayModeButtonItem
 
             self.showDetailViewController(navigationController, sender: nil)
 

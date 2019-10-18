@@ -35,14 +35,14 @@ class NavigationControllerDelegate: NSObject, UINavigationControllerDelegate {
         let configuration = UIImage.SymbolConfiguration(pointSize: 50, weight: .light, scale: .large)
         self.rightButton = UIButton(type: .system)
         self.rightButton.setImage(UIImage(systemName: "chevron.right", withConfiguration: configuration), for: .normal)
-        self.rightButton.tintColor = .darkText
+        self.rightButton.tintColor = .label
         self.rightButton.sizeToFit()
         self.rightButton.translatesAutoresizingMaskIntoConstraints = false
         self.rightButton.addTarget(self, action: #selector(rightKeyPressed), for: .touchUpInside)
 
         self.leftButton = UIButton(type: .system)
         self.leftButton.setImage(UIImage(systemName: "chevron.left", withConfiguration: configuration), for: .normal)
-        self.leftButton.tintColor = .darkText
+        self.leftButton.tintColor = .label
         self.leftButton.sizeToFit()
         self.leftButton.translatesAutoresizingMaskIntoConstraints = false
         self.leftButton.addTarget(self, action: #selector(leftKeyPressed), for: .touchUpInside)

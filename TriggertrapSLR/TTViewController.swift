@@ -128,8 +128,6 @@ class TTViewController: SplitLayoutViewController, DispatchableLifecycle, Sequen
         if let _ = feedbackViewController {
             self.feedbackViewController.performThemeUpdate()
         }
-    
-
 
         #if targetEnvironment(macCatalyst)
         self.rightButton = nil
@@ -279,7 +277,7 @@ class TTViewController: SplitLayoutViewController, DispatchableLifecycle, Sequen
             if shownVolumeAlert {
                 showVolumeNotification()
                 
-                // We've warned them one before
+                // We've warned them once before
                 // If they want to ignore us them let them go ahead
                 // (The camera won't trigger if the volume is too low)
                 return true

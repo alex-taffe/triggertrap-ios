@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fT2-Ge-Gp5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fT2-Ge-Gp5">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -151,7 +151,6 @@
                                             <constraint firstAttribute="height" constant="28" id="q7v-ks-OM5"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Metric-Light" family="Metric" pointSize="22"/>
-                                        <color key="textColor" red="0.14442044496536255" green="0.14441612362861633" blue="0.14441859722137451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're awesome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="AL3-h7-rM9">
@@ -160,7 +159,7 @@
                                             <constraint firstAttribute="height" constant="25" id="8Sb-qz-yCH"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Metric-Light" family="Metric" pointSize="20"/>
-                                        <color key="textColor" red="0.43873488903045654" green="0.43872174620628357" blue="0.43872916698455811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" translatesAutoresizingMaskIntoConstraints="NO" id="uva-10-LEp">
@@ -173,7 +172,7 @@
                                         <color key="currentPageIndicatorTintColor" red="0.8862745098" green="0.13725490200000001" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </pageControl>
                                 </subviews>
-                                <color key="backgroundColor" red="0.92150187492370605" green="0.92147433757781982" blue="0.92148995399475098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="secondarySystemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="uva-10-LEp" firstAttribute="top" secondItem="AL3-h7-rM9" secondAttribute="bottom" id="0T0-nc-dGr"/>
                                     <constraint firstItem="hBh-31-poQ" firstAttribute="leading" secondItem="LXV-5R-8AU" secondAttribute="trailing" constant="8" id="2HH-aE-594"/>
@@ -204,7 +203,7 @@
                                     <constraint firstAttribute="height" constant="25" id="i6f-g0-Eao"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Metric-Light" family="Metric" pointSize="20"/>
-                                <color key="textColor" red="0.51372549019607838" green="0.51372549019607838" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXY-JH-gzG" customClass="BorderButton" customModule="Triggertrap" customModuleProvider="target">
@@ -238,7 +237,6 @@
                                     <constraint firstAttribute="height" constant="30" id="Rn7-fg-AUQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Metric-Light" family="Metric" pointSize="24"/>
-                                <color key="textColor" red="0.14442044496536255" green="0.14441612362861633" blue="0.14441859722137451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mYp-Aw-z32">
@@ -248,7 +246,7 @@
                                 </constraints>
                                 <string key="text">You need a mobile kit to connect your camera to your iOS device. Together, they’re the world’s most powerful camera remote. Ooh.</string>
                                 <fontDescription key="fontDescription" name="Metric-Light" family="Metric" pointSize="22"/>
-                                <color key="textColor" red="0.43873488903045654" green="0.43872174620628357" blue="0.43872916698455811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="N3" translatesAutoresizingMaskIntoConstraints="NO" id="5wY-Ti-ALt">
@@ -271,7 +269,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="gsl-dA-35G" secondAttribute="trailing" constant="8" id="4uY-x1-8kB"/>
                             <constraint firstItem="eXY-JH-gzG" firstAttribute="leading" secondItem="9b6-6J-Ae2" secondAttribute="leading" constant="16" id="8jG-Hf-TiF"/>
@@ -341,7 +339,6 @@
                                             <constraint firstAttribute="height" constant="30" id="kxv-D0-zpj"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Metric-Light" family="Metric" pointSize="24"/>
-                                        <color key="textColor" red="0.14442044496536255" green="0.14441612362861633" blue="0.14441859722137451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jXr-aS-AAr" userLabel="pickersView">
@@ -420,11 +417,11 @@
                                             <constraint firstAttribute="height" constant="25" id="M7d-Ul-B9o"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Metric-Light" family="Metric" pointSize="20"/>
-                                        <color key="textColor" red="0.51372549020000002" green="0.51372549020000002" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="2xi-fe-XzZ" firstAttribute="top" secondItem="Vsv-Hh-MjD" secondAttribute="bottom" constant="9" id="1OX-yJ-LzO"/>
                                     <constraint firstAttribute="trailing" secondItem="jXr-aS-AAr" secondAttribute="trailing" constant="8" id="2U9-Gq-zlk"/>
@@ -467,7 +464,6 @@
                                             <constraint firstAttribute="height" constant="28" id="AzX-OX-Vta"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Metric-Light" family="Metric" pointSize="22"/>
-                                        <color key="textColor" red="0.14442044496536255" green="0.14441612362861633" blue="0.14441859722137451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time to set things up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSy-2n-wSB">
@@ -476,7 +472,7 @@
                                             <constraint firstAttribute="height" constant="25" id="xxh-6t-Wh5"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Metric-Light" family="Metric" pointSize="20"/>
-                                        <color key="textColor" red="0.43873488903045654" green="0.43872174620628357" blue="0.43872916698455811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" translatesAutoresizingMaskIntoConstraints="NO" id="XKo-2p-FcR">
@@ -504,7 +500,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.92150187492370605" green="0.92147433757781982" blue="0.92148995399475098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="secondarySystemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Ys6-wd-Lxw" secondAttribute="bottom" constant="8" id="3Gf-qb-Y84"/>
                                     <constraint firstItem="afR-Bz-tXh" firstAttribute="top" secondItem="jID-SX-KPf" secondAttribute="top" constant="8" id="4c7-JB-yI4"/>
@@ -729,7 +725,6 @@
                                             <constraint firstAttribute="height" constant="28" id="6cT-yC-Ria"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Metric-Light" family="Metric" pointSize="22"/>
-                                        <color key="textColor" red="0.14442044496536255" green="0.14441612362861633" blue="0.14441859722137451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plug into the headphone socket" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OUT-Lt-TrE">
@@ -738,7 +733,7 @@
                                             <constraint firstAttribute="height" constant="25" id="4rG-2d-25m"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Metric-Light" family="Metric" pointSize="20"/>
-                                        <color key="textColor" red="0.43873488903045654" green="0.43872174620628357" blue="0.43872916698455811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="Qp3-8O-fhm">
@@ -751,7 +746,7 @@
                                         <color key="currentPageIndicatorTintColor" red="0.8862745098" green="0.13725490200000001" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </pageControl>
                                 </subviews>
-                                <color key="backgroundColor" red="0.92150187492370605" green="0.92147433757781982" blue="0.92148995399475098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="secondarySystemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="IeY-Am-L7z" firstAttribute="leading" secondItem="fRG-sd-rWr" secondAttribute="trailing" constant="8" id="Gf8-zc-2WI"/>
                                     <constraint firstAttribute="trailing" secondItem="OUT-Lt-TrE" secondAttribute="trailing" constant="8" id="Gk9-n9-xJk"/>
@@ -783,7 +778,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="9Gy-1h-iHq" firstAttribute="top" secondItem="pnX-EK-J6g" secondAttribute="bottom" constant="-282" id="9Po-iu-p4b"/>
                             <constraint firstAttribute="trailing" secondItem="j4v-Du-oPe" secondAttribute="trailing" id="9vQ-vS-YSr"/>
@@ -1018,7 +1013,6 @@
                                             <constraint firstAttribute="height" constant="28" id="acp-Qf-xhG"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Metric-Light" family="Metric" pointSize="22"/>
-                                        <color key="textColor" red="0.14442044496536255" green="0.14441612362861633" blue="0.14441859722137451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plug into the cable release port" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mnR-my-cup">
@@ -1027,7 +1021,7 @@
                                             <constraint firstAttribute="height" constant="25" id="M3g-nV-4JV"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Metric-Light" family="Metric" pointSize="20"/>
-                                        <color key="textColor" red="0.43873488903045654" green="0.43872174620628357" blue="0.43872916698455811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" currentPage="3" translatesAutoresizingMaskIntoConstraints="NO" id="Ram-pm-b5E">
@@ -1040,7 +1034,7 @@
                                         <color key="currentPageIndicatorTintColor" red="0.8862745098" green="0.13725490200000001" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </pageControl>
                                 </subviews>
-                                <color key="backgroundColor" red="0.92150187492370605" green="0.92147433757781982" blue="0.92148995399475098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="secondarySystemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="gqF-Hw-EWw" secondAttribute="bottom" constant="12" id="7g8-Uw-3KL"/>
                                     <constraint firstItem="vWz-zk-Fk8" firstAttribute="leading" secondItem="QSu-0H-5ce" secondAttribute="leading" constant="8" id="7re-bC-GnD"/>
@@ -1080,7 +1074,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="OWe-0a-eHi" firstAttribute="trailing" secondItem="Bwp-l3-ZzX" secondAttribute="trailing" id="2bN-cx-gly"/>
                             <constraint firstAttribute="trailing" secondItem="QSu-0H-5ce" secondAttribute="trailing" id="8cC-NG-1Wb"/>
@@ -1292,7 +1286,7 @@
                                 <rect key="frame" x="219" y="43" width="163" height="363"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Popout Shape - Body" translatesAutoresizingMaskIntoConstraints="NO" id="6f2-vH-JEz">
-                                        <rect key="frame" x="53" y="-63" width="144" height="426"/>
+                                        <rect key="frame" x="89" y="150" width="72" height="213"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Popout Shape - Circle" translatesAutoresizingMaskIntoConstraints="NO" id="toZ-1N-EbM">
                                         <rect key="frame" x="0.0" y="0.0" width="163" height="163"/>
@@ -1397,7 +1391,6 @@
                                             <constraint firstAttribute="height" constant="28" id="1th-3X-mYW"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Metric-Light" family="Metric" pointSize="22"/>
-                                        <color key="textColor" red="0.14442044496536255" green="0.14441612362861633" blue="0.14441859722137451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usually found on the lens" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3hW-gA-ewV">
@@ -1406,7 +1399,7 @@
                                             <constraint firstAttribute="height" constant="25" id="Ufa-NV-fCc"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Metric-Light" family="Metric" pointSize="20"/>
-                                        <color key="textColor" red="0.43873488903045654" green="0.43872174620628357" blue="0.43872916698455811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" currentPage="4" translatesAutoresizingMaskIntoConstraints="NO" id="K0m-0I-gO2">
@@ -1419,7 +1412,7 @@
                                         <color key="currentPageIndicatorTintColor" red="0.8862745098" green="0.13725490200000001" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </pageControl>
                                 </subviews>
-                                <color key="backgroundColor" red="0.92150187492370605" green="0.92147433757781982" blue="0.92148995399475098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="secondarySystemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="K0m-0I-gO2" secondAttribute="bottom" id="3ds-zG-2ZJ"/>
                                     <constraint firstAttribute="trailing" secondItem="1cn-lg-XY6" secondAttribute="trailing" constant="8" id="HeY-5u-Wg9"/>
@@ -1451,7 +1444,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="CLn-ER-NTO" firstAttribute="top" relation="greaterThanOrEqual" secondItem="z5G-oa-08Z" secondAttribute="top" constant="16" id="3Ur-b2-wEb"/>
                             <constraint firstItem="xAz-tR-IDo" firstAttribute="top" secondItem="CLn-ER-NTO" secondAttribute="bottom" constant="-126" id="3Xz-9c-gWW"/>
@@ -1732,7 +1725,7 @@
                                             <constraint firstAttribute="height" constant="25" id="gTx-Kq-Iij"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Metric-Light" family="Metric" pointSize="20"/>
-                                        <color key="textColor" red="0.43873488903045654" green="0.43872174620628357" blue="0.43872916698455811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" currentPage="2" translatesAutoresizingMaskIntoConstraints="NO" id="PY2-gZ-0Rz">
@@ -1750,11 +1743,10 @@
                                             <constraint firstAttribute="height" constant="28" id="Zp0-wy-ewd"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Metric-Light" family="Metric" pointSize="22"/>
-                                        <color key="textColor" red="0.14442044496536255" green="0.14441612362861633" blue="0.14441859722137451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.92150187492370605" green="0.92147433757781982" blue="0.92148995399475098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="secondarySystemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="PY2-gZ-0Rz" firstAttribute="top" secondItem="1Vd-Us-h6E" secondAttribute="bottom" id="22p-MN-EH8"/>
                                     <constraint firstAttribute="bottom" secondItem="ni0-bK-4CG" secondAttribute="bottom" constant="12" id="4Ka-Bb-8er"/>
@@ -1786,7 +1778,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="1Ie-be-GOd" firstAttribute="leading" secondItem="siC-JM-9AD" secondAttribute="leading" id="0bq-H0-c97"/>
                             <constraint firstItem="c8S-re-1tI" firstAttribute="top" secondItem="P38-0G-O30" secondAttribute="bottom" constant="14" id="42e-ml-vhn"/>
@@ -1868,13 +1860,11 @@
                                             <constraint firstAttribute="height" constant="30" id="cRm-ZZ-EjN"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Metric-Light" family="Metric" pointSize="24"/>
-                                        <color key="textColor" red="0.14442044496536255" green="0.14441612362861633" blue="0.14441859722137451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Awesome." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="W4X-g7-ACc">
                                         <rect key="frame" x="103.5" y="100" width="168.5" height="42"/>
                                         <fontDescription key="fontDescription" name="Metric-Regular" family="Metric" pointSize="36"/>
-                                        <color key="textColor" red="0.14442044496536255" green="0.14441612362861633" blue="0.14441859722137451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Give it a tap!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tx7-Ah-uw4">
@@ -1883,11 +1873,10 @@
                                             <constraint firstAttribute="height" constant="30" id="HP4-G6-5e3"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Metric-Light" family="Metric" pointSize="24"/>
-                                        <color key="textColor" red="0.14442044496536255" green="0.14441612362861633" blue="0.14441859722137451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="Ucp-qm-usC" firstAttribute="top" secondItem="W4X-g7-ACc" secondAttribute="bottom" priority="999" constant="44" id="Dzm-Vj-LEh"/>
                                     <constraint firstItem="tx7-Ah-uw4" firstAttribute="top" secondItem="Ucp-qm-usC" secondAttribute="bottom" constant="54" id="UPX-8p-ZH7"/>
@@ -1966,7 +1955,7 @@
                                         <color key="currentPageIndicatorTintColor" red="0.8862745098" green="0.13725490200000001" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </pageControl>
                                 </subviews>
-                                <color key="backgroundColor" red="0.92150187492370605" green="0.92147433757781982" blue="0.92148995399475098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="secondarySystemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="centerY" secondItem="5fB-sC-ASp" secondAttribute="centerY" priority="999" id="UzS-Xh-zFL"/>
                                     <constraint firstAttribute="trailing" secondItem="ijc-xD-ZGk" secondAttribute="trailing" constant="16" id="WsI-Ao-JAG"/>
