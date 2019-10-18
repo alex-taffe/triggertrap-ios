@@ -534,7 +534,11 @@
 }
 
 - (BOOL)canBecomeFirstResponder {
+#if TARGET_OS_MACCATALYST
     return true;
+#else
+    return false;
+#endif
 }
 
 #pragma mark - UITextInput
