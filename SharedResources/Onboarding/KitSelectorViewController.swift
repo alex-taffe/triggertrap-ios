@@ -26,4 +26,12 @@ class KitSelectorViewController: OnboardingViewController {
     @IBOutlet var pageControl: UIPageControl!
     
     @IBOutlet var dismissButton: UIButton!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        #if targetEnvironment(macCatalyst)
+        self.dismissButton.isHidden = true
+        #endif
+    }
 }

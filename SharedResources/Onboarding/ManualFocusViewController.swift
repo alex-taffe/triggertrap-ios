@@ -38,6 +38,14 @@ class ManualFocusViewController: OnboardingViewController {
     @IBOutlet var manualSwitch: UISwitch!
     
     @IBOutlet var dismissButton: UIButton!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        #if targetEnvironment(macCatalyst)
+        self.dismissButton.isHidden = true
+        #endif
+    }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()

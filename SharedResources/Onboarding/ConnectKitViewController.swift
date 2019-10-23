@@ -37,6 +37,10 @@ class ConnectKitViewController: OnboardingViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        #if targetEnvironment(macCatalyst)
+        self.dismissButton.isHidden = true
+        #endif
     }
     
     override func viewDidLayoutSubviews() {

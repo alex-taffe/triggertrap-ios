@@ -52,9 +52,12 @@ class VolumeViewController: OnboardingViewController {
     fileprivate var outputVolume = 0
     
     // MARK: - Lifecycle
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        #if targetEnvironment(macCatalyst)
+        self.dismissButton.isHidden = true
+        #endif
         
         whiteViewDescriptionLabel.text = NSLocalizedString("Set to 100%", comment: "Set to 100%")
         

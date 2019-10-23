@@ -40,6 +40,14 @@ class CameraViewController: OnboardingViewController {
     @IBOutlet var dongleCoilImageView: UIImageView!
     
     @IBOutlet var dismissButton: UIButton!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        #if targetEnvironment(macCatalyst)
+        self.dismissButton.isHidden = true
+        #endif
+    }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()

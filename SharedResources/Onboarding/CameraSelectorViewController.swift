@@ -46,7 +46,10 @@ class CameraSelectorViewController: OnboardingViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        commonInit()
+        self.commonInit()
+        #if targetEnvironment(macCatalyst)
+        self.dismissButton.isHidden = true
+        #endif
     }
     
     override func viewWillAppear(_ animated: Bool) {
