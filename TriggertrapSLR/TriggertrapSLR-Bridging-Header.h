@@ -52,3 +52,6 @@
 #import "MPGNotification.h"
 
 #import "Constants.h"
+
+//AppKit Glue
+#import "AppKitGlue.h"

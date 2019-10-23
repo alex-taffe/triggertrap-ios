@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1DF0B459EB8E6F5EC09B5C5C /* (null) in Frameworks */ = {isa = PBXBuildFile; };
-		6C27BE94075250620411351D /* Pods_TriggertrapSLR_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0EABEDE2EC72F98FAC1644 /* Pods_TriggertrapSLR_Mac.framework */; };
+		6C27BE94075250620411351D /* Pods_TriggertrapSLR_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0EABEDE2EC72F98FAC1644 /* Pods_TriggertrapSLR_Mac.framework */; platformFilter = maccatalyst; };
 		9E23FEBA1BFF3AC50021E659 /* iTunesConnect.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E23FEBC1BFF3AC50021E659 /* iTunesConnect.strings */; };
 		9E67C6831D423BAD00C560CD /* SettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C6821D423BAD00C560CD /* SettingsManager.m */; };
 		9E67C69D1D423F6800C560CD /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C69C1D423F6800C560CD /* FeedbackViewController.swift */; };
@@ -381,6 +381,8 @@
 		FA40EF372326AF9C009AE6B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40EF362326AF9B009AE6B7 /* SceneDelegate.swift */; };
 		FA40EF382326AFA6009AE6B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40EF362326AF9B009AE6B7 /* SceneDelegate.swift */; };
 		FA56926F217E587C00A4575F /* NeutralDensityCalculatorNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA56926E217E587C00A4575F /* NeutralDensityCalculatorNavigationController.swift */; };
+		FA6E16EF2360B94100F3B195 /* AppKitGlue.bundle in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FA6E16E92360B93A00F3B195 /* AppKitGlue.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA6E16F42360B98200F3B195 /* TTVolumeLevelChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6E16F32360B98200F3B195 /* TTVolumeLevelChecker.m */; };
 		FA6E879323243E7B009590DF /* Modes Mac.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA6E879023243E75009590DF /* Modes Mac.plist */; };
 		FA6E879923244710009590DF /* DetailNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E879823244710009590DF /* DetailNavigationController.swift */; };
 		FA6E879A23244710009590DF /* DetailNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E879823244710009590DF /* DetailNavigationController.swift */; };
@@ -389,9 +391,20 @@
 		FA6E879D232452E6009590DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EE1F1B51B1C9FE800FE6EB7 /* Images.xcassets */; };
 		FAB3553F20BF011E003CCF66 /* MPGNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB3553E20BF011E003CCF66 /* MPGNotification.m */; };
 		FAB6639020B4D1AD003C256E /* OptionsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB6638F20B4D1AD003C256E /* OptionsNavigationController.swift */; };
+		FABA79282360C5B20060D8CC /* AppKitGlue.m in Sources */ = {isa = PBXBuildFile; fileRef = FABA79272360C5B20060D8CC /* AppKitGlue.m */; };
 		FAE62D4E23311DDC002AC8E6 /* PreferencesSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE62D4C23311DD5002AC8E6 /* PreferencesSceneDelegate.swift */; };
 		FAE62D512331380F002AC8E6 /* TutorialSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE62D4F2331378A002AC8E6 /* TutorialSceneDelegate.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA6E16F02360B94100F3B195 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EE1F13B1B1C9DFD00FE6EB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA6E16E82360B93A00F3B195;
+			remoteInfo = AppKitGlue;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		9EE1F1F01B1CA17B00FE6EB7 /* Embed Frameworks */ = {
@@ -450,6 +463,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				FA6E16EF2360B94100F3B195 /* AppKitGlue.bundle in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -815,6 +829,10 @@
 		FA40EF362326AF9B009AE6B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FA40EF7B2326B7A2009AE6B7 /* Info-Mac.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Mac.plist"; sourceTree = "<group>"; };
 		FA56926E217E587C00A4575F /* NeutralDensityCalculatorNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeutralDensityCalculatorNavigationController.swift; sourceTree = "<group>"; };
+		FA6E16E92360B93A00F3B195 /* AppKitGlue.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppKitGlue.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA6E16EB2360B93A00F3B195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA6E16F22360B98200F3B195 /* TTVolumeLevelChecker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTVolumeLevelChecker.h; sourceTree = "<group>"; };
+		FA6E16F32360B98200F3B195 /* TTVolumeLevelChecker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTVolumeLevelChecker.m; sourceTree = "<group>"; };
 		FA6E879123243E75009590DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = "Base.lproj/Modes Mac.plist"; sourceTree = "<group>"; };
 		FA6E879423243F65009590DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = "en.lproj/Modes Mac.plist"; sourceTree = "<group>"; };
 		FA6E879523243F69009590DF /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "en-GB"; path = "en-GB.lproj/Modes Mac.plist"; sourceTree = "<group>"; };
@@ -824,6 +842,9 @@
 		FAB3553D20BF011E003CCF66 /* MPGNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPGNotification.h; sourceTree = "<group>"; };
 		FAB3553E20BF011E003CCF66 /* MPGNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPGNotification.m; sourceTree = "<group>"; };
 		FAB6638F20B4D1AD003C256E /* OptionsNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsNavigationController.swift; sourceTree = "<group>"; };
+		FABA79232360C4560060D8CC /* AppKitGlue-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppKitGlue-Bridging-Header.h"; sourceTree = "<group>"; };
+		FABA79262360C5B20060D8CC /* AppKitGlue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppKitGlue.h; sourceTree = "<group>"; };
+		FABA79272360C5B20060D8CC /* AppKitGlue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppKitGlue.m; sourceTree = "<group>"; };
 		FAE62D4C23311DD5002AC8E6 /* PreferencesSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesSceneDelegate.swift; sourceTree = "<group>"; };
 		FAE62D4F2331378A002AC8E6 /* TutorialSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialSceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -842,6 +863,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C27BE94075250620411351D /* Pods_TriggertrapSLR_Mac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA6E16E62360B93A00F3B195 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -869,6 +897,7 @@
 				BDD4C3C81BF0E750008CA311 /* Triggertrap Watch Kit Extension */,
 				BD0965FC1BF9EE49000C581B /* Triggertrap WatchKit 1 Extension */,
 				BD09660E1BF9EE49000C581B /* Triggertrap WatchKit 1 App */,
+				FA6E16EA2360B93A00F3B195 /* AppKitGlue */,
 				9EE1F1441B1C9DFD00FE6EB7 /* Products */,
 				B117DE22060B1C8BDF0E6BE6 /* Pods */,
 				79374477B2F7DCA0830A2DD5 /* Frameworks */,
@@ -880,6 +909,7 @@
 			children = (
 				9EE1F1A71B1C9FE800FE6EB7 /* TriggertrapSLR.app */,
 				FA06C69B2324369A002C4A11 /* Triggertrap.app */,
+				FA6E16E92360B93A00F3B195 /* AppKitGlue.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -887,6 +917,8 @@
 		9EE1F1A81B1C9FE800FE6EB7 /* TriggertrapSLR */ = {
 			isa = PBXGroup;
 			children = (
+				FABA79262360C5B20060D8CC /* AppKitGlue.h */,
+				FABA79272360C5B20060D8CC /* AppKitGlue.m */,
 				BDD44D491BB163B200B98FF6 /* SLRConstants.swift */,
 				9EE1F1AB1B1C9FE800FE6EB7 /* AppDelegate.swift */,
 				FA40EF362326AF9B009AE6B7 /* SceneDelegate.swift */,
@@ -1681,6 +1713,17 @@
 			name = Unwrappable;
 			sourceTree = "<group>";
 		};
+		FA6E16EA2360B93A00F3B195 /* AppKitGlue */ = {
+			isa = PBXGroup;
+			children = (
+				FA6E16EB2360B93A00F3B195 /* Info.plist */,
+				FA6E16F22360B98200F3B195 /* TTVolumeLevelChecker.h */,
+				FA6E16F32360B98200F3B195 /* TTVolumeLevelChecker.m */,
+				FABA79232360C4560060D8CC /* AppKitGlue-Bridging-Header.h */,
+			);
+			path = AppKitGlue;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1724,11 +1767,29 @@
 			buildRules = (
 			);
 			dependencies = (
+				FA6E16F12360B94100F3B195 /* PBXTargetDependency */,
 			);
 			name = "TriggertrapSLR Mac";
 			productName = TriggertrapSLR;
 			productReference = FA06C69B2324369A002C4A11 /* Triggertrap.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FA6E16E82360B93A00F3B195 /* AppKitGlue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA6E16EE2360B93A00F3B195 /* Build configuration list for PBXNativeTarget "AppKitGlue" */;
+			buildPhases = (
+				FA6E16E52360B93A00F3B195 /* Sources */,
+				FA6E16E62360B93A00F3B195 /* Frameworks */,
+				FA6E16E72360B93A00F3B195 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppKitGlue;
+			productName = AppKitGlue;
+			productReference = FA6E16E92360B93A00F3B195 /* AppKitGlue.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -1757,6 +1818,10 @@
 							};
 						};
 					};
+					FA6E16E82360B93A00F3B195 = {
+						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
+					};
 				};
 			};
 			buildConfigurationList = 9EE1F13E1B1C9DFD00FE6EB7 /* Build configuration list for PBXProject "Triggertrap" */;
@@ -1777,6 +1842,7 @@
 			targets = (
 				9EE1F1A61B1C9FE800FE6EB7 /* TriggertrapSLR */,
 				FA06C5CC2324369A002C4A11 /* TriggertrapSLR Mac */,
+				FA6E16E82360B93A00F3B195 /* AppKitGlue */,
 			);
 		};
 /* End PBXProject section */
@@ -1881,6 +1947,13 @@
 				FA06C6902324369A002C4A11 /* middleExposures.plist in Resources */,
 				FA06C6912324369A002C4A11 /* distanceUnitsPlist.strings in Resources */,
 				FA06C6922324369A002C4A11 /* SplashImage.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA6E16E72360B93A00F3B195 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2231,6 +2304,7 @@
 				FA06C6222324369A002C4A11 /* AppDelegate.swift in Sources */,
 				FA06C6232324369A002C4A11 /* SLRConstants.swift in Sources */,
 				FA06C6242324369A002C4A11 /* AppleWatchManager.swift in Sources */,
+				FABA79282360C5B20060D8CC /* AppKitGlue.m in Sources */,
 				FA06C6252324369A002C4A11 /* UIDevice+Camera.m in Sources */,
 				FA06C6262324369A002C4A11 /* ControlPoint.m in Sources */,
 				FA06C6272324369A002C4A11 /* SubSettingsViewController.swift in Sources */,
@@ -2296,7 +2370,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FA6E16E52360B93A00F3B195 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6E16F42360B98200F3B195 /* TTVolumeLevelChecker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA6E16F12360B94100F3B195 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA6E16E82360B93A00F3B195 /* AppKitGlue */;
+			targetProxy = FA6E16F02360B94100F3B195 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9E23FEBC1BFF3AC50021E659 /* iTunesConnect.strings */ = {
@@ -2824,7 +2914,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7569F278FF52CCFCB509F824 /* Pods-TriggertrapSLR Mac.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(EMBEDDED_CONTENT_CONTAINS_SWIFT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
@@ -2866,7 +2955,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 12771AFFFA9B463F93474F9C /* Pods-TriggertrapSLR Mac.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(EMBEDDED_CONTENT_CONTAINS_SWIFT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
@@ -2907,6 +2995,79 @@
 			};
 			name = Release;
 		};
+		FA6E16EC2360B93A00F3B195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
+				DEVELOPMENT_TEAM = S4JEZRL8YY;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = AppKitGlue/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.triggertrap.AppKitGlue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "AppKitGlue/AppKitGlue-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		FA6E16ED2360B93A00F3B195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
+				DEVELOPMENT_TEAM = S4JEZRL8YY;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = AppKitGlue/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.triggertrap.AppKitGlue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "AppKitGlue/AppKitGlue-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2933,6 +3094,15 @@
 			buildConfigurations = (
 				FA06C6992324369A002C4A11 /* Debug */,
 				FA06C69A2324369A002C4A11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA6E16EE2360B93A00F3B195 /* Build configuration list for PBXNativeTarget "AppKitGlue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA6E16EC2360B93A00F3B195 /* Debug */,
+				FA6E16ED2360B93A00F3B195 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

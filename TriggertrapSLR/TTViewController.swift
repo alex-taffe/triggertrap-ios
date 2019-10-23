@@ -270,8 +270,14 @@ class TTViewController: SplitLayoutViewController, DispatchableLifecycle, Sequen
     }
     
     func sufficientVolumeToTrigger() -> Bool {
-        
-        if AVAudioSession.sharedInstance().outputVolume >= 1.0 {
+
+        #if targetEnvironment(macCatalyst)
+        let volume =  AppKitGlue.defaultVolumeOutputLevel()
+        #else
+        let volume = AVAudioSession.sharedInstance().outputVolume
+        #endif
+
+        if volume >= 1.0 {
             return true
         } else {
             if shownVolumeAlert {
