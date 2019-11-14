@@ -106,6 +106,7 @@ class WiFiViewController: TTViewController {
                         // Hide red view and stop shutter button animation
                         hideFeedbackView()
                         stopShutterButtonAnimation()
+                        NotificationCenter.default.post(name: Notification.Name(rawValue: constWatchDidTrigger), object: nil)
                         
                     } else {
                         // Start Wifi Master
@@ -118,6 +119,7 @@ class WiFiViewController: TTViewController {
                         
                         WifiDispatcher.sharedInstance.remoteOutputServer?.delegate = self
                         WifiDispatcher.sharedInstance.remoteOutputServer?.startService()
+                        NotificationCenter.default.post(name: Notification.Name(rawValue: constWatchDidTrigger), object: nil)
                     }
                     
                     break
@@ -141,6 +143,7 @@ class WiFiViewController: TTViewController {
                         // Update name here
                         remoteClient.currentServerName = server
                         remoteClient.connectToCurrentServer()
+                        NotificationCenter.default.post(name: Notification.Name(rawValue: constWatchDidTrigger), object: nil)
                     }
                     break
                 }

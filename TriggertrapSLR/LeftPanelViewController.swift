@@ -43,6 +43,8 @@ class LeftPanelViewController: UITableViewController {
         imageViewContainer.addSubview(imageView)
 
         self.navigationItem.titleView = imageViewContainer
+
+        NotificationCenter.default.addObserver(self, selector: #selector(wifiChanged), name: Notification.Name(rawValue: constWatchDidTrigger), object: nil)
     }
     
     deinit {
@@ -73,6 +75,10 @@ class LeftPanelViewController: UITableViewController {
             self.navigationController?.navigationBar.barTintColor = UIColor.triggertrap_primaryColor(1.0)
         }
         
+    }
+
+    @objc func wifiChanged() {
+        self.tableView.reloadData()
     }
 }
 
@@ -108,12 +114,15 @@ extension LeftPanelViewController {
             if WearablesManager.sharedInstance.isWearablesModeRunning() && !cell.wearablesSupported {
                 cell.descriptionLabel.text = NSLocalizedString("Not available with Wearable mode running", comment: "Not available with Wearable mode running")
                 cell.square.backgroundColor = UIColor.triggertrap_color(UIColor.triggertrap_naturalColor(), change: CGFloat(indexPath.row) * 0.1)
+                cell.isUserInteractionEnabled = false
             } else if WifiDispatcher.sharedInstance.remoteOutputServer.delegate != nil && !cell.remoteSupported  {
                 cell.descriptionLabel.text = NSLocalizedString("Not available with Wifi Master running", comment: "Not available with Wifi Master running")
                 cell.square.backgroundColor = UIColor.triggertrap_color(UIColor.triggertrap_naturalColor(), change: CGFloat(indexPath.row) * 0.1)
+                cell.isUserInteractionEnabled = false
             } else {
                 cell.descriptionLabel.text = NSLocalizedString(mode["description"] as! String, tableName: "ModesPlist", bundle: Bundle.main, value: "Description", comment: "Ignore when translating")
                 cell.square.backgroundColor = UIColor.triggertrap_color(UIColor.triggertrap_primaryColor(), change: CGFloat(indexPath.row) * 0.1)
+                cell.isUserInteractionEnabled = true
             }
             
             cell.descriptionLabel.textColor = UIColor.triggertrap_foregroundColor()

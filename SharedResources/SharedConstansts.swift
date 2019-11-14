@@ -44,6 +44,10 @@ let constPhotoTaken = "Photo Taken"
 
 let constWatchDidTrigger = "WatchDidTrigger"
 
+// MARK: - WiFi
+
+let constWiFiDidChange = "wifiDidChange"
+
 // MARK: - Timelapse Pro
 
 let constViewInAppStoreLink = "https://itunes.apple.com/app/id946115908?mt=8"
