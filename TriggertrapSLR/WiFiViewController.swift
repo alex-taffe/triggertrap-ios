@@ -39,9 +39,6 @@ class WiFiViewController: TTViewController {
         
         remoteClient.delegate = self
         
-        // Necessary to fix gap between collection view top item and navigation bar
-        self.automaticallyAdjustsScrollViewInsets = false
-        
         // Add notification observer which calls wifiDidDisconnect when device goes into airplain mode/wifi is disabled
         NotificationCenter.default.addObserver(self, selector: #selector(WiFiViewController.wifiDidDisconnect), name: NSNotification.Name(rawValue: ConstWifiMasterIsSelected), object: nil)
         

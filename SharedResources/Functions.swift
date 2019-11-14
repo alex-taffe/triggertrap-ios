@@ -59,7 +59,18 @@ enum Theme: Int {
 
 func AppTheme() -> Theme {
     if #available(iOS 13.0, *) {
-        return UIApplication.shared.keyWindow?.rootViewController?.traitCollection.userInterfaceStyle == .dark ? .night : .normal
+
+        let keyWindow = UIApplication.shared.connectedScenes
+        .filter({$0.activationState == .foregroundActive})
+        .map({$0 as? UIWindowScene})
+        .compactMap({$0})
+        .first?.windows
+        .filter({$0.isKeyWindow}).first
+        
+        guard let rootController = keyWindow?.rootViewController else {
+            return .normal
+        }
+        return rootController.traitCollection.userInterfaceStyle == .dark ? Theme.night : Theme.normal
     } else {
         if let appTheme = UserDefaults.standard.object(forKey: ConstAppTheme) as? Int, let theme = Theme(rawValue: appTheme) {
             return theme
