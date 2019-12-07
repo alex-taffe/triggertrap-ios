@@ -389,7 +389,6 @@
 		FA6E879B232448C7009590DF /* Modes.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDD75BD91BE77AAB0014DA3D /* Modes.plist */; };
 		FA6E879C232452D1009590DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EE1F1B51B1C9FE800FE6EB7 /* Images.xcassets */; };
 		FA6E879D232452E6009590DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EE1F1B51B1C9FE800FE6EB7 /* Images.xcassets */; };
-		FA8551C2237DCA26005116D5 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8551C1237DCA26005116D5 /* Collection.swift */; };
 		FAB3553F20BF011E003CCF66 /* MPGNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB3553E20BF011E003CCF66 /* MPGNotification.m */; };
 		FAB6639020B4D1AD003C256E /* OptionsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB6638F20B4D1AD003C256E /* OptionsNavigationController.swift */; };
 		FABA79282360C5B20060D8CC /* AppKitGlue.m in Sources */ = {isa = PBXBuildFile; fileRef = FABA79272360C5B20060D8CC /* AppKitGlue.m */; };
@@ -840,7 +839,6 @@
 		FA6E879623243F6A009590DF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = de; path = "de.lproj/Modes Mac.plist"; sourceTree = "<group>"; };
 		FA6E879723243F6A009590DF /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = it; path = "it.lproj/Modes Mac.plist"; sourceTree = "<group>"; };
 		FA6E879823244710009590DF /* DetailNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNavigationController.swift; sourceTree = "<group>"; };
-		FA8551C1237DCA26005116D5 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		FAB3553D20BF011E003CCF66 /* MPGNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPGNotification.h; sourceTree = "<group>"; };
 		FAB3553E20BF011E003CCF66 /* MPGNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPGNotification.m; sourceTree = "<group>"; };
 		FAB6638F20B4D1AD003C256E /* OptionsNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsNavigationController.swift; sourceTree = "<group>"; };
@@ -1656,7 +1654,6 @@
 				BDD44D261BB1619300B98FF6 /* Array.swift */,
 				BDD44D281BB1619300B98FF6 /* UIColor.swift */,
 				BDD44D291BB1619300B98FF6 /* UIFont.swift */,
-				FA8551C1237DCA26005116D5 /* Collection.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -2191,7 +2188,6 @@
 				9E67C69D1D423F6800C560CD /* FeedbackViewController.swift in Sources */,
 				BD11340E1BB3F01A006ED87A /* ConnectKitViewController.swift in Sources */,
 				BD1133D01BB3EED1006ED87A /* KitToCameraSelectorTransition.swift in Sources */,
-				FA8551C2237DCA26005116D5 /* Collection.swift in Sources */,
 				BD17D55F1C0CB16100843404 /* Activity.swift in Sources */,
 				BDD44B191BA98B0300B98FF6 /* Dispatcher.swift in Sources */,
 				BDD44B131BA98B0300B98FF6 /* UnwrappableType.swift in Sources */,

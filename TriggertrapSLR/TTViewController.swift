@@ -136,6 +136,7 @@ class TTViewController: SplitLayoutViewController, DispatchableLifecycle, Sequen
         self.rightButton?.tintColor = UIColor.triggertrap_iconColor()
         #endif
 
+        self.navigationController?.navigationBar.barTintColor = UIColor.triggertrap_primaryColor(1.0)
         
         self.bulbButton?.setImage(ImageWithColor(UIImage(named: "BulbIcon")!, color: UIColor.triggertrap_primaryColor()), for: UIControl.State())
         self.bulbButton?.imageView?.contentMode = .scaleAspectFit
