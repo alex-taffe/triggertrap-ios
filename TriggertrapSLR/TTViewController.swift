@@ -79,6 +79,7 @@ class TTViewController: SplitLayoutViewController, DispatchableLifecycle, Sequen
             // Disable shutter button
             shutterButtonEnabled(false)
         }
+
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -101,6 +102,9 @@ class TTViewController: SplitLayoutViewController, DispatchableLifecycle, Sequen
             
             UserDefaults.standard.set(true, forKey: ConstFirstAppLaunch)
             UserDefaults.standard.synchronize()
+        }
+        if viewControllerTheme != AppTheme() {
+            performThemeUpdate()
         }
     }
     

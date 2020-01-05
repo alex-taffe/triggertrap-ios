@@ -22,6 +22,15 @@ class DetailNavigationController: UINavigationController {
 
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        if #available(iOS 13.0, *){
+            self.navigationController?.navigationBar.barTintColor = UIColor.triggertrap_primaryColor(1.0)
+            let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.systemBackground]
+            self.navigationController?.navigationBar.titleTextAttributes = textAttributes
+        }
+
+    }
+
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         if #available(iOS 13.0, *){
             self.navigationController?.navigationBar.barTintColor = UIColor.triggertrap_primaryColor(1.0)

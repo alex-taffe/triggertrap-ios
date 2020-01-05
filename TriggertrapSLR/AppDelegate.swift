@@ -58,8 +58,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = UIColor.triggertrap_fillColor(1.0)
 
         DongleObserver.sharedInstance.dongleConnectedToPhone()
-
-
         
         return true
     }
